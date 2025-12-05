@@ -935,7 +935,10 @@ const Footer = ({ t }) => (
             <div className="bg-red-700 p-1.5 mr-2">
               <Scale className="h-5 w-5 text-white" />
             </div>
-            <span className="font-serif text-xl font-bold uppercase">Car Accident<span className="text-red-600 ml-1">Attorneys</span></span>
+            <div className="flex flex-col">
+              <span className="font-serif text-xl font-bold uppercase leading-none text-white">Car Accident</span>
+              <span className="font-serif text-xl font-bold uppercase leading-none text-red-600">Attorneys</span>
+            </div>
           </div>
           <p className="text-gray-500 text-sm leading-relaxed mb-6">
             We are dedicated to fighting for the rights of the injured. With billions won, our record speaks for itself.
