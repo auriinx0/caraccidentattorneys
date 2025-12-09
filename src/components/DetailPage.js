@@ -1,12 +1,30 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { ChevronRight, CheckCircle } from 'lucide-react';
 import { AREA_STRUCT } from '../constants';
 import IntakeForm from './IntakeForm';
 
 const DetailPage = ({ areaId, t, setRoute }) => {
     const areaStruct = AREA_STRUCT.find(a => a.id === areaId);
+    const [statIndex, setStatIndex] = useState(0);
+    const [fade, setFade] = useState(true);
+
     if (!areaStruct) return null;
     const areaInfo = t.areas[areaId];
+
+    // Rotate statistics
+    useEffect(() => {
+        if (!areaInfo.statistics || !Array.isArray(areaInfo.statistics)) return;
+
+        const interval = setInterval(() => {
+            setFade(false); // Fade out
+            setTimeout(() => {
+                setStatIndex((prevIndex) => (prevIndex + 1) % areaInfo.statistics.length);
+                setFade(true); // Fade in
+            }, 500); // Wait for fade out
+        }, 4000); // Total display time
+
+        return () => clearInterval(interval);
+    }, [areaInfo.statistics]);
 
     return (
         <div className="bg-white min-h-screen pt-20">
@@ -43,17 +61,42 @@ const DetailPage = ({ areaId, t, setRoute }) => {
                                     <h3 className="text-xl font-bold text-red-700 mb-4 uppercase tracking-wide flex items-center">
                                         Key Statistics
                                     </h3>
-                                    <div className="whitespace-pre-line text-sm">{areaInfo.statistics}</div>
+                                    <div className={`min-h-[60px] transition-opacity duration-500 flex items-center ${fade ? 'opacity-100' : 'opacity-0'}`}>
+                                        <p className="text-lg font-medium text-gray-800">
+                                            {Array.isArray(areaInfo.statistics)
+                                                ? areaInfo.statistics[statIndex]
+                                                : areaInfo.statistics}
+                                        </p>
+                                    </div>
                                 </div>
                             )}
 
                             {/* What To Do Section */}
-                            {areaInfo.whatToDo ? (
+                            {areaInfo.whatToDo && (
                                 <>
                                     <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4 uppercase tracking-wide">{t.detailPage.whatToDoTitle}</h3>
-                                    <div className="whitespace-pre-line mb-8">{areaInfo.whatToDo}</div>
+                                    {Array.isArray(areaInfo.whatToDo) ? (
+                                        <ul className="list-none space-y-3 mb-8">
+                                            {areaInfo.whatToDo.map((item, i) => (
+                                                <li key={i} className="flex items-start">
+                                                    <span className="flex-shrink-0 h-6 w-6 rounded-full bg-red-100 text-red-600 flex items-center justify-center text-sm font-bold mr-3 mt-0.5">{i + 1}</span>
+                                                    <span className="text-gray-700">{item}</span>
+                                                </li>
+                                            ))}
+                                        </ul>
+                                    ) : (
+                                        <div className="whitespace-pre-line mb-8">{areaInfo.whatToDo}</div>
+                                    )}
                                 </>
-                            ) : null}
+                            )}
+
+                            {/* Additional Sections (e.g. Rear Ending) */}
+                            {areaInfo.additionalSections && areaInfo.additionalSections.map((section, idx) => (
+                                <div key={idx} className="mt-8">
+                                    <h3 className="text-2xl font-bold text-gray-900 mb-4 uppercase tracking-wide">{section.title}</h3>
+                                    <div className="whitespace-pre-line text-gray-700">{section.content}</div>
+                                </div>
+                            ))}
 
                             <div className="bg-gray-100 p-8 border-l-4 border-red-700 my-8">
                                 <h4 className="text-lg font-bold text-gray-900 mb-4 uppercase">{t.detailPage.commitTitle}</h4>
@@ -68,12 +111,12 @@ const DetailPage = ({ areaId, t, setRoute }) => {
                             </div>
 
                             {/* How We Help Section */}
-                            {areaInfo.howWeHelp ? (
+                            {areaInfo.howWeHelp && (
                                 <>
                                     <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4 uppercase tracking-wide">{t.detailPage.howWeHelpTitle}</h3>
                                     <div className="whitespace-pre-line">{areaInfo.howWeHelp}</div>
                                 </>
-                            ) : null}
+                            )}
                         </div>
                     </div>
                     <div className="space-y-8">
