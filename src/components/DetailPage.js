@@ -8,11 +8,10 @@ const DetailPage = ({ areaId, t, setRoute }) => {
     const [statIndex, setStatIndex] = useState(0);
     const [fade, setFade] = useState(true);
 
-    if (!areaStruct) return null;
-    const areaInfo = t.areas[areaId];
-
     // Rotate statistics
     useEffect(() => {
+        if (!areaStruct) return;
+        const areaInfo = t.areas[areaId];
         if (!areaInfo.statistics || !Array.isArray(areaInfo.statistics)) return;
 
         const interval = setInterval(() => {
@@ -24,7 +23,10 @@ const DetailPage = ({ areaId, t, setRoute }) => {
         }, 4000); // Total display time
 
         return () => clearInterval(interval);
-    }, [areaInfo.statistics]);
+    }, [areaId, t.areas, areaStruct]);
+
+    if (!areaStruct) return null;
+    const areaInfo = t.areas[areaId];
 
     return (
         <div className="bg-white min-h-screen pt-20">

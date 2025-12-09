@@ -23,6 +23,7 @@ export default function App() {
   useEffect(() => {
     const savedLang = getCookie('site_lang');
     if (savedLang && ['en', 'es', 'ko', 'zh'].includes(savedLang)) {
+      // eslint-disable-next-line react-hooks/exhaustive-deps
       setLang(savedLang);
     }
   }, []);
@@ -58,7 +59,7 @@ export default function App() {
           <div className="absolute top-0 right-0 w-1/3 h-full bg-[#1a1a1a] transform -skew-x-12 opacity-50"></div>
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
             <h2 className="font-serif text-5xl md:text-6xl font-bold mb-8 uppercase tracking-tighter">
-              We Don't Just Practice. <br /><span className="text-red-700">We Win.</span>
+              We Don&apos;t Just Practice. <br /><span className="text-red-700">We Win.</span>
             </h2>
             <button className="bg-transparent border-2 border-red-700 text-white px-10 py-4 font-black text-sm uppercase tracking-widest hover:bg-red-700 transition duration-300">
               View Our Verdicts

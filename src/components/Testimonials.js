@@ -45,7 +45,7 @@ const Testimonials = ({ t }) => {
                             <Quote className="hidden md:block text-red-100 w-16 h-16 absolute top-8 left-8 -z-10" />
 
                             <p className="text-gray-600 text-lg md:text-xl leading-relaxed italic mb-8 relative z-10 min-h-[120px] flex items-center">
-                                "{review.text}"
+                                &quot;{review.text}&quot;
                             </p>
                             <div className="flex items-center">
                                 <div className="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center font-bold text-gray-500 mr-4">
