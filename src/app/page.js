@@ -5,7 +5,7 @@ import {
   Scale, 
   Phone, 
   Menu, 
-  X, // Added X for closing mobile menu
+  X,
   Car, 
   Smartphone, 
   BriefcaseMedical, 
@@ -32,12 +32,12 @@ import {
   Droplets,
   Star,
   Quote,
-  Calendar,
-  Clock as ClockIcon
+  Calendar,        
+  Clock as ClockIcon 
 } from 'lucide-react';
 
 // --- CONFIGURATION ---
-const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxoROt_1EA-mN7lSge8GEdJocR9jKyjjbTElJcx6QJDVqQb0rRwrcr2vqVTl5FPP21azg/exec";
+const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxZyFCki8SRj1zCWMLguyxKWI31WZlaoIVVRbZC-snUxYphFeOsN63gaPy4KHXYl8QTCQ/exec";
 const ACCESS_KEY = "bd059ed0-3d31-4877-b768-50ba79857be9";
 
 const US_STATES = [
@@ -47,6 +47,24 @@ const US_STATES = [
   "New Mexico", "New York", "North Carolina", "North Dakota", "Ohio", "Oklahoma", "Oregon", "Pennsylvania", "Rhode Island", "South Carolina",
   "South Dakota", "Tennessee", "Texas", "Utah", "Vermont", "Virginia", "Washington", "West Virginia", "Wisconsin", "Wyoming"
 ];
+
+// --- COOKIE HELPERS ---
+const setCookie = (name, value, days) => {
+  if (typeof document !== 'undefined') {
+    const expires = new Date();
+    expires.setTime(expires.getTime() + days * 24 * 60 * 60 * 1000);
+    document.cookie = `${name}=${value};expires=${expires.toUTCString()};path=/`;
+  }
+};
+
+const getCookie = (name) => {
+  if (typeof document !== 'undefined') {
+    const value = `; ${document.cookie}`;
+    const parts = value.split(`; ${name}=`);
+    if (parts.length === 2) return parts.pop().split(';').shift();
+  }
+  return null;
+};
 
 // Structure definition for mapping icons and IDs
 const CATEGORY_STRUCT = [
@@ -141,10 +159,21 @@ const TRANSLATIONS = {
     form: { title: "Evaluación Gratuita", subtitle: "Nuestra oficina se comunicará con usted dentro de las 24 horas.", nameLabel: "Nombre Completo", phoneLabel: "Número de Teléfono", emailLabel: "Correo Electrónico", stateLabel: "Estado", dateLabel: "Fecha del Accidente", timeLabel: "Hora", accidentLabel: "Describa el Accidente", injuryLabel: "Tipo de Lesión", submitBtn: "Enviar", disclaimer: "*Al presionar 'Enviar' usted acepta recibir llamadas y notificaciones SMS.", sending: "Enviando...", success: "¡Solicitud Enviada!", error: "Error. Intente de nuevo." },
     sections: { areasTitle: "Nuestras Áreas de Práctica", areasSubtitle: "Seleccione una categoría para ver tipos de casos específicos", viewAll: "Ver Todos los Casos", learnMore: "Aprende Más", whyUs: "¿Por qué elegir Car Accident Attorneys?", callToAction: "No Espere. Justicia Retrasada es Justicia Denegada." },
     footer: { copyright: "© 2025 Car Accident Attorneys. Todos los derechos reservados.", mainOffice: "Oficina Principal", newClients: "Nuevos Clientes" },
-    testimonials: { title: "Historias de Éxito", subtitle: "Vea lo que dicen nuestros clientes.", googleRating: "5.0 Estrellas en Google", reviews: [{ name: "Elizabeth Gonzalez", text: "Tuve un accidente en abril..." }] },
+    testimonials: { 
+      title: "Historias de Éxito", 
+      subtitle: "Vea lo que dicen nuestros clientes.", 
+      googleRating: "5.0 Estrellas en Google", 
+      reviews: [
+        { name: "Elizabeth Gonzalez", text: "Tuve un accidente en abril donde se consideró culpa de la otra parte y me recomendaron las Oficinas Legales de Parke Injury. Mi caso concluyó el 18 de noviembre y recibí mi acuerdo. Fue casi el doble de lo anticipado..." },
+        { name: "Annie Smith", text: "Tuve una gran experiencia con el bufete de abogados Parke Injury después de mi accidente automovilístico. De principio a fin, hicieron que una situación estresante fuera mucho más fácil de manejar. ¡JB y Chase fueron increíblemente serviciales! Siempre profesionales..." },
+        { name: "Veronica Salazar", text: "Tuvimos una gran experiencia trabajando con esta oficina de abogados de accidentes. Chase, Margarth y todo el equipo fueron increíblemente serviciales con el caso de mi esposo. Trabajaron duro para asegurar que obtuviéramos el mejor resultado posible..." },
+        { name: "Sang Hwi Lee", text: "Estoy más que agradecido por el servicio excepcional que recibí del bufete de abogados Parke Injury durante mi caso de lesiones personales. Desde la primera consulta hasta la resolución final, el equipo demostró profesionalismo..." },
+        { name: "Ahmed Galal", text: "El bufete de abogados Parke son los abogados más profesionales en accidentes de tráfico, ya que tuve un accidente con fuga en mayo de 2020, todo lo que tenía era una foto de las placas de ese tipo y pudieron encontrarlo con LVMPD..." }
+      ] 
+    },
     detailPage: { introPart1: "Nos especializamos en", introPart2: "casos.", whyTitle: "Por Qué Necesita Representación", whyText: "Las compañías de seguros...", commitTitle: "Nuestro Compromiso:", commitments: ["Cero Costos Iniciales"], aboutTitle: "Sobre Este Reclamo", aboutText: "Investigamos cada detalle..." },
     categories: { 'cat-vehicle': { title: 'Accidentes de Vehículos', desc: 'Autos, camiones, etc.' }, 'cat-products': { title: 'Productos Peligrosos', desc: 'Productos defectuosos.' }, 'cat-injury': { title: 'Lesiones Personales', desc: 'Resbalones y caídas.' } },
-    areas: { 'car-accidents': { title: 'Accidentes de Auto', desc: 'Representación experta.' }, 'motorcycle': { title: 'Accidentes de Motocicleta', desc: 'Protección para motociclistas.' } }
+    areas: { 'car-accidents': { title: 'Accidentes de Auto', desc: 'Representación experta.' }, 'motorcycle': { title: 'Accidentes de Motocicleta', desc: 'Protección para motociclistas.' }, 'commercial': { title: 'Accidentes de Camiones', desc: 'Litigios complejos.' }, 'boating': { title: 'Accidentes de Navegación', desc: 'Lesiones en lagos.' }, 'bus': { title: 'Accidentes de Autobús', desc: 'Colisiones de transporte público.' }, 'rideshare': { title: 'Uber y Lyft', desc: 'Responsabilidad de transporte.' }, 'pedestrian': { title: 'Accidentes de Peatones', desc: 'Luchando por los heridos.' }, 'passenger': { title: 'Lesiones de Pasajeros', desc: 'Representación para pasajeros.' }, 'slip-fall': { title: 'Resbalones y Caídas', desc: 'Responsabilidad de locales.' }, 'construction': { title: 'Accidentes de Construcción', desc: 'Lesiones en construcción.' }, 'brain': { title: 'Lesiones Cerebrales', desc: 'Casos de TBI.' }, 'mesh': { title: 'Malla Quirúrgica', desc: 'Implantes defectuosos.' }, 'hair': { title: 'Alisadores de Cabello', desc: 'Productos químicos.' }, 'roundup': { title: 'Roundup (Glifosato)', desc: 'Litigios de herbicidas.' }, 'talc': { title: 'Talco de J&J', desc: 'Casos de cáncer.' }, 'ozempic': { title: 'Ozempic', desc: 'Problemas estomacales.' }, 'truvada': { title: 'Truvada', desc: 'Enfermedad renal.' } }
   },
   ko: {
     nav: { home: "홈", practiceAreas: "업무 분야", results: "승소 사례", contact: "문의하기", freeConsult: "무료 상담" },
@@ -152,10 +181,21 @@ const TRANSLATIONS = {
     form: { title: "무료 사건 검토", subtitle: "무료 견적을 받아보세요.", namePlaceholder: "성함", phonePlaceholder: "전화번호", emailPlaceholder: "이메일 주소", detailsPlaceholder: "사건 경위를 말씀해 주세요...", submitBtn: "무료 견적 및 상담 지금 연락하세요", sending: "전송 중...", success: "요청이 전송되었습니다!", error: "오류가 발생했습니다. 다시 시도해 주세요.", stateLabel: "사고 발생 주", dateLabel: "사고 날짜", timeLabel: "대략적인 시간", accidentLabel: "사고 경위", injuryLabel: "부상 유형" },
     sections: { areasTitle: "전문 분야", areasSubtitle: "특정 사건 유형을 보려면 카테고리를 선택하세요", viewAll: "모든 사례 보기", learnMore: "더 알아보기", whyUs: "왜 Car Accident Attorneys를 선택해야 할까요?", callToAction: "기다리지 마십시오. 지체된 정의는 정의가 아닙니다." },
     footer: { copyright: "© 2025 Car Accident Attorneys. All Rights Reserved.", mainOffice: "본사", newClients: "신규 고객" },
-    testimonials: { title: "고객 성공 사례", subtitle: "Google에서 고객들이 우리에 대해 어떻게 말하는지 확인하세요.", googleRating: "Google 평점 5.0", reviews: [{ name: "Elizabeth Gonzalez", text: "4월에 상대방 과실로 인정된 사고를 당해..." }] },
+    testimonials: { 
+      title: "고객 성공 사례", 
+      subtitle: "Google에서 고객들이 우리에 대해 어떻게 말하는지 확인하세요.", 
+      googleRating: "Google 평점 5.0", 
+      reviews: [
+        { name: "Elizabeth Gonzalez", text: "4월에 상대방 과실로 인정된 사고를 당해 Parke Injury Law Offices를 추천받았습니다. 제 사건은 11월 18일에 종결되었고 합의금을 받았습니다. 예상했던 것보다 거의 두 배나 많았습니다..." },
+        { name: "Annie Smith", text: "차 사고 후 Parke Injury Law Firm에서 훌륭한 경험을 했습니다. 처음부터 끝까지 스트레스 받는 상황을 훨씬 더 쉽게 처리할 수 있게 해주었습니다. JB와 Chase는 정말 큰 도움이 되었습니다! 항상 전문적이었습니다..." },
+        { name: "Veronica Salazar", text: "이 사고 변호사 사무실과 함께 일하면서 훌륭한 경험을 했습니다. Chase, Margarth, 그리고 전체 팀은 제 남편의 사건에 대해 정말 큰 도움이 되었습니다. 그들은 우리가 최상의 결과를 얻을 수 있도록 열심히 노력했습니다..." },
+        { name: "Sang Hwi Lee", text: "제 개인 상해 사건 동안 Parke Injury Law Firm에서 받은 탁월한 서비스에 대해 정말 감사합니다. 첫 상담부터 최종 해결까지 팀은 전문성을 보여주었습니다..." },
+        { name: "Ahmed Galal", text: "Parke 법률 사무소는 교통 사고 분야에서 가장 전문적인 변호사들입니다. 2020년 5월에 뺑소니 사고를 당했을 때 제가 가진 것은 그 사람의 번호판 사진뿐이었는데 LVMPD와 함께 그를 찾을 수 있었습니다..." }
+      ] 
+    },
     detailPage: { introPart1: "Car Accident Attorneys는", introPart2: "사건을 전문으로 합니다.", whyTitle: "대리인이 필요한 이유", whyText: "보험 회사와 대기업에는...", commitTitle: "고객에 대한 약속:", commitments: ["초기 비용 0원"], aboutTitle: "이 청구에 대하여", aboutText: "우리는 귀하의 사건에 대한 모든 세부 사항을 조사합니다." },
     categories: { 'cat-vehicle': { title: '자동차 사고', desc: '자동차, 트럭 등' }, 'cat-products': { title: '위험한 제품', desc: '결함이 있는 약물' }, 'cat-injury': { title: '개인 상해', desc: '미끄러짐, 낙상' } },
-    areas: { 'car-accidents': { title: '자동차 사고', desc: '전문적인 법률 대리.' }, 'motorcycle': { title: '오토바이 사고', desc: '라이더 보호.' } }
+    areas: { 'car-accidents': { title: '자동차 사고', desc: '전문적인 법률 대리.' }, 'motorcycle': { title: '오토바이 사고', desc: '라이더 보호.' }, 'commercial': { title: '트럭 사고', desc: '복잡한 소송.' }, 'boating': { title: '보트 사고', desc: '부상.' }, 'bus': { title: '버스 사고', desc: '대중 교통.' }, 'rideshare': { title: '우버(Uber) 및 리프트(Lyft)', desc: '승객 안전.' }, 'pedestrian': { title: '보행자 사고', desc: '보행자 보호.' }, 'passenger': { title: '승객 부상', desc: '승객 대리.' }, 'slip-fall': { title: '미끄러짐 및 낙상', desc: '구내 책임.' }, 'construction': { title: '건설 현장 사고', desc: '건설 부상.' }, 'brain': { title: '뇌 손상 (TBI)', desc: '치명적인 TBI.' }, 'mesh': { title: '수술용 메쉬', desc: '결함 있는 임플란트.' }, 'hair': { title: '헤어 릴랙서 소송', desc: '화학 물질.' }, 'roundup': { title: '라운드업 (Roundup)', desc: '제초제 소송.' }, 'talc': { title: 'J&J 베이비 파우더', desc: '활석 제품.' }, 'ozempic': { title: '오젬픽 (Ozempic)', desc: '위마비.' }, 'truvada': { title: '트루바다 (Truvada)', desc: '신장 질환.' } }
   },
   zh: {
     nav: { home: "首页", practiceAreas: "业务领域", results: "成功案例", contact: "联系我们", freeConsult: "免费咨询" },
@@ -163,10 +203,21 @@ const TRANSLATIONS = {
     form: { title: "免费案件评估", subtitle: "获取免费估算。", namePlaceholder: "全名", phonePlaceholder: "电话号码", emailPlaceholder: "电子邮箱", detailsPlaceholder: "请告诉我们发生了什么...", submitBtn: "免费估算和咨询 立即联系", sending: "发送中...", success: "请求已发送！", error: "错误。请重试。", stateLabel: "事故发生的州", dateLabel: "事故日期", timeLabel: "大概时间", accidentLabel: "事故描述", injuryLabel: "受伤类型" },
     sections: { areasTitle: "我们的业务领域", areasSubtitle: "选择一个类别查看具体案件类型", viewAll: "查看所有案例", learnMore: "了解更多", whyUs: "为什么选择 Car Accident Attorneys？", callToAction: "不要等待。迟到的正义非正义。" },
     footer: { copyright: "© 2025 Car Accident Attorneys. 版权所有。", mainOffice: "总办公室", newClients: "新客户" },
-    testimonials: { title: "客户成功案例", subtitle: "查看我们的客户在 Google 上的评价。", googleRating: "Google 评分 5.0 星", reviews: [{ name: "Elizabeth Gonzalez", text: "我在四月份发生了一起事故..." }] },
+    testimonials: { 
+      title: "客户成功案例", 
+      subtitle: "查看我们的客户在 Google 上的评价。", 
+      googleRating: "Google 评分 5.0 星", 
+      reviews: [
+        { name: "Elizabeth Gonzalez", text: "我在四月份发生了一起事故，被认定是对方的过错，有人向我推荐了 Parke 伤害律师事务所。我的案件已于 11 月 18 日结束，我已经收到了和解金。这几乎是预期的两倍……" },
+        { name: "Annie Smith", text: "车祸发生后，我在 Parke 伤害律师事务所的经历非常棒。从开始到结束，他们让紧张的情况变得更容易处理。JB 和 Chase 提供了令人难以置信的帮助！总是很专业……" },
+        { name: "Veronica Salazar", text: "我们与这家事故律师事务所的合作经历非常棒。Chase、Margarth 和整个团队对我丈夫的案件提供了令人难以置信的帮助。他们努力工作以确保我们获得尽可能最好的结果……" },
+        { name: "Sang Hwi Lee", text: "我非常感谢我在人身伤害案件期间从 Parke 伤害律师事务所获得的卓越服务。从第一次咨询到最终解决，团队都表现出了专业精神……" },
+        { name: "Ahmed Galal", text: "Parke 律师事务所是交通事故中最专业的律师，我在 2020 年 5 月遭遇了一起肇事逃逸事故，我只有那个人车牌的照片，他们能够通过 LVMPD 找到他……" }
+      ] 
+    },
     detailPage: { introPart1: "在 Car Accident Attorneys，我们专门处理", introPart2: "案件。", whyTitle: "为什么您需要代理", whyText: "保险公司和大公司...", commitTitle: "我们要向您承诺：", commitments: ["零预付费用"], aboutTitle: "关于此索赔", aboutText: "我们调查您案件的每一个细节。" },
     categories: { 'cat-vehicle': { title: '机动车事故', desc: '汽车、卡车等' }, 'cat-products': { title: '危险产品', desc: '有缺陷的药物' }, 'cat-injury': { title: '人身伤害', desc: '滑倒、跌倒' } },
-    areas: { 'car-accidents': { title: '汽车事故', desc: '专家法律代表。' }, 'motorcycle': { title: '摩托车事故', desc: '保护骑手。' } }
+    areas: { 'car-accidents': { title: '汽车事故', desc: '专家法律代表。' }, 'motorcycle': { title: '摩托车事故', desc: '保护骑手。' }, 'commercial': { title: '卡车事故', desc: '复杂诉讼。' }, 'boating': { title: '划船事故', desc: '伤害。' }, 'bus': { title: '巴士事故', desc: '公共交通。' }, 'rideshare': { title: 'Uber 和 Lyft', desc: '乘客安全。' }, 'pedestrian': { title: '行人事故', desc: '行人保护。' }, 'passenger': { title: '乘客受伤', desc: '乘客代表。' }, 'slip-fall': { title: '滑倒和跌倒', desc: '场所责任。' }, 'construction': { title: '施工区事故', desc: '施工伤害。' }, 'brain': { title: '脑损伤 (TBI)', desc: '严重 TBI。' }, 'mesh': { title: '手术网片', desc: '缺陷植入物。' }, 'hair': { title: '直发剂诉讼', desc: '化学品。' }, 'roundup': { title: '除草剂 (Roundup)', desc: '除草剂诉讼。' }, 'talc': { title: '强生滑石粉', desc: '滑石粉产品。' }, 'ozempic': { title: 'Ozempic (减肥药)', desc: '胃轻瘫。' }, 'truvada': { title: 'Truvada', desc: '肾脏疾病。' } }
   }
 };
 
@@ -189,11 +240,9 @@ const IntakeForm = ({ t }) => {
     e.preventDefault();
     setStatus('sending');
     
-    // Create combined details string for systems that expect fewer fields
     const combinedAccidentDetails = `[Occurred: ${formData.accidentDate} at ${formData.accidentTime}] [State: ${formData.state}] ${formData.accidentDetails}`;
 
     try {
-      // 1. Send to Google Sheet
       await fetch(GOOGLE_SCRIPT_URL, {
         method: 'POST',
         mode: 'no-cors',
@@ -205,14 +254,13 @@ const IntakeForm = ({ t }) => {
         })
       });
 
-      // 2. Send to Web3Forms
       await fetch("https://api.web3forms.com/submit", {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           access_key: ACCESS_KEY,
           ...formData,
-          accidentDetails: combinedAccidentDetails, // Send combined detail for email readability
+          accidentDetails: combinedAccidentDetails, 
           subject: "New Lead from Website"
         })
       });
@@ -354,7 +402,7 @@ const IntakeForm = ({ t }) => {
   );
 };
 
-const Header = ({ lang, setLang, setRoute, t, isScrolled }) => {
+const Header = ({ lang, setLang, setRoute, t, isScrolled, handleLangChange }) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
@@ -391,13 +439,13 @@ const Header = ({ lang, setLang, setRoute, t, isScrolled }) => {
           {/* Language Selector */}
           <div className="flex items-center space-x-2 bg-black/40 px-3 py-1 border border-gray-700 rounded-sm">
             <Globe className="h-3 w-3 text-gray-400" />
-            <button onClick={() => setLang('en')} className={`text-[10px] font-bold ${lang === 'en' ? 'text-red-500' : 'text-gray-400 hover:text-white'}`}>English</button>
+            <button onClick={() => handleLangChange('en')} className={`text-[10px] font-bold ${lang === 'en' ? 'text-red-500' : 'text-gray-400 hover:text-white'}`}>English</button>
             <span className="text-gray-600 text-[10px]">|</span>
-            <button onClick={() => setLang('es')} className={`text-[10px] font-bold ${lang === 'es' ? 'text-red-500' : 'text-gray-400 hover:text-white'}`}>Español</button>
+            <button onClick={() => handleLangChange('es')} className={`text-[10px] font-bold ${lang === 'es' ? 'text-red-500' : 'text-gray-400 hover:text-white'}`}>Español</button>
             <span className="text-gray-600 text-[10px]">|</span>
-            <button onClick={() => setLang('ko')} className={`text-[10px] font-bold ${lang === 'ko' ? 'text-red-500' : 'text-gray-400 hover:text-white'}`}>한국어</button>
+            <button onClick={() => handleLangChange('ko')} className={`text-[10px] font-bold ${lang === 'ko' ? 'text-red-500' : 'text-gray-400 hover:text-white'}`}>한국어</button>
             <span className="text-gray-600 text-[10px]">|</span>
-            <button onClick={() => setLang('zh')} className={`text-[10px] font-bold ${lang === 'zh' ? 'text-red-500' : 'text-gray-400 hover:text-white'}`}>中文</button>
+            <button onClick={() => handleLangChange('zh')} className={`text-[10px] font-bold ${lang === 'zh' ? 'text-red-500' : 'text-gray-400 hover:text-white'}`}>中文</button>
           </div>
 
           <a href="tel:555-000-0000" className="bg-red-700 hover:bg-red-800 text-white px-6 py-3 font-black text-xs uppercase tracking-widest shadow-lg transition transform hover:scale-105 flex items-center border border-red-600 whitespace-nowrap">
@@ -430,7 +478,7 @@ const Header = ({ lang, setLang, setRoute, t, isScrolled }) => {
                 {['en', 'es', 'ko', 'zh'].map((l) => (
                   <button 
                     key={l}
-                    onClick={() => { setLang(l); setMobileMenuOpen(false); }}
+                    onClick={() => { handleLangChange(l); setMobileMenuOpen(false); }}
                     className={`px-4 py-2 border ${lang === l ? 'border-red-600 text-red-500' : 'border-gray-700 text-gray-400'} rounded uppercase font-bold`}
                   >
                     {l === 'en' ? 'English' : l === 'es' ? 'Español' : l === 'ko' ? '한국어' : '中文'}
@@ -513,14 +561,13 @@ const Hero = ({ t }) => {
   );
 };
 
-// ... [Rest of MainCategories, Testimonials, CategoryPage, DetailPage, Footer is the same as previous functional version] ...
 const MainCategories = ({ t, setRoute }) => (
   <section className="py-24 bg-[#1a1a1a]">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div className="flex flex-col md:flex-row justify-between items-end mb-16 border-b border-gray-800 pb-8">
+      <div className="flex flex-col md:flex-row justify-between items-end mb-12 md:mb-16 border-b border-gray-800 pb-8">
         <div>
           <h2 className="text-red-600 font-bold uppercase tracking-widest text-sm mb-2">Legal Expertise</h2>
-          <h3 className="font-serif text-4xl md:text-5xl font-bold text-white">{t.sections.areasTitle}</h3>
+          <h3 className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-white">{t.sections.areasTitle}</h3>
         </div>
         <p className="text-gray-400 max-w-md mt-4 md:mt-0">{t.sections.areasSubtitle}</p>
       </div>
@@ -599,8 +646,10 @@ const Testimonials = ({ t }) => {
 
         <div className="max-w-4xl mx-auto">
           <div className={`transition-opacity duration-500 ${fade ? 'opacity-100' : 'opacity-0'}`}>
-            <div className="bg-white p-8 md:p-12 rounded-2xl shadow-xl border-t-4 border-red-600 relative">
-               <Quote className="text-red-100 w-16 h-16 absolute top-8 left-8 -z-10" />
+            <div className="bg-white p-8 md:p-12 rounded-2xl shadow-xl border-t-4 border-red-600 relative z-0">
+               {/* Adjusted quotation mark for mobile: hidden on small screens, visible on larger */}
+               <Quote className="hidden md:block text-red-100 w-16 h-16 absolute top-8 left-8 -z-10" />
+               
                <p className="text-gray-600 text-lg md:text-xl leading-relaxed italic mb-8 relative z-10 min-h-[120px] flex items-center">
                  "{review.text}"
                </p>
@@ -823,6 +872,15 @@ export default function App() {
   const [route, setRoute] = useState('home');
   const [isScrolled, setIsScrolled] = useState(false);
 
+  // --- COOKIE EFFECT ---
+  // Check for cookie on initial load
+  useEffect(() => {
+    const savedLang = getCookie('site_lang');
+    if (savedLang && ['en', 'es', 'ko', 'zh'].includes(savedLang)) {
+      setLang(savedLang);
+    }
+  }, []);
+
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 50);
     window.addEventListener('scroll', handleScroll);
@@ -833,7 +891,13 @@ export default function App() {
     window.scrollTo(0, 0);
   }, [route]);
 
-  const t = TRANSLATIONS[lang];
+  // Handler to update language and save cookie
+  const handleLangChange = (newLang) => {
+    setLang(newLang);
+    setCookie('site_lang', newLang, 365);
+  };
+
+  const t = TRANSLATIONS[lang] || TRANSLATIONS['en'];
 
   // Helper to determine view
   let content;
@@ -873,6 +937,7 @@ export default function App() {
         setRoute={setRoute} 
         t={t} 
         isScrolled={isScrolled} 
+        handleLangChange={handleLangChange} // Pass the handler
       />
       
       <main>
