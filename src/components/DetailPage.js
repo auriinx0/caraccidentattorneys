@@ -28,17 +28,32 @@ const DetailPage = ({ areaId, t, setRoute }) => {
                             <p className="text-xl leading-relaxed font-serif text-gray-900">
                                 {t.detailPage.introPart1} <strong>{areaInfo.title}</strong> {t.detailPage.introPart2}
                             </p>
+
+                            {/* About Section */}
+                            {areaInfo.about && (
+                                <>
+                                    <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4 uppercase tracking-wide">{t.detailPage.aboutTitle}</h3>
+                                    <div className="whitespace-pre-line">{areaInfo.about}</div>
+                                </>
+                            )}
+
+                            {/* Statistics Section */}
+                            {areaInfo.statistics && (
+                                <div className="bg-gray-50 p-6 rounded-lg border border-gray-200 mt-8">
+                                    <h3 className="text-xl font-bold text-red-700 mb-4 uppercase tracking-wide flex items-center">
+                                        Key Statistics
+                                    </h3>
+                                    <div className="whitespace-pre-line text-sm">{areaInfo.statistics}</div>
+                                </div>
+                            )}
+
+                            {/* What To Do Section */}
                             {areaInfo.whatToDo ? (
                                 <>
                                     <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4 uppercase tracking-wide">{t.detailPage.whatToDoTitle}</h3>
                                     <div className="whitespace-pre-line mb-8">{areaInfo.whatToDo}</div>
                                 </>
-                            ) : (
-                                <>
-                                    <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4 uppercase tracking-wide">{t.detailPage.whyTitle}</h3>
-                                    <p>{t.detailPage.whyText}</p>
-                                </>
-                            )}
+                            ) : null}
 
                             <div className="bg-gray-100 p-8 border-l-4 border-red-700 my-8">
                                 <h4 className="text-lg font-bold text-gray-900 mb-4 uppercase">{t.detailPage.commitTitle}</h4>
@@ -52,17 +67,13 @@ const DetailPage = ({ areaId, t, setRoute }) => {
                                 </ul>
                             </div>
 
+                            {/* How We Help Section */}
                             {areaInfo.howWeHelp ? (
                                 <>
                                     <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4 uppercase tracking-wide">{t.detailPage.howWeHelpTitle}</h3>
                                     <div className="whitespace-pre-line">{areaInfo.howWeHelp}</div>
                                 </>
-                            ) : (
-                                <>
-                                    <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4 uppercase tracking-wide">{t.detailPage.aboutTitle}</h3>
-                                    <p>{t.detailPage.aboutText}</p>
-                                </>
-                            )}
+                            ) : null}
                         </div>
                     </div>
                     <div className="space-y-8">
