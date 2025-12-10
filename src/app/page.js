@@ -29,26 +29,33 @@ export default function App() {
     const savedLang = getCookie('site_lang');
     const supportedLangs = ['en', 'es', 'ko', 'zh', 'vi'];
 
+    console.log("Current Cookie:", savedLang);
+
     if (savedLang && supportedLangs.includes(savedLang)) {
+      console.log("Using saved language:", savedLang);
       setLang(savedLang);
     } else {
       // Auto-detect from browser
       let detectedLang = 'en'; // Default fallback
 
       if (typeof navigator !== 'undefined') {
+        console.log("Navigator Languages:", navigator.languages);
+        console.log("Navigator Language:", navigator.language);
+
         // 1. Check navigator.languages (array of preferred languages)
         if (navigator.languages && navigator.languages.length > 0) {
           for (const l of navigator.languages) {
             const code = l.split('-')[0].toLowerCase();
+            console.log("Checking language:", l, "->", code);
             if (supportedLangs.includes(code)) {
               detectedLang = code;
+              console.log("Match found:", detectedLang);
               break; // Found a match, stop looking
             }
           }
         }
 
-        // 2. If no match yet, check navigator.language (single string)
-        // This handles older browsers or if languages array was empty/no matches found yet
+        // 2. Fallback to navigator.language
         if (detectedLang === 'en' && navigator.language) {
           const code = navigator.language.split('-')[0].toLowerCase();
           if (supportedLangs.includes(code)) {
@@ -57,8 +64,10 @@ export default function App() {
         }
       }
 
+      console.log("Final Detected Language:", detectedLang);
       setLang(detectedLang);
       setCookie('site_lang', detectedLang, 365);
+      console.log("Set cookie 'site_lang' to:", detectedLang);
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
