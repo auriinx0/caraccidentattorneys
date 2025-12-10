@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { ChevronRight, CheckCircle, AlertTriangle, Activity, Shield, Clock, Home } from 'lucide-react';
+import { ChevronRight, CheckCircle, AlertTriangle, Activity, Shield, Clock, Home, ArrowRight } from 'lucide-react';
 import { AREA_STRUCT } from '../constants';
 import IntakeForm from './IntakeForm';
 
@@ -27,6 +27,67 @@ const DetailPage = ({ areaId, t, setRoute }) => {
 
     if (!areaStruct) return null;
     const areaInfo = t.areas[areaId];
+    const relatedAreas = AREA_STRUCT.filter(a => a.categoryId === areaStruct.categoryId && a.id !== areaId);
+
+    // Content Parser for Bold and Lists
+    const renderContent = (content) => {
+        if (!content) return null;
+
+        // Split by double newline to separate paragraphs/blocks
+        const blocks = content.split('\n\n');
+
+        return blocks.map((block, blockIdx) => {
+            // Check if block is a list (numeric or bullet)
+            if (block.match(/^(\d+\.|[\*\•])\s/m)) {
+                // Split into list items
+                const items = block.split('\n').filter(line => line.trim().length > 0);
+                return (
+                    <div key={blockIdx} className="my-6 bg-gray-50 rounded-xl p-6 border border-gray-100 shadow-sm">
+                        <ul className="space-y-4">
+                            {items.map((item, itemIdx) => {
+                                // Remove list markers for cleaner look
+                                const cleanText = item.replace(/^(\d+\.|[\*\•])\s/, '');
+                                // Parse bold syntax: **text**
+                                const parts = cleanText.split(/(\*\*.*?\*\*)/g);
+
+                                return (
+                                    <li key={itemIdx} className="flex items-start">
+                                        <div className="flex-shrink-0 mt-1 mr-3">
+                                            <div className="w-6 h-6 rounded-full bg-red-100 flex items-center justify-center text-red-600">
+                                                <CheckCircle className="w-4 h-4" />
+                                            </div>
+                                        </div>
+                                        <span className="text-gray-800 leading-relaxed">
+                                            {parts.map((part, pIdx) => {
+                                                if (part.startsWith('**') && part.endsWith('**')) {
+                                                    return <strong key={pIdx} className="font-bold text-gray-900">{part.slice(2, -2)}</strong>;
+                                                }
+                                                return part;
+                                            })}
+                                        </span>
+                                    </li>
+                                );
+                            })}
+                        </ul>
+                    </div>
+                );
+            }
+
+            // Standard Paragraph
+            // Parse bold syntax: **text**
+            const parts = block.split(/(\*\*.*?\*\*)/g);
+            return (
+                <p key={blockIdx} className="mb-6 text-gray-700 leading-loose">
+                    {parts.map((part, pIdx) => {
+                        if (part.startsWith('**') && part.endsWith('**')) {
+                            return <strong key={pIdx} className="font-bold text-gray-900">{part.slice(2, -2)}</strong>;
+                        }
+                        return part;
+                    })}
+                </p>
+            );
+        });
+    };
 
     // JSON-LD Structured Data
     const jsonLd = {
@@ -42,7 +103,7 @@ const DetailPage = ({ areaId, t, setRoute }) => {
     };
 
     return (
-        <div className="bg-white min-h-screen pt-20">
+        <div className="bg-white min-h-screen">
             {/* JSON-LD */}
             <script
                 type="application/ld+json"
@@ -57,7 +118,7 @@ const DetailPage = ({ areaId, t, setRoute }) => {
 
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                     {/* Breadcrumbs */}
-                    <nav className="flex items-center space-x-2 text-sm text-gray-400 mb-8 uppercase tracking-wider font-medium">
+                    <nav className="flex items-center space-x-2 text-sm text-gray-400 mb-8 uppercase tracking-wider font-medium flex-wrap gap-y-2">
                         <button onClick={() => setRoute('home')} className="hover:text-white transition flex items-center">
                             <Home className="w-4 h-4 mr-1" /> {t.nav.home}
                         </button>
@@ -84,19 +145,19 @@ const DetailPage = ({ areaId, t, setRoute }) => {
 
                     {/* Main Content - Left Column */}
                     <main className="lg:col-span-8">
-                        <article className="prose prose-xl prose-red max-w-none text-gray-700">
-                            <p className="lead text-2xl font-serif text-gray-900 border-l-4 border-red-600 pl-6 italic">
+                        <article className="max-w-none">
+                            <p className="lead text-2xl font-serif text-gray-900 border-l-4 border-red-600 pl-6 italic mb-12">
                                 {t.detailPage.introPart1} <strong className="text-red-700">{areaInfo.title}</strong> {t.detailPage.introPart2}
                             </p>
 
                             {/* About Section */}
                             {areaInfo.about && (
-                                <section className="mt-12">
+                                <section className="mb-16">
                                     <h2 className="text-3xl font-bold text-gray-900 flex items-center mb-6">
                                         <Shield className="w-8 h-8 text-red-600 mr-3" />
                                         {t.detailPage.aboutTitle}
                                     </h2>
-                                    <div className="whitespace-pre-line leading-relaxed text-gray-700">
+                                    <div className="text-lg text-gray-700 leading-relaxed">
                                         {areaInfo.about}
                                     </div>
                                 </section>
@@ -170,25 +231,25 @@ const DetailPage = ({ areaId, t, setRoute }) => {
                             {/* Additional Sections */}
                             {areaInfo.additionalSections && areaInfo.additionalSections.map((section, idx) => (
                                 <section key={idx} className="mt-16">
-                                    <h2 className="text-3xl font-bold text-gray-900 mb-6 border-b border-gray-200 pb-4">
+                                    <h2 className="text-3xl font-bold text-gray-900 mb-6 border-b border-red-100 pb-4">
                                         {section.title}
                                     </h2>
-                                    <div className="whitespace-pre-line text-gray-700 leading-relaxed bg-white">
-                                        {section.content}
+                                    <div className="text-gray-700">
+                                        {renderContent(section.content)}
                                     </div>
                                 </section>
                             ))}
 
                             {/* How We Help */}
                             {areaInfo.howWeHelp && (
-                                <section className="mt-16 bg-red-900 text-white p-8 rounded-2xl relative overflow-hidden">
+                                <section className="mt-16 bg-red-900 text-white p-8 rounded-2xl relative overflow-hidden shadow-2xl">
                                     <div className="absolute top-0 right-0 p-8 opacity-10">
                                         <Shield className="w-64 h-64" />
                                     </div>
-                                    <h2 className="text-3xl font-bold text-white mb-6 relative z-10">
+                                    <h2 className="text-3xl font-bold text-white mb-6 relative z-10 border-b border-red-800 pb-4">
                                         {t.detailPage.howWeHelpTitle}
                                     </h2>
-                                    <div className="whitespace-pre-line text-red-50 text-lg relative z-10 leading-relaxed">
+                                    <div className="text-red-50 text-lg relative z-10 leading-relaxed font-light">
                                         {areaInfo.howWeHelp}
                                     </div>
                                 </section>
@@ -210,9 +271,35 @@ const DetailPage = ({ areaId, t, setRoute }) => {
                                 </div>
                             </div>
 
+                            {/* Related Topics Widget */}
+                            {relatedAreas.length > 0 && (
+                                <div className="bg-gray-50 rounded-xl p-6 border border-gray-200">
+                                    <h4 className="font-bold text-gray-900 mb-4 uppercase text-sm tracking-wider flex items-center border-b border-gray-200 pb-2">
+                                        <ArrowRight className="w-4 h-4 text-red-600 mr-2" />
+                                        Related Topics
+                                    </h4>
+                                    <ul className="space-y-2">
+                                        {relatedAreas.map(area => (
+                                            <li key={area.id}>
+                                                <button
+                                                    onClick={() => {
+                                                        window.scrollTo(0, 0);
+                                                        setRoute(`detail-${area.id}`);
+                                                    }}
+                                                    className="w-full text-left p-3 rounded-lg hover:bg-white hover:shadow-sm transition-all text-gray-600 hover:text-red-600 font-medium text-sm flex items-center group"
+                                                >
+                                                    <span className="w-1.5 h-1.5 bg-gray-300 rounded-full mr-3 group-hover:bg-red-500 transition-colors"></span>
+                                                    {t.areas[area.id].title}
+                                                </button>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </div>
+                            )}
+
                             {/* Why Choose Us Minimal */}
                             <div className="bg-gray-50 rounded-xl p-6 border border-gray-200">
-                                <h4 className="font-bold text-gray-900 mb-4 uppercase text-sm tracking-wider flex items-center">
+                                <h4 className="font-bold text-gray-900 mb-4 uppercase text-sm tracking-wider flex items-center border-b border-gray-200 pb-2">
                                     <CheckCircle className="w-4 h-4 text-red-600 mr-2" />
                                     {t.detailPage.commitTitle}
                                 </h4>

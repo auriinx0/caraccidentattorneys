@@ -10,7 +10,7 @@ const CategoryPage = ({ catId, t, setRoute }) => {
     const relevantAreas = AREA_STRUCT.filter(a => a.categoryId === catId).map(area => ({ ...area, ...t.areas[area.id] }));
 
     return (
-        <div className="bg-[#1a1a1a] min-h-screen pt-20">
+        <div className="bg-[#1a1a1a] min-h-screen">
             <div className="bg-[#111] py-16 border-b border-gray-800">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <button onClick={() => setRoute('home')} className="text-gray-400 hover:text-white mb-6 flex items-center text-xs font-bold uppercase tracking-widest hover:text-red-500 transition">

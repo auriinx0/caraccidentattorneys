@@ -25,15 +25,24 @@ const Header = ({ lang, setLang, setRoute, t, isScrolled, handleLangChange }) =>
 
                 {/* Desktop Nav */}
                 <div className="hidden xl:flex items-center space-x-6">
-                    {['home', 'practiceAreas', 'results'].map((key) => (
-                        <button
-                            key={key}
-                            onClick={() => key === 'home' ? setRoute('home') : null}
-                            className="text-gray-300 hover:text-white text-xs font-bold uppercase tracking-widest transition hover:text-red-500"
-                        >
-                            {t.nav[key]}
-                        </button>
-                    ))}
+                    <button
+                        onClick={() => setRoute('home')}
+                        className="text-gray-300 hover:text-white text-xs font-bold uppercase tracking-widest transition hover:text-red-500"
+                    >
+                        {t.nav.home}
+                    </button>
+                    <button
+                        onClick={() => setRoute('practiceAreas')}
+                        className="text-gray-300 hover:text-white text-xs font-bold uppercase tracking-widest transition hover:text-red-500"
+                    >
+                        {t.nav.practiceAreas}
+                    </button>
+                    <button
+                        onClick={() => setRoute('results')}
+                        className="text-gray-300 hover:text-white text-xs font-bold uppercase tracking-widest transition hover:text-red-500"
+                    >
+                        {t.nav.results}
+                    </button>
 
                     {/* Language Selector */}
                     <div className="flex items-center space-x-2 bg-black/40 px-3 py-1 border border-gray-700 rounded-sm">
@@ -63,15 +72,24 @@ const Header = ({ lang, setLang, setRoute, t, isScrolled, handleLangChange }) =>
                 {/* Mobile Full Screen Menu Overlay */}
                 {mobileMenuOpen && (
                     <div className="fixed inset-0 bg-[#111] z-40 flex flex-col items-center justify-center p-8 space-y-8 animate-fade-in">
-                        {['home', 'practiceAreas', 'results'].map((key) => (
-                            <button
-                                key={key}
-                                onClick={() => { setRoute('home'); setMobileMenuOpen(false); }}
-                                className="text-white text-2xl font-serif font-bold uppercase tracking-widest"
-                            >
-                                {t.nav[key]}
-                            </button>
-                        ))}
+                        <button
+                            onClick={() => { setRoute('home'); setMobileMenuOpen(false); }}
+                            className="text-white text-2xl font-serif font-bold uppercase tracking-widest"
+                        >
+                            {t.nav.home}
+                        </button>
+                        <button
+                            onClick={() => { setRoute('practiceAreas'); setMobileMenuOpen(false); }}
+                            className="text-white text-2xl font-serif font-bold uppercase tracking-widest"
+                        >
+                            {t.nav.practiceAreas}
+                        </button>
+                        <button
+                            onClick={() => { setRoute('results'); setMobileMenuOpen(false); }}
+                            className="text-white text-2xl font-serif font-bold uppercase tracking-widest"
+                        >
+                            {t.nav.results}
+                        </button>
 
                         <div className="flex flex-wrap justify-center gap-4 mt-8">
                             {['en', 'es', 'ko', 'zh'].map((l) => (

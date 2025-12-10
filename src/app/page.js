@@ -11,7 +11,11 @@ import Footer from '../components/Footer';
 import { TRANSLATIONS } from '../locales';
 import { getCookie, setCookie } from '../utils';
 
+import Link from 'next/link';
+
 // --- Main App Component ---
+
+import VerdictsPage from '../components/VerdictsPage';
 
 export default function App() {
   const [lang, setLang] = useState('en');
@@ -61,7 +65,10 @@ export default function App() {
             <h2 className="font-serif text-5xl md:text-6xl font-bold mb-8 uppercase tracking-tighter">
               We Don&apos;t Just Practice. <br /><span className="text-red-700">We Win.</span>
             </h2>
-            <button className="bg-transparent border-2 border-red-700 text-white px-10 py-4 font-black text-sm uppercase tracking-widest hover:bg-red-700 transition duration-300">
+            <button
+              onClick={() => setRoute('results')}
+              className="bg-transparent border-2 border-red-700 text-white px-10 py-4 font-black text-sm uppercase tracking-widest hover:bg-red-700 transition duration-300"
+            >
               View Our Verdicts
             </button>
           </div>
@@ -74,6 +81,27 @@ export default function App() {
   } else if (route.startsWith('detail-')) {
     const areaId = route.replace('detail-', '');
     content = <DetailPage areaId={areaId} t={t} setRoute={setRoute} />;
+  } else if (route === 'results') {
+    content = <VerdictsPage t={t} />;
+  } else if (route === 'practiceAreas') {
+    // Direct navigation to categories view, defaulting to vehicle or a main hub
+    // For now, let's route to the main vehicle category or just show the main categories component again if needed
+    // But simpler is to maybe just show main home categories.
+    // Let's scroll to main categories on home:
+    setRoute('home');
+    setTimeout(() => {
+      const el = document.getElementById('practice-areas');
+      if (el) el.scrollIntoView({ behavior: 'smooth' });
+    }, 100);
+    return null; // Temporary
+  }
+
+  // Handle direct practiceAreas route better by creating a generic wrapper or reused component
+  // For this simplified app, 'practiceAreas' will redirect to home and scroll, or we can build a dedicated all-areas page.
+  // Given time constraints, I'll map 'practiceAreas' to 'category-vehicle' as a default start, or better, implement a dedicated 'AllCategories' view later.
+  // For now:
+  if (route === 'practiceAreas') {
+    content = <MainCategories t={t} setRoute={setRoute} isPage={true} />;
   }
 
   return (

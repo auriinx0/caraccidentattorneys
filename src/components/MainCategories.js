@@ -1,8 +1,8 @@
 import React from 'react';
 import { CATEGORY_STRUCT } from '../constants';
 
-const MainCategories = ({ t, setRoute }) => (
-    <section className="py-24 bg-[#1a1a1a]">
+const MainCategories = ({ t, setRoute, isPage }) => (
+    <section className={`bg-[#1a1a1a] ${isPage ? 'min-h-screen pt-32 pb-24' : 'py-24'}`} id="practice-areas">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex flex-col md:flex-row justify-between items-end mb-12 md:mb-16 border-b border-gray-800 pb-8">
                 <div>

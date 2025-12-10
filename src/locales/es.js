@@ -50,8 +50,28 @@ export const es = {
             howWeHelp: "Manejamos toda la comunicación con las aseguradoras, asegurando que no diga nada que pueda dañar su reclamo. Investigamos el accidente, probamos la responsabilidad y luchamos por la máxima compensación para sus facturas médicas, salarios perdidos y dolor y sufrimiento.",
             additionalSections: [
                 {
-                    title: "What should I do if I get rear ended?",
-                    content: "Rear-end collisions are the most common type of car accident. They are often caused by distracted driving, tailgating, or sudden stops. If you are rear-ended, it is almost always the other driver's fault, but proving the extent of your injuries is crucial.\n\n**Steps to take:**\n1. **Check for injuries:** Whiplash is common and symptoms may not appear immediately.\n2. **Document the scene:** Take pictures of both vehicles, specifically the damage.\n3. **Don't admit fault:** Even saying 'I'm okay' can be used against you later.\n4. **Get a medical evaluation:** See a doctor to rule out hidden injuries like concussions or spinal damage."
+                    title: "Causas Comunes de Accidentes de Auto",
+                    content: "Entender la causa de un accidente es el primer paso para determinar la responsabilidad. Algunas de las causas más frecuentes incluyen:\\n\\n**Conducción Distraída:** Enviar mensajes de texto, comer o usar sistemas de entretenimiento desvía la atención de la carretera.\\n**Exceso de Velocidad:** Superar los límites de velocidad reduce el tiempo de reacción y aumenta la gravedad del choque.\\n**Conducción Ebria (DUI):** El alcohol afecta el juicio y la coordinación, llevando a colisiones mortales.\\n**Conducción Temeraria:** Cambiar carril imprudentemente, seguir muy de cerca e ignorar las señales de tráfico.\\n**Condiciones Climáticas:** La lluvia, nieve y hielo pueden hacer las carreteras peligrosas, pero los conductores tienen el deber de conducir con seguridad."
+                },
+                {
+                    title: "Tipos de Lesiones",
+                    content: "Los accidentes automovilísticos pueden causar una amplia gama de lesiones:\\n\\n*   **Latigazo Cervical:** Lesión de tejido blando en el cuello.\\n*   **Lesiones Cerebrales Traumáticas (TBI):** Conmociones y daño cerebral severo.\\n*   **Huesos Rotos:** Fracturas de brazos, piernas, costillas y pelvis.\\n*   **Lesiones de Médula Espinal:** Pueden resultar en parálisis parcial o total.\\n*   **Hemorragia Interna:** Daño a órganos que requiere cirugía inmediata."
+                },
+                {
+                    title: "Determinando la Responsabilidad",
+                    content: "Probar la culpa a menudo requiere una investigación exhaustiva. Usamos:\\n\\n1.  **Informes Policiales:** Cuentas oficiales de la escena del accidente.\\n2.  **Declaraciones de Testigos:** Relatos imparciales de transeúntes.\\n3.  **Imágenes de Vigilancia:** Evidencia en video de cámaras de tráfico o seguridad.\\n4.  **Reconstrucción de Accidentes:** Expertos que recrean científicamente el choque.\\n5.  **Registros Telefónicos:** Para probar la conducción distraída."
+                },
+                {
+                    title: "Compensación Disponible",
+                    content: "Las víctimas pueden tener derecho a varias formas de compensación:\\n\\n*   **Gastos Médicos:** Facturas hospitalarias actuales y futuras, cirugías y terapia.\\n*   **Salarios Perdidos:** Pago perdido debido al tiempo de recuperación.\\n*   **Dolor y Sufrimiento:** Compensación por dolor físico y angustia emocional.\\n*   **Daños a la Propiedad:** Reparación o reemplazo de su vehículo."
+                },
+                {
+                    title: "¿Qué debo hacer si me golpean por detrás?",
+                    content: "Las colisiones traseras son el tipo más común de accidente automovilístico. A menudo son causadas por conducción distraída o frenadas repentinas. Si lo golpean por detrás, casi siempre es culpa del otro conductor.\\n\\n**Pasos a seguir:**\\n1. **Verifique lesiones:** El latigazo cervical es común y los síntomas pueden no aparecer de inmediato.\\n2. **Documente la escena:** Tome fotos de ambos vehículos, específicamente el daño.\\n3. **No admita culpa:** Incluso decir 'estoy bien' puede usarse en su contra.\\n4. **Obtenga una evaluación médica:** Vea a un médico para descartar lesiones ocultas."
+                },
+                {
+                    title: "Preguntas Frecuentes",
+                    content: "**P: ¿Cuánto tiempo tengo para presentar un reclamo?**\\nR: El estatuto de limitaciones varía, pero típicamente es de 2 años.\\n\\n**P: ¿Qué pasa si el otro conductor no tiene seguro?**\\nR: Puede presentar un reclamo bajo su propia cobertura de Automovilista Sin Seguro.\\n\\n**P: ¿Debo aceptar la primera oferta?**\\nR: No. Las ofertas iniciales son casi siempre más bajas que el valor real de su caso."
                 }
             ]
         },
@@ -71,7 +91,21 @@ export const es = {
                 "Tome fotos de las condiciones de la carretera y daños del vehículo.",
                 "Contacte a un abogado antes de hablar con el seguro."
             ],
-            howWeHelp: "Los motociclistas a menudo enfrentan prejuicios de las compañías de seguros. Luchamos para probar que el otro conductor tuvo la culpa. Entendemos la dinámica única de los accidentes de motocicleta y las lesiones graves que pueden resultar."
+            howWeHelp: "Los motociclistas a menudo enfrentan prejuicios de las compañías de seguros. Luchamos para probar que el otro conductor tuvo la culpa. Entendemos la dinámica única de los accidentes de motocicleta y las lesiones graves que pueden resultar.",
+            additionalSections: [
+                {
+                    title: "Causas Comunes de Accidentes de Moto",
+                    content: "Los motociclistas enfrentan riesgos únicos. Causas comunes:\\n\\n**Giros a la Izquierda:** Los autos que giran a la izquierda a menudo no ven las motos.\\n**Filtrado de Carriles:** Conducir entre carriles puede ser peligroso.\\n**Peligros en la Carretera:** Baches y pavimento irregular.\\n**Dooring:** Puertas de autos estacionados que se abren en el camino del conductor."
+                },
+                {
+                    title: "Lesiones Comunes",
+                    content: "Sin protección, los conductores a menudo sufren:\\n\\n*   **Abrasiones (Road Rash):** Abrasión severa de la piel.\\n*   **Lesiones en la Cabeza:** Incluso con casco, las TBI son comunes.\\n*   **Lesiones en las Piernas:** Fracturas y aplastamientos.\\n*   **Brazo de Motociclista:** Daño nervioso en el brazo."
+                },
+                {
+                    title: "Preguntas Frecuentes",
+                    content: "**P: ¿Es legal filtrar carriles?**\\nR: Depende de su estado. En California es legal.\\n\\n**P: ¿Tengo que usar casco?**\\nR: Las leyes varían, pero usar uno reduce el riesgo de lesiones y fortalece su reclamo legal."
+                }
+            ]
         },
         'commercial': {
             title: 'Accidentes de Camiones',
@@ -88,7 +122,25 @@ export const es = {
                 "Tome fotos del número DOT del camión.",
                 "No firme nada de la empresa de camiones."
             ],
-            howWeHelp: "Los casos de camiones involucran regulaciones federales y múltiples partes responsables. Enviamos cartas de expoliación para preservar los datos de la caja negra y los registros del conductor para probar negligencia."
+            howWeHelp: "Los casos de camiones involucran regulaciones federales y múltiples partes responsables. Enviamos cartas de expoliación para preservar los datos de la caja negra y los registros del conductor para probar negligencia.",
+            additionalSections: [
+                {
+                    title: "Por qué los Accidentes de Camiones son Diferentes",
+                    content: "Los accidentes de camiones comerciales no son como los de autos debido a:\\n\\n**Tamaño y Peso:** Un semi pesa 80,000 libras.\\n**Regulaciones Federales:** Los camioneros deben seguir leyes estrictas de horas de conducción.\\n**Responsabilidad Corporativa:** Usted está demandando a una gran empresa."
+                },
+                {
+                    title: "Causas Comunes",
+                    content: "*   **Fatiga del Conductor:** Conducir más allá de los límites legales.\\n*   **Carga Incorrecta:** Carga desequilibrada puede causar vuelcos.\\n*   **Fallas de Mantenimiento:** Frenos desgastados o neumáticos reventados."
+                },
+                {
+                    title: "¿Quién es Responsable?",
+                    content: "Múltiples partes pueden ser responsables:\\n1.  **El Conductor:** Por error o negligencia.\\n2.  **La Empresa de Transporte:** Por prácticas de contratación.\\n3.  **La Empresa de Mantenimiento:** Por no reparar el camión."
+                },
+                {
+                    title: "Preguntas Frecuentes",
+                    content: "**P: ¿Qué es una 'Caja Negra'?**\\nR: Un Registrador de Datos de Eventos (EDR) que registra velocidad y frenado. Es evidencia crucial.\\n\\n**P: ¿Cuánto seguro tienen los camiones?**\\nR: Tienen límites de responsabilidad mucho más altos (a menudo $750k - $5M)."
+                }
+            ]
         },
         'boating': {
             title: 'Accidentes de Navegación',
@@ -105,7 +157,21 @@ export const es = {
                 "Intercambie información con otros operadores.",
                 "Documente las condiciones del agua y el clima."
             ],
-            howWeHelp: "Entendemos las leyes marítimas y las regulaciones estatales de navegación. Ya sea una colisión, BUI (Navegación bajo la influencia) o falla del equipo, hacemos responsables a las partes culpables."
+            howWeHelp: "Entendemos las leyes marítimas y las regulaciones estatales de navegación. Ya sea una colisión, BUI (Navegación bajo la influencia) o falla del equipo, hacemos responsables a las partes culpables.",
+            additionalSections: [
+                {
+                    title: "Leyes Marítimas y de Navegación",
+                    content: "Los accidentes de navegación a menudo caen bajo leyes marítimas especiales. La jurisdicción (aguas estatales vs. federales) juega un papel importante."
+                },
+                {
+                    title: "Causas Comunes",
+                    content: "*   **BUI (Alcohol):** Factor #1 en accidentes fatales.\\n*   **Inexperiencia:** Falta de entrenamiento.\\n*   **Velocidad:** Exceso de velocidad dificulta ver nadadores.\\n*   **Falla del Equipo:** Falla del motor o pérdida de dirección."
+                },
+                {
+                    title: "Preguntas Frecuentes",
+                    content: "**P: ¿Necesito licencia para operar un barco?**\\nR: La mayoría de los estados requieren un curso de seguridad.\\n\\n**P: ¿Quién es responsable de un accidente por estela?**\\nR: Los operadores son responsables del daño causado por su estela."
+                }
+            ]
         },
         'bus': {
             title: 'Accidentes de Autobús',
@@ -122,7 +188,21 @@ export const es = {
                 "Obtenga información de contacto de otros pasajeros.",
                 "Presente un informe a la compañía de autobuses o autoridad de tránsito inmediatamente."
             ],
-            howWeHelp: "Los casos de autobuses a menudo involucran entidades gubernamentales con plazos estrictos (inmunidad soberana). Aseguramos que su reclamo se presente a tiempo e investigamos los registros de capacitación del conductor y mantenimiento del vehículo."
+            howWeHelp: "Los casos de autobuses a menudo involucran entidades gubernamentales con plazos estrictos (inmunidad soberana). Aseguramos que su reclamo se presente a tiempo e investigamos los registros de capacitación del conductor y mantenimiento del vehículo.",
+            additionalSections: [
+                {
+                    title: "Público vs. Privado",
+                    content: "**Autobuses del Gobierno:** Plazos muy cortos para presentar un aviso de reclamo (6 meses o menos).\\n**Transportistas Privados:** Sujetos a leyes de negligencia estándar."
+                },
+                {
+                    title: "Causas Comunes",
+                    content: "*   **Fatiga del Conductor:** Turnos divididos y rutas largas.\\n*   **Puntos Ciegos:** Grandes puntos ciegos donde desaparecen los autos.\\n*   **Paradas Repentinas:** Pasajeros de pie pueden caer."
+                },
+                {
+                    title: "Preguntas Frecuentes",
+                    content: "**P: ¿Puedo demandar si era pasajero?**\\nR: Sí, los pasajeros rara vez tienen la culpa.\\n\\n**P: ¿Qué pasa si el autobús es del gobierno?**\\nR: Contacte a un abogado inmediatamente. Perder el plazo puede prohibir su demanda."
+                }
+            ]
         },
         'rideshare': {
             title: 'Uber y Lyft',
@@ -139,7 +219,21 @@ export const es = {
                 "Obtenga la información del conductor y seguro.",
                 "Reporte el accidente a través de la aplicación, pero no dé una declaración detallada todavía."
             ],
-            howWeHelp: "Los casos de viajes compartidos involucran pólizas de seguro complejas (períodos 1, 2 y 3). Determinamos qué póliza se aplica y luchamos para asegurar que las pólizas de un millón de dólares de Uber o Lyft cubran sus lesiones."
+            howWeHelp: "Los casos de viajes compartidos involucran pólizas de seguro complejas (períodos 1, 2 y 3). Determinamos qué póliza se aplica y luchamos para asegurar que las pólizas de un millón de dólares de Uber o Lyft cubran sus lesiones.",
+            additionalSections: [
+                {
+                    title: "Seguro de Viajes Compartidos",
+                    content: "La cobertura depende del estado del conductor:\\n\\n**Período 1 (App Apagada):** Seguro personal del conductor.\\n**Período 2 (App Encendida, Esperando):** Límites bajos.\\n**Período 3 (Viaje Activo):** Póliza de $1 Millón de Uber/Lyft."
+                },
+                {
+                    title: "Problemas Comunes",
+                    content: "*   **Asalto por Conductor:** Reclamos físicos o sexuales.\\n*   **Conducción Insegura:** Presión por calificaciones.\\n*   **Verificación de Antecedentes:** Falla al filtrar conductores peligrosos."
+                },
+                {
+                    title: "Preguntas Frecuentes",
+                    content: "**P: ¿Puedo demandar a Uber/Lyft directamente?**\\nR: Es difícil (contratistas independientes), pero puede demandar por su cobertura de seguro.\\n\\n**P: ¿Qué pasa si era pasajero?**\\nR: Está totalmente cubierto por la póliza de $1 Millón."
+                }
+            ]
         },
         'pedestrian': {
             title: 'Accidentes de Peatones',
@@ -157,7 +251,25 @@ export const es = {
                 "Tome fotos del paso de peatones, señales e iluminación.",
                 "Busque atención médica inmediatamente."
             ],
-            howWeHelp: "Los peatones no tienen protección y a menudo sufren lesiones catastróficas. Reconstruimos el accidente para probar que el conductor no cedió el paso y luchamos por la compensación de atención a largo plazo que necesita."
+            howWeHelp: "Los peatones no tienen protección y a menudo sufren lesiones catastróficas. Reconstruimos el accidente para probar que el conductor no cedió el paso y luchamos por la compensación de atención a largo plazo que necesita.",
+            additionalSections: [
+                {
+                    title: "Leyes de Derecho de Paso",
+                    content: "Los conductores deben ceder el paso en los cruces peatonales. Los problemas legales a menudo dependen de si el peatón estaba en un cruce marcado vs. no marcado."
+                },
+                {
+                    title: "Causas Comunes",
+                    content: "*   **Conducción Distraída:** Mirar teléfonos en lugar de la carretera.\\n*   **Giros a la Izquierda:** Los conductores buscan autos pero no ven peatones.\\n*   **Mala Visibilidad:** Accidentes de noche o mal tiempo."
+                },
+                {
+                    title: "Lesiones Graves",
+                    content: "*   **Fracturas:** Piernas, pelvis y costillas.\\n*   **Lesiones en la Cabeza:** Impacto con el capó o pavimento.\\n*   **Lesiones de Médula Espinal:** Posible parálisis."
+                },
+                {
+                    title: "Preguntas Frecuentes",
+                    content: "**P: ¿Puedo recuperar daños si crucé imprudentemente?**\\nR: Posiblemente. Las leyes de negligencia comparativa pueden permitirle recuperar daños parciales.\\n\\n**P: ¿Qué pasa si fue un atropello y fuga?**\\nR: Su propio seguro de Automovilista Sin Seguro (UM) puede cubrir sus lesiones."
+                }
+            ]
         },
         'passenger': {
             title: 'Lesiones de Pasajeros',
@@ -174,7 +286,21 @@ export const es = {
                 "Busque tratamiento médico.",
                 "Llame a un abogado: tiene derechos incluso si su amigo conducía."
             ],
-            howWeHelp: "Como pasajero, rara vez tiene la culpa. Podemos presentar reclamos contra el seguro del otro conductor y, si es necesario, el seguro del conductor anfitrión para asegurar que sus facturas médicas estén cubiertas."
+            howWeHelp: "Como pasajero, rara vez tiene la culpa. Podemos presentar reclamos contra el seguro del otro conductor y, si es necesario, el seguro del conductor anfitrión para asegurar que sus facturas médicas estén cubiertas.",
+            additionalSections: [
+                {
+                    title: "Derechos de los Pasajeros",
+                    content: "Los pasajeros son víctimas inocentes. Generalmente tiene derecho a demandar:\\n1.  **Al Otro Conductor:** Si causó el choque.\\n2.  **Al Conductor Anfitrión:** Si la persona que conducía fue negligente.\\n3.  **Su Propio Seguro:** Cobertura PIP o MedPay."
+                },
+                {
+                    title: "Demandando a un Amigo o Pariente",
+                    content: "Muchos pasajeros dudan en demandar a un amigo. Recuerde: **Está demandando a la compañía de seguros, no al individuo.**"
+                },
+                {
+                    title: "Preguntas Frecuentes",
+                    content: "**P: ¿Subirán mis primas si presento un reclamo como pasajero?**\\nR: Generalmente no. Usted no conducía.\\n\\n**P: ¿Qué pasa si ambos conductores tuvieron la culpa?**\\nR: Puede cobrar compensación de ambas pólizas de seguro."
+                }
+            ]
         },
         'slip-fall': {
             title: 'Resbalones y Caídas',
@@ -191,7 +317,21 @@ export const es = {
                 "Tome fotos del peligro (derrame, piso irregular) antes de que se limpie.",
                 "Obtenga nombres de testigos."
             ],
-            howWeHelp: "Probamos que el propietario sabía o debería haber sabido sobre la condición peligrosa. Obtenemos imágenes de vigilancia y registros de mantenimiento para construir un caso sólido de responsabilidad de locales."
+            howWeHelp: "Probamos que el propietario sabía o debería haber sabido sobre la condición peligrosa. Obtenemos imágenes de vigilancia y registros de mantenimiento para construir un caso sólido de responsabilidad de locales.",
+            additionalSections: [
+                {
+                    title: "Probando Negligencia",
+                    content: "Para ganar un caso, debe probar:\\n1.  **Deber:** El dueño le debía un deber de cuidado.\\n2.  **Incumplimiento:** El dueño sabía del peligro (ej. un derrame) y lo ignoró.\\n3.  **Causalidad:** El peligro causó su caída.\\n4.  **Daños:** Usted resultó herido."
+                },
+                {
+                    title: "Peligros Comunes",
+                    content: "*   **Pisos Mojados:** Derrames en tiendas.\\n*   **Aceras Heladas:** Falta de salar o limpiar.\\n*   **Pavimento Irregular:** Grietas en estacionamientos.\\n*   **Mala Iluminación:** Ocultando escalones."
+                },
+                {
+                    title: "Preguntas Frecuentes",
+                    content: "**P: ¿Qué es 'Aviso Constructivo'?**\\nR: Significa que el derrame estuvo allí el tiempo suficiente para que la tienda *debería* haberlo visto.\\n\\n**P: ¿Debo llenar un reporte de incidente?**\\nR: Sí, pero sea breve y factual. No admita culpa."
+                }
+            ]
         },
         'construction': {
             title: 'Accidentes de Construcción',
@@ -208,7 +348,21 @@ export const es = {
                 "Identifique testigos.",
                 "No firme ofertas de compensación laboral sin asesoramiento legal."
             ],
-            howWeHelp: "Más allá de la compensación laboral, puede tener un reclamo de terceros contra subcontratistas, fabricantes de equipos o propietarios. Exploramos todas las vías de compensación."
+            howWeHelp: "Más allá de la compensación laboral, puede tener un reclamo de terceros contra subcontratistas, fabricantes de equipos o propietarios. Exploramos todas las vías de compensación.",
+            additionalSections: [
+                {
+                    title: "Compensación Laboral vs. Terceros",
+                    content: "**Compensación Laboral:** Paga facturas médicas sin importar la culpa, pero no puede demandar a su empleador.\\n**Reclamos de Terceros:** Si un subcontratista o fabricante causó su lesión, puede demandarlos por **daños totales**, incluido dolor y sufrimiento."
+                },
+                {
+                    title: "Accidentes Comunes",
+                    content: "*   **Caídas de Andamios:** Falta de barandillas.\\n*   **Objetos que Caen:** Herramientas desde alturas.\\n*   **Accidentes de Grúa:** Error del operador.\\n*   **Electrocución:** Contacto con líneas eléctricas."
+                },
+                {
+                    title: "Preguntas Frecuentes",
+                    content: "**P: ¿Puedo demandar si solo estaba visitando el sitio?**\\nR: Sí, los no empleados tienen plenos derechos de demandar por negligencia.\\n\\n**P: ¿Quién paga mis facturas médicas?**\\nR: La compensación laboral debería pagar de inmediato."
+                }
+            ]
         },
         'brain': {
             title: 'Lesiones Cerebrales',
@@ -225,7 +379,25 @@ export const es = {
                 "Mantenga un diario de sus síntomas.",
                 "Consulte con un neurólogo."
             ],
-            howWeHelp: "Las TBI pueden tener consecuencias de por vida. Trabajamos con expertos médicos para calcular el costo de por vida de la atención, la capacidad de ganancia perdida y la calidad de vida disminuida para asegurar un acuerdo que asegure su futuro."
+            howWeHelp: "Las TBI pueden tener consecuencias de por vida. Trabajamos con expertos médicos para calcular el costo de por vida de la atención, la capacidad de ganancia perdida y la calidad de vida disminuida para asegurar un acuerdo que asegure su futuro.",
+            additionalSections: [
+                {
+                    title: "Entendiendo la Severidad de TBI",
+                    content: "**TBI Leve (Conmoción):** Confusión temporal, dolor de cabeza. Múltiples conmociones pueden causar daño permanente.\\n**TBI Moderado/Severo:** Pérdida de conciencia, déficits cognitivos y discapacidad física."
+                },
+                {
+                    title: "Causas Principales",
+                    content: "*   **Caídas:** La causa #1, especialmente en ancianos.\\n*   **Choques de Vehículos:** El latigazo puede causar daño cerebral.\\n*   **Golpes:** Ser golpeado por objetos."
+                },
+                {
+                    title: "Costos de por Vida",
+                    content: "Las lesiones cerebrales graves a menudo requieren:\\n*   Cuidado en el hogar 24/7.\\n*   Terapia de rehabilitación cognitiva.\\n*   Modificaciones en el hogar."
+                },
+                {
+                    title: "Preguntas Frecuentes",
+                    content: "**P: ¿Puedo tener un TBI sin perder el conocimiento?**\\nR: Sí. Las conmociones a menudo ocurren sin desmayarse.\\n\\n**P: ¿Por qué necesito un especialista?**\\nR: Las lesiones cerebrales son complejas. Necesita un neurólogo para documentar el daño."
+                }
+            ]
         },
         'mesh': {
             title: 'Malla Quirúrgica',
@@ -241,7 +413,25 @@ export const es = {
                 "Solicite sus registros médicos identificando el producto de malla específico utilizado.",
                 "Contacte a un abogado para verificar si su dispositivo está sujeto a un retiro del mercado."
             ],
-            howWeHelp: "Manejamos litigios masivos contra fabricantes de dispositivos médicos defectuosos. Luchamos por la compensación por cirugías de revisión, dolor y sufrimiento causados por implantes de malla fallidos."
+            howWeHelp: "Manejamos litigios masivos contra fabricantes de dispositivos médicos defectuosos. Luchamos por la compensación por cirugías de revisión, dolor y sufrimiento causados por implantes de malla fallidos.",
+            additionalSections: [
+                {
+                    title: "El Problema con la Malla",
+                    content: "La malla quirúrgica está hecha de plástico de polipropileno. Puede degradarse, encogerse o erosionarse en los tejidos/órganos circundantes."
+                },
+                {
+                    title: "Complicaciones",
+                    content: "*   **Erosión:** Malla cortando la pared vaginal o el intestino.\\n*   **Infección:** Infecciones crónicas.\\n*   **Dolor Crónico:** Dolor pélvico severo.\\n*   **Recurrencia:** La hernia regresa."
+                },
+                {
+                    title: "Litigio Masivo vs. Demanda Colectiva",
+                    content: "Estos casos son típicamente **Litigios Multidistritales (MDL)**. Esto significa que ud. tiene su *propia* demanda individual basada en sus lesiones específicas."
+                },
+                {
+                    title: "Preguntas Frecuentes",
+                    content: "**P: ¿Cómo sé si tengo malla?**\\nR: Podemos solicitar sus registros de cirugía para identificar el producto.\\n\\n**P: ¿Es demasiado tarde para demandar?**\\nR: Los plazos son estrictos. Contáctenos inmediatamente para verificar su fecha límite."
+                }
+            ]
         },
         'hair': {
             title: 'Alisadores de Cabello',
@@ -257,7 +447,21 @@ export const es = {
                 "Documente su historial de uso (marcas, frecuencia, salones).",
                 "Obtenga registros médicos si se le diagnostica cáncer de útero u ovario."
             ],
-            howWeHelp: "Estamos investigando reclamos de que los alisadores químicos causaron cáncer. Buscamos responsabilizar a los fabricantes por no advertir a los consumidores sobre los riesgos de sus productos."
+            howWeHelp: "Estamos investigando reclamos de que los alisadores químicos causaron cáncer. Buscamos responsabilizar a los fabricantes por no advertir a los consumidores sobre los riesgos de sus productos.",
+            additionalSections: [
+                {
+                    title: "La Ciencia: Químicos y Cáncer",
+                    content: "Los alisadores a menudo contienen **Disruptores Endocrinos (EDC)** como parabenos y ftalatos. Estos imitan el estrógeno, alimentando cánceres sensibles a hormonas."
+                },
+                {
+                    title: "¿Quién Califica?",
+                    content: "Puede calificar si:\\n1.  Usó alisadores químicos regularmente (ej. 4+ veces al año).\\n2.  Lo hizo por varios años.\\n3.  Fue diagnosticada con Cáncer de Útero, Ovario o Endometrial."
+                },
+                {
+                    title: "Marcas Involucradas",
+                    content: "Marcas como Dark & Lovely, Motions, Olive Oil, y otras."
+                }
+            ]
         },
         'roundup': {
             title: 'Roundup',
@@ -273,7 +477,21 @@ export const es = {
                 "Guarde recibos de compra.",
                 "Obtenga copias de registros médicos que diagnostiquen Linfoma no Hodgkin."
             ],
-            howWeHelp: "Representamos a personas diagnosticadas con cáncer después de usar Roundup. Luchamos contra Monsanto/Bayer para asegurar la compensación por costos médicos y sufrimiento debido a la exposición al glifosato."
+            howWeHelp: "Representamos a personas diagnosticadas con cáncer después de usar Roundup. Luchamos contra Monsanto/Bayer para asegurar la compensación por costos médicos y sufrimiento debido a la exposición al glifosato.",
+            additionalSections: [
+                {
+                    title: "Glifosato y Linfoma no Hodgkin",
+                    content: "El glifosato interrumpe las funciones celulares. Los estudios sugieren que la exposición a largo plazo aumenta significativamente el riesgo de desarrollar Linfoma no Hodgkin (LNH)."
+                },
+                {
+                    title: "¿Quién está en Riesgo?",
+                    content: "*   **Jardineros:** Alta exposición ocupacional.\\n*   **Agricultores:** Uso regular en cultivos.\\n*   **Propietarios:** Uso frecuente en jardines."
+                },
+                {
+                    title: "Daños Recuperables",
+                    content: "*   Facturas médicas pasadas y futuras.\\n*   Ingresos perdidos.\\n*   Dolor y sufrimiento."
+                }
+            ]
         },
         'talc': {
             title: 'Talco de J&J',
@@ -289,7 +507,25 @@ export const es = {
                 "Obtenga registros médicos sobre su diagnóstico de cáncer de ovario.",
                 "Contáctenos para una evaluación gratuita."
             ],
-            howWeHelp: "Estamos persiguiendo reclamos de que el talco contaminado con asbesto causó cáncer de ovario. Luchamos para responsabilizar a Johnson & Johnson por poner las ganancias por encima de la seguridad del consumidor."
+            howWeHelp: "Estamos persiguiendo reclamos de que el talco contaminado con asbesto causó cáncer de ovario. Luchamos para responsabilizar a Johnson & Johnson por poner las ganancias por encima de la seguridad del consumidor.",
+            additionalSections: [
+                {
+                    title: "Asbesto en Talco",
+                    content: "Si no se extrae con cuidado, el talco puede estar contaminado con fibras de asbesto. Cuando se usa para la higiene femenina, estas fibras pueden causar cáncer."
+                },
+                {
+                    title: "El Encubrimiento",
+                    content: "Documentos internos sugieren que J&J sabía sobre pruebas positivas de asbesto durante décadas pero ocultó esta información."
+                },
+                {
+                    title: "Elegibilidad",
+                    content: "Buscamos:\\n1.  Uso diario de talco para higiene.\\n2.  Uso por 4+ años.\\n3.  Diagnóstico de Cáncer de Ovario o Mesotelioma."
+                },
+                {
+                    title: "Preguntas Frecuentes",
+                    content: "**P: ¿Es segura la maicena?**\\nR: Sí, la maicena no contiene asbesto. Las demandas involucran polvo a base de *talco*."
+                }
+            ]
         },
         'ozempic': {
             title: 'Ozempic',
@@ -305,7 +541,21 @@ export const es = {
                 "Discuta sus síntomas con su médico.",
                 "Mantenga registros de su prescripción y uso."
             ],
-            howWeHelp: "Estamos investigando reclamos de lesiones gastrointestinales severas vinculadas a Ozempic y Wegovy. Si sufrió gastroparesia, podemos ayudarlo a buscar compensación por sus lesiones."
+            howWeHelp: "Estamos investigando reclamos de lesiones gastrointestinales severas vinculadas a Ozempic y Wegovy. Si sufrió gastroparesia, podemos ayudarlo a buscar compensación por sus lesiones.",
+            additionalSections: [
+                {
+                    title: "Parálisis Estomacal (Gastroparesia)",
+                    content: "Ozempic ralentiza la digestión. En algunos pacientes, hace que el estómago deje de funcionar por completo. Esto lleva a vómitos severos y hospitalización."
+                },
+                {
+                    title: "Falla en Advertir",
+                    content: "Las demandas alegan que Novo Nordisk no advirtió adecuadamente que el 'retraso en el vaciado gástrico' podría resultar en gastroparesia permanente."
+                },
+                {
+                    title: "Lesiones Comunes",
+                    content: "*   **Síndrome de Vómitos Cíclicos:** Vómitos incontrolables.\\n*   **Deshidratación/Malnutrición:** Requiriendo sueros.\\n*   **Pérdida de Dientes:** Por ácido de vómito crónico."
+                }
+            ]
         },
         'truvada': {
             title: 'Truvada',
@@ -321,7 +571,25 @@ export const es = {
                 "Mantenga registros de sus recetas de medicamentos TDF.",
                 "Contacte a un abogado si ha sido diagnosticado con insuficiencia renal u osteoporosis."
             ],
-            howWeHelp: "Representamos a pacientes perjudicados por medicamentos TDF como Truvada. Argumentamos que el fabricante retrasó el lanzamiento de una alternativa más segura (TAF) para maximizar las ganancias, causando daños innecesarios a los pacientes."
+            howWeHelp: "Representamos a pacientes perjudicados por medicamentos TDF como Truvada. Argumentamos que el fabricante retrasó el lanzamiento de una alternativa más segura (TAF) para maximizar las ganancias, causando daños innecesarios a los pacientes.",
+            additionalSections: [
+                {
+                    title: "Drogas TDF vs. TAF",
+                    content: "Gilead tenía una versión más segura (TAF) pero retrasó su lanzamiento para seguir ganando dinero con la patente TDF. TDF es más tóxico para riñones y huesos."
+                },
+                {
+                    title: "Lesiones",
+                    content: "*   **Enfermedad Renal Crónica (CKD):** Pérdida gradual de función.\\n*   **Falla Renal Aguda:** Requiriendo diálisis.\\n*   **Osteoporosis:** Pérdida de densidad ósea."
+                },
+                {
+                    title: "Medicamentos Involucrados",
+                    content: "Truvada, Viread, Atripla, Complera, y Stribild."
+                },
+                {
+                    title: "Preguntas Frecuentes",
+                    content: "**P: ¿Debo dejar mis medicamentos de VIH?**\\nR: NO. Nunca deje la medicación sin un médico. Cambie a alternativas más seguras si se le aconseja."
+                }
+            ]
         },
     }
 };

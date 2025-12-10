@@ -75,8 +75,28 @@ export const en = {
             howWeHelp: "We handle all communication with insurance companies, ensuring you don't say anything that could hurt your claim. We investigate the crash, prove liability, and fight for maximum compensation for your medical bills, lost wages, and pain and suffering.",
             additionalSections: [
                 {
+                    title: "Common Causes of Car Accidents",
+                    content: "Understanding the cause of an accident is the first step in determining liability. Some of the most frequent causes include:\\n\\n**Distracted Driving:** Texting, eating, or using in-car entertainment systems diverts attention from the road.\\n**Speeding:** Exceeding speed limits reduces reaction time and increases crash severity.\\n**Drunk Driving (DUI):** Alcohol impairs judgment and coordination, leading to deadly collisions.\\n**Reckless Driving:** Weaving through traffic, tailgating, and ignoring traffic signals.\\n**Weather Conditions:** Rain, snow, and ice can make roads dangerous, but drivers still have a duty to drive safely for conditions."
+                },
+                {
+                    title: "Types of Injuries",
+                    content: "Car accidents can cause a wide range of injuries, from minor to life-altering:\\n\\n*   **Whiplash:** Soft tissue injury to the neck.\\n*   **Traumatic Brain Injuries (TBI):** Concussions and severe brain damage.\\n*   **Broken Bones:** Fractures of the arms, legs, ribs, and pelvis.\\n*   **Spinal Cord Injuries:** Can result in partial or total paralysis.\\n*   **Internal Bleeding:** Damage to organs that requires immediate surgery."
+                },
+                {
+                    title: "Determining Liability",
+                    content: "Proving fault often requires a thorough investigation. We use:\\n\\n1.  **Police Reports:** Official accounts of the accident scene.\\n2.  **Witness Statements:** Unbiased accounts from bystanders.\\n3.  **Surveillance Footage:** Video evidence from traffic or security cameras.\\n4.  **Accident Reconstruction:** Experts who scientifically recreate the crash.\\n5.  **Cell Phone Records:** To prove distracted driving."
+                },
+                {
+                    title: "Compensation Available",
+                    content: "Victims may be entitled to various forms of compensation:\\n\\n*   **Medical Expenses:** Current and future hospital bills, surgeries, and therapy.\\n*   **Lost Wages:** Pay lost due to recovery time.\\n*   **Pain and Suffering:** Compensation for physical pain and emotional distress.\\n*   **Property Damage:** Repair or replacement of your vehicle."
+                },
+                {
                     title: "What should I do if I get rear ended?",
-                    content: "Rear-end collisions are the most common type of car accident. They are often caused by distracted driving, tailgating, or sudden stops. If you are rear-ended, it is almost always the other driver's fault, but proving the extent of your injuries is crucial.\n\n**Steps to take:**\n1. **Check for injuries:** Whiplash is common and symptoms may not appear immediately.\n2. **Document the scene:** Take pictures of both vehicles, specifically the damage.\n3. **Don't admit fault:** Even saying 'I'm okay' can be used against you later.\n4. **Get a medical evaluation:** See a doctor to rule out hidden injuries like concussions or spinal damage."
+                    content: "Rear-end collisions are the most common type of car accident. They are often caused by distracted driving, tailgating, or sudden stops. If you are rear-ended, it is almost always the other driver's fault, but proving the extent of your injuries is crucial.\\n\\n**Steps to take:**\n1. **Check for injuries:** Whiplash is common and symptoms may not appear immediately.\n2. **Document the scene:** Take pictures of both vehicles, specifically the damage.\n3. **Don't admit fault:** Even saying 'I'm okay' can be used against you later.\n4. **Get a medical evaluation:** See a doctor to rule out hidden injuries like concussions or spinal damage."
+                },
+                {
+                    title: "FAQ",
+                    content: "**Q: How long do I have to file a claim?**\\nA: The statute of limitations varies by state, but it is typically 2 years from the date of the accident.\\n\\n**Q: What if the other driver doesn't have insurance?**\\nA: You may be able to file a claim under your own Uninsured Motorist coverage.\\n\\n**Q: Should I accept the first settlement offer?**\\nA: No. Initial offers are almost always lower than your case's true value. Always consult an attorney first."
                 }
             ]
         },
@@ -96,7 +116,25 @@ export const en = {
                 "Take photos of road conditions and vehicle damage.",
                 "Contact an attorney before speaking to insurance."
             ],
-            howWeHelp: "Motorcyclists often face bias from insurance companies. We fight to prove that the other driver was at fault. We understand the unique dynamics of motorcycle accidents and the severe injuries that can result."
+            howWeHelp: "Motorcyclists often face bias from insurance companies. We fight to prove that the other driver was at fault. We understand the unique dynamics of motorcycle accidents and the severe injuries that can result.",
+            additionalSections: [
+                {
+                    title: "Common Causes of Motorcycle Accidents",
+                    content: "Motorcyclists face unique risks. Common causes include:\\n\\n**Left-Hand Turns:** Cars turning left often fail to see oncoming motorcycles.\\n**Lane Splitting:** Driving between lanes can be dangerous if other drivers aren't expecting it.\\n**Road Hazards:** Potholes, debris, and uneven pavement pose greater risks to bikes.\\n**Dooring:** Parked car doors opening into a rider's path."
+                },
+                {
+                    title: "Common Injuries",
+                    content: "Without the protection of a steel cage, riders often suffer:\\n\\n*   **Road Rash:** Severe skin abrasion that can lead to infection.\\n*   **Head Injuries:** Even with a helmet, TBIs are common.\\n*   **Leg Injuries:** Fractures and crush injuries to the lower extremities.\\n*   **Biker's Arm:** Nerve damage in the arm caused by bracing for a fall."
+                },
+                {
+                    title: "Liability & Bias",
+                    content: "Insurance companies often try to blame the biker (e.g., speeding or reckless driving). We combat this bias by:\\n\\n*   Showing the driver failed to yield right of way.\\n*   Demonstrating the rider was obeying traffic laws.\\n*   Using helmet laws to protect your rights."
+                },
+                {
+                    title: "FAQ",
+                    content: "**Q: Is lane splitting legal?**\\nA: It depends on your state. In California, it is legal; in many others, it is not.\\n\\n**Q: Do I have to wear a helmet?**\\nA: Helmet laws vary by state, but wearing one significantly reduces injury risk and strengthens your legal claim."
+                }
+            ]
         },
         'commercial': {
             title: 'Truck Accidents',
@@ -113,7 +151,25 @@ export const en = {
                 "Take photos of the truck's DOT number.",
                 "Do not sign anything from the trucking company."
             ],
-            howWeHelp: "Trucking cases involve federal regulations and multiple liable parties (driver, company, loader). We send spoliation letters to preserve black box data and driver logs to prove negligence."
+            howWeHelp: "Trucking cases involve federal regulations and multiple liable parties (driver, company, loader). We send spoliation letters to preserve black box data and driver logs to prove negligence.",
+            additionalSections: [
+                {
+                    title: "Why Truck Accidents Are Different",
+                    content: "Commercial truck accidents are not like car accidents due to:\\n\\n**Size and Weight:** A fully loaded semi weighs 80,000 lbs, causing catastrophic damage.\\n**Federal Regulations:** Truckers must follow strict laws on driving hours (Hours of Service) and maintenance.\\n**Corporate Liability:** You are often suing a large company, not just an individual."
+                },
+                {
+                    title: "Common Causes",
+                    content: "*   **Driver Fatigue:** Driving beyond legal hour limits.\\n*   **Improper Loading:** Unbalanced cargo can cause rollovers.\\n*   **Maintenance Failures:** Worn brakes or blown tires.\\n*   **Blind Spots:** 'No-zones' where the truck driver cannot see you."
+                },
+                {
+                    title: "Who Is Liable?",
+                    content: "Multiple parties may be responsible:\\n1.  **The Driver:** For error or negligence.\\n2.  **The Trucking Company:** For hiring practices or forcing illegal schedules.\\n3.  **The Maintenance Company:** For failing to repair the truck.\\n4.  **The Cargo Loader:** For improperly securing the load."
+                },
+                {
+                    title: "FAQ",
+                    content: "**Q: What is a 'Black Box'?**\\nA: An Event Data Recorder (EDR) that records speed, braking, and steering data before a crash. It is crucial evidence.\\n\\n**Q: How much insurance do trucks carry?**\\nA: Commercial trucks are required to carry much higher liability limits (often $750,000 to $5,000,000) than passenger cars."
+                }
+            ]
         },
         'boating': {
             title: 'Boating Accidents',
@@ -130,7 +186,25 @@ export const en = {
                 "Exchange information with other boat operators.",
                 "Document the water conditions and weather."
             ],
-            howWeHelp: "We understand maritime laws and state boating regulations. Whether it was a collision, BUI (Boating Under the Influence), or equipment failure, we hold the responsible parties accountable."
+            howWeHelp: "We understand maritime laws and state boating regulations. Whether it was a collision, BUI (Boating Under the Influence), or equipment failure, we hold the responsible parties accountable.",
+            additionalSections: [
+                {
+                    title: "Maritime & Boating Laws",
+                    content: "Boating accidents often fall under special Maritime or Admiralty laws, which differ from standard state traffic laws. Jurisdiction (state vs. federal waters) plays a huge role in how a case is litigated."
+                },
+                {
+                    title: "Common Causes of Boating Accidents",
+                    content: "*   **Boating Under the Influence (BUI):** Alcohol is the #1 factor in fatal boating accidents.\\n*   **Operator Inexperience:** Lack of training on rules of the water.\\n*   **Speeding:** Excessive speed makes it hard to see swimmers or obstacles.\\n*   **Equipment Failure:** Engine failure or steering loss."
+                },
+                {
+                    title: "Types of Injuries",
+                    content: "*   **Drowning:** The most common cause of death.\\n*   **Propeller Injuries:** Severe lacerations and amputations.\\n*   **Traumatic Brain Injury:** From capsizing or collision.\\n*   **Carbon Monoxide Poisoning:** From poor engine ventilation."
+                },
+                {
+                    title: "FAQ",
+                    content: "**Q: Do I need a license to operate a boat?**\\nA: Most states require a boating safety course certification.\\n\\n**Q: Who is liable for a wake accident?**\\nA: Boat operators are responsible for damage caused by their wake."
+                }
+            ]
         },
         'bus': {
             title: 'Bus Accidents',
@@ -147,7 +221,21 @@ export const en = {
                 "Get contact info from other passengers.",
                 "File a report with the bus company or transit authority immediately."
             ],
-            howWeHelp: "Bus cases often involve government entities with strict filing deadlines (sovereign immunity). We ensure your claim is filed on time and investigate driver training and vehicle maintenance records."
+            howWeHelp: "Bus cases often involve government entities with strict filing deadlines (sovereign immunity). We ensure your claim is filed on time and investigate driver training and vehicle maintenance records.",
+            additionalSections: [
+                {
+                    title: "Public vs. Private Bus Carriers",
+                    content: "Legal rules differ depending on who owns the bus:\\n\\n**Government Buses (City Transit/School Buses):**\\n*   Often have 'Sovereign Immunity' limits.\\n*   Very short deadlines to file a 'Notice of Claim' (sometimes 6 months or less).\\n\\n**Private Carriers (Greyhound/Charter):**\\n*   Subject to standard negligence laws and federal common carrier regulations."
+                },
+                {
+                    title: "Common Bus Accident Causes",
+                    content: "*   **Driver Fatigue:** Split shifts and long routes.\\n*   **Blind Spots:** Buses have massive blind spots where cars disappear.\\n*   **Sudden Stops:** Standing passengers can be thrown violently.\\n*   **Inadequate Maintenance:** Brake failures or tire blowouts."
+                },
+                {
+                    title: "FAQ",
+                    content: "**Q: Can I sue if I was a passenger?**\\nA: Yes, passengers are rarely at fault.\\n\\n**Q: What if the bus is government-owned?**\\nA: Contact a lawyer immediately. Missing the short filing deadline (Notice of Claim) can permanently bar your right to sue."
+                }
+            ]
         },
         'rideshare': {
             title: 'Uber and Lyft Rideshare',
@@ -164,7 +252,21 @@ export const en = {
                 "Get the driver's info and insurance.",
                 "Report the accident through the app, but do not give a detailed statement yet."
             ],
-            howWeHelp: "Rideshare cases involve complex insurance policies (periods 1, 2, and 3). We determine which policy applies and fight to ensure Uber or Lyft's million-dollar policies cover your injuries."
+            howWeHelp: "Rideshare cases involve complex insurance policies (periods 1, 2, and 3). We determine which policy applies and fight to ensure Uber or Lyft's million-dollar policies cover your injuries.",
+            additionalSections: [
+                {
+                    title: "Understanding Rideshare Insurance Periods",
+                    content: "Insurance coverage depends on the driver's status:\\n\\n**Period 1 (App Off):** Driver's personal insurance applies (often denies business use).\\n**Period 2 (App On, Waiting):** Low limits apply (e.g., $50k/$100k).\\n**Period 3 (Active Ride):** Uber/Lyft's $1 Million policy applies."
+                },
+                {
+                    title: "Common Issues",
+                    content: "*   **Assault by Driver:** Claims involving physical or sexual assault.\\n*   **Unsafe Driving:** Ratings pressure can cause speeding.\\n*   **Background Checks:** Failure to screen dangerous drivers."
+                },
+                {
+                    title: "FAQ",
+                    content: "**Q: Can I sue Uber/Lyft directly?**\\nA: It is difficult because drivers are 'independent contractors,' but you can sue for their insurance coverage.\\n\\n**Q: What if I was a passenger?**\\nA: You are fully covered by the $1 Million policy in most cases."
+                }
+            ]
         },
         'pedestrian': {
             title: 'Pedestrian Accidents',
@@ -182,7 +284,25 @@ export const en = {
                 "Take photos of the crosswalk, signals, and lighting.",
                 "Seek medical care immediately."
             ],
-            howWeHelp: "Pedestrians have no protection and often suffer catastrophic injuries. We reconstruct the accident to prove the driver failed to yield and fight for the long-term care compensation you need."
+            howWeHelp: "Pedestrians have no protection and often suffer catastrophic injuries. We reconstruct the accident to prove the driver failed to yield and fight for the long-term care compensation you need.",
+            additionalSections: [
+                {
+                    title: "Pedestrian Right-of-Way Laws",
+                    content: "Drivers must yield to pedestrians in crosswalks, but pedestrians also have duties. Legal issues often turn on whether the pedestrian was in a marked vs. unmarked crosswalk or jaywalking."
+                },
+                {
+                    title: "Common Causes",
+                    content: "*   **Distracted Driving:** Drivers looking at phones instead of the road.\\n*   **Left-Hand Turns:** Drivers often look for cars but miss pedestrians.\\n*   **Poor Visibility:** Accidents at night or in bad weather.\\n*   **Backing Up:** Parking lot accidents are frequent."
+                },
+                {
+                    title: "Severe Injuries",
+                    content: "Pedestrian accidents result in high medical bills due to:\\n*   **Fractures:** Legs, pelvis, and ribs are commonly broken.\\n*   **Head Injuries:** Impact with the vehicle hood or pavement.\\n*   **Spinal Cord Injuries:** Leading to potential paralysis."
+                },
+                {
+                    title: "FAQ",
+                    content: "**Q: Can I recover damages if I was jaywalking?**\\nA: Possibly. Comparative negligence laws may allow you to recover partial damages if the driver was also at fault (e.g., speeding).\\n\\n**Q: What if it was a hit-and-run?**\\nA: Your own Uninsured Motorist (UM) insurance may cover your injuries."
+                }
+            ]
         },
         'passenger': {
             title: 'Passenger Injuries',
@@ -199,7 +319,25 @@ export const en = {
                 "Seek medical treatment.",
                 "Call an attorney - you have rights even if your friend was driving."
             ],
-            howWeHelp: "As a passenger, you are rarely at fault. We can file claims against the other driver's insurance and, if necessary, the host driver's insurance to ensure your medical bills are covered."
+            howWeHelp: "As a passenger, you are rarely at fault. We can file claims against the other driver's insurance and, if necessary, the host driver's insurance to ensure your medical bills are covered.",
+            additionalSections: [
+                {
+                    title: "Passenger Rights",
+                    content: "Passengers are innocent victims. You generally have the right to sue:\\n1.  **The Other Driver:** If they caused the crash.\\n2.  **The Host Driver:** If the person driving you was negligent.\\n3.  **Your Own Insurance:** PIP or MedPay coverage."
+                },
+                {
+                    title: "Suing a Friend or Relative",
+                    content: "Many passengers hesitate to sue a friend. Remember: **You are suing the insurance company, not the individual.** Your friend pays for insurance exactly for this reason—to cover injuries to people in their car."
+                },
+                {
+                    title: "Common Injuries",
+                    content: "*   **Dashboard Injuries:** Knee and leg fractures requiring surgery.\\n*   **Face/Head Injuries:** From airbag deployment or hitting the windshield.\\n*   **Whiplash:** Severe neck strain."
+                },
+                {
+                    title: "FAQ",
+                    content: "**Q: Will my premiums go up if I file a claim as a passenger?**\\nA: Generally, no. You were not driving.\\n\\n**Q: What if both drivers were at fault?**\\nA: You may be able to collect compensation from both insurance policies."
+                }
+            ]
         },
         'slip-fall': {
             title: 'Slip and Fall',
@@ -216,7 +354,25 @@ export const en = {
                 "Take photos of the hazard (spill, uneven floor) before it's cleaned.",
                 "Get witness names."
             ],
-            howWeHelp: "We prove that the property owner knew or should have known about the dangerous condition. We obtain surveillance footage and maintenance records to build a strong premises liability case."
+            howWeHelp: "We prove that the property owner knew or should have known about the dangerous condition. We obtain surveillance footage and maintenance records to build a strong premises liability case.",
+            additionalSections: [
+                {
+                    title: "Proving Negligence",
+                    content: "To win a slip and fall case, you must prove:\\n1.  **Duty:** The owner owed you a duty of care.\\n2.  **Breach:** The owner knew of a hazard (e.g., a spill) and ignored it.\\n3.  **Causation:** The hazard caused your fall.\\n4.  **Damages:** You were injured."
+                },
+                {
+                    title: "Common Hazards",
+                    content: "*   **Wet Floors:** Spills in grocery stores are classic cases.\\n*   **Icy Sidewalks:** Failure to salt or shovel entrances.\\n*   **Uneven Pavement:** Cracks in parking lots or walkways.\\n*   **Poor Lighting:** Hiding steps or obstacles."
+                },
+                {
+                    title: "Types of Injuries",
+                    content: "*   **Hip Fractures:** Especially dangerous for older adults.\\n*   **Head Injuries:** Striking the ground can cause TBI.\\n*   **Back Injuries:** Herniated discs from the impact."
+                },
+                {
+                    title: "FAQ",
+                    content: "**Q: What is 'Constructive Notice'?**\\nA: It means the spill was there long enough that the store *should* have seen and cleaned it.\\n\\n**Q: Should I fill out an incident report?**\\nA: Yes, but keep it brief and factual. Do not admit fault."
+                }
+            ]
         },
         'construction': {
             title: 'Construction Zone Accidents',
@@ -233,7 +389,25 @@ export const en = {
                 "Identify witnesses.",
                 "Do not sign settlement offers from workers' comp without legal advice."
             ],
-            howWeHelp: "Beyond workers' comp, you may have a third-party claim against subcontractors, equipment manufacturers, or property owners. We explore all avenues for compensation."
+            howWeHelp: "Beyond workers' comp, you may have a third-party claim against subcontractors, equipment manufacturers, or property owners. We explore all avenues for compensation.",
+            additionalSections: [
+                {
+                    title: "Workers' Comp vs. Third-Party Claims",
+                    content: "**Workers' Comp:** Pays medical bills and some lost wages regardless of fault, but you cannot sue your employer.\\n**Third-Party Claims:** If a subcontractor, delivery driver, or equipment manufacturer caused your injury, you can sue them for **full damages**, including pain and suffering."
+                },
+                {
+                    title: "Common Construction Accidents",
+                    content: "*   **Scaffolding Falls:** Lack of guardrails or harness failure.\\n*   **Falling Objects:** Tools or debris dropped from heights.\\n*   **Crane Accidents:** Operator error or mechanical failure.\\n*   **Electrocution:** Contact with power lines."
+                },
+                {
+                    title: "Injuries",
+                    content: "*   **Crush Injuries:** Getting caught between heavy equipment.\\n*   **Amputations:** Loss of fingers or limbs.\\n*   **Spinal Cord Damage:** Paraplegia or quadriplegia."
+                },
+                {
+                    title: "FAQ",
+                    content: "**Q: Can I sue if I was visiting the site?**\\nA: Yes, non-employees have full rights to sue for negligence.\\n\\n**Q: Who pays for my medical bills?**\\nA: Workers' comp should pay immediately. A lawsuit can recover additional costs later."
+                }
+            ]
         },
         'brain': {
             title: 'Brain Injuries',
@@ -250,7 +424,25 @@ export const en = {
                 "Keep a journal of your symptoms.",
                 "Consult with a neurologist."
             ],
-            howWeHelp: "TBIs can have life-altering consequences. We work with medical experts to calculate the lifetime cost of care, lost earning capacity, and diminished quality of life to secure a settlement that secures your future."
+            howWeHelp: "TBIs can have life-altering consequences. We work with medical experts to calculate the lifetime cost of care, lost earning capacity, and diminished quality of life to secure a settlement that secures your future.",
+            additionalSections: [
+                {
+                    title: "Understanding TBI Severity",
+                    content: "**Mild TBI (Concussion):** Temporary confusion, headache, nausea. Multiple concussions can cause permanent damage.\\n**Moderate/Severe TBI:** Loss of consciousness, cognitive deficits, mood changes, and physical disability requiring lifetime care."
+                },
+                {
+                    title: "Leading Causes",
+                    content: "*   **Falls:** The #1 cause, especially in construction and for the elderly.\\n*   **Vehicle Crashes:** Whiplash alone can cause brain shearing (diffuse axonal injury).\\n*   **Strikes/Blows:** Being hit by falling objects or debris."
+                },
+                {
+                    title: "Lifetime Costs",
+                    content: "Severe brain injuries often require:\\n*   24/7 in-home care.\\n*   Cognitive rehabilitation therapy.\\n*   Home modifications (ramps, lifts).\\n*   Lost wages (inability to return to work)."
+                },
+                {
+                    title: "FAQ",
+                    content: "**Q: Can I have a TBI without losing consciousness?**\\nA: Yes. Concussions often occur without blacking out.\\n\\n**Q: Why do I need a specialist?**\\nA: Brain injuries are complex. You need a neurologist to document the damage for your legal case."
+                }
+            ]
         },
         'mesh': {
             title: 'Surgical Mesh',
@@ -266,7 +458,25 @@ export const en = {
                 "Request your medical records identifying the specific mesh product used.",
                 "Contact an attorney to check if your device is subject to a recall."
             ],
-            howWeHelp: "We handle mass tort litigation against manufacturers of defective medical devices. We fight for compensation for revision surgeries, pain, and suffering caused by failed mesh implants."
+            howWeHelp: "We handle mass tort litigation against manufacturers of defective medical devices. We fight for compensation for revision surgeries, pain, and suffering caused by failed mesh implants.",
+            additionalSections: [
+                {
+                    title: "The Problem with Surgical Mesh",
+                    content: "Surgical mesh (transvaginal or hernia mesh) is made of polypropylene plastic. In the body, it can degrade, shrink, or erode into surrounding tissues/organs."
+                },
+                {
+                    title: "Complications",
+                    content: "*   **Erosion:** Mesh cutting through the vaginal wall or bowel.\\n*   **Infection:** Chronic, antibiotic-resistant infections.\\n*   **Chronic Pain:** Severe pelvic or groin pain making daily life impossible.\\n*   **Recurrence:** The hernia returns despite the surgery."
+                },
+                {
+                    title: "Mass Tort vs. Class Action",
+                    content: "These cases are typically **Multidistrict Litigation (MDL)**, not class actions. This means you have your *own* individual lawsuit and settlement based on your specific injuries."
+                },
+                {
+                    title: "FAQ",
+                    content: "**Q: How do I know if I have mesh?**\\nA: We can request your surgery records (Operative Report) to identify the product ID.\\n\\n**Q: Is it too late to sue?**\\nA: Statutes of limitations are strict. Contact us immediately to check your deadline."
+                }
+            ]
         },
         'hair': {
             title: 'Hair Relaxer Lawsuit',
@@ -282,7 +492,25 @@ export const en = {
                 "Document your history of use (brands, frequency, salons).",
                 "Obtain medical records if diagnosed with uterine or ovarian cancer."
             ],
-            howWeHelp: "We are investigating claims that chemical hair straighteners caused cancer. We aim to hold manufacturers accountable for failing to warn consumers about the risks of their products."
+            howWeHelp: "We are investigating claims that chemical hair straighteners caused cancer. We aim to hold manufacturers accountable for failing to warn consumers about the risks of their products.",
+            additionalSections: [
+                {
+                    title: "The Science: Chemicals and Cancer",
+                    content: "Hair relaxers often contain **Endocrine Disrupting Chemicals (EDCs)** like parabens and phthalates. These chemicals mimic estrogen in the body, fueling hormone-sensitive cancers like Uterine and Ovarian cancer."
+                },
+                {
+                    title: "Who Qualifies?",
+                    content: "You may qualify if:\\n1.  You used chemical hair relaxers/straighteners regularly (e.g., 4+ times a year).\\n2.  You did so for several years.\\n3.  You were diagnosed with Uterine Cancer, Ovarian Cancer, or Endometrial Cancer."
+                },
+                {
+                    title: "Brands Involved",
+                    content: "Lawsuits have been filed against manufacturers of brands like Dark & Lovely, Motions, Olive Oil, and others."
+                },
+                {
+                    title: "FAQ",
+                    content: "**Q: Are fibroids covered?**\\nA: Currently, most litigation focuses on cancer, but fibroid claims are being evaluated.\\n\\n**Q: Do I need receipts from years ago?**\\nA: No, affidavits and photos can help prove usage history."
+                }
+            ]
         },
         'roundup': {
             title: 'Roundup',
@@ -298,7 +526,25 @@ export const en = {
                 "Keep receipts of purchase.",
                 "Get copies of medical records diagnosing Non-Hodgkin Lymphoma."
             ],
-            howWeHelp: "We represent individuals diagnosed with cancer after using Roundup. We fight against Monsanto/Bayer to secure compensation for medical costs and suffering due to exposure to glyphosate."
+            howWeHelp: "We represent individuals diagnosed with cancer after using Roundup. We fight against Monsanto/Bayer to secure compensation for medical costs and suffering due to exposure to glyphosate.",
+            additionalSections: [
+                {
+                    title: "Glyphosate and Non-Hodgkin Lymphoma",
+                    content: "Glyphosate, the active ingredient in Roundup, disrupts cell functions. Studies suggest long-term exposure significantly increases the risk of developing Non-Hodgkin Lymphoma (NHL)."
+                },
+                {
+                    title: "Who is at Risk?",
+                    content: "*   **Landscapers & Groundskeepers:** High occupational exposure.\\n*   **Farmers:** Regular use on crops.\\n*   **Homeowners:** Frequent garden use."
+                },
+                {
+                    title: "Damages Recoverable",
+                    content: "*   Past and future medical bills (chemotherapy, radiation).\\n*   Lost income due to illness.\\n*   Pain and suffering.\\n*   Punitive damages (in some cases)."
+                },
+                {
+                    title: "FAQ",
+                    content: "**Q: I have a different cancer, can I sue?**\\nA: The strongest scientific link is currently with Non-Hodgkin Lymphoma (NHL).\\n\\n**Q: Has Monsanto settled?**\\nA: Bayer (Monsanto's owner) has paid billions in settlements, but new cases are still being filed."
+                }
+            ]
         },
         'talc': {
             title: 'J&J Talcum Powder',
@@ -314,7 +560,25 @@ export const en = {
                 "Obtain medical records regarding your ovarian cancer diagnosis.",
                 "Contact us for a free case evaluation."
             ],
-            howWeHelp: "We are pursuing claims that asbestos-contaminated talc caused ovarian cancer. We fight to hold Johnson & Johnson accountable for putting profit over consumer safety."
+            howWeHelp: "We are pursuing claims that asbestos-contaminated talc caused ovarian cancer. We fight to hold Johnson & Johnson accountable for putting profit over consumer safety.",
+            additionalSections: [
+                {
+                    title: "Asbestos in Talc",
+                    content: "Talc and asbestos are minerals often found together underground. If not mined carefully, talc can be contaminated with asbestos fibers. When used for feminine hygiene, these fibers can travel to the ovaries and cause inflammation/cancer."
+                },
+                {
+                    title: "The Cover-Up",
+                    content: "Internal J&J memos ('The Talc Papers') suggest company executives knew about positive tests for asbestos in their Baby Powder for decades but hid this info from regulators and the public."
+                },
+                {
+                    title: "Eligibility",
+                    content: "We look for:\\n1.  Daily/daily use of talc powder for hygiene (perineal use).\\n2.  Use for 4+ years.\\n3.  Diagnosis of Ovarian Cancer or Mesothelioma."
+                },
+                {
+                    title: "FAQ",
+                    content: "**Q: Is cornstarch powder safe?**\\nA: Yes, cornstarch does not contain asbestos. The lawsuits involve *talc*-based powder."
+                }
+            ]
         },
         'ozempic': {
             title: 'Ozempic',
@@ -330,7 +594,25 @@ export const en = {
                 "Discuss your symptoms with your doctor.",
                 "Keep records of your prescription and usage."
             ],
-            howWeHelp: "We are investigating claims of severe gastrointestinal injuries linked to Ozempic and Wegovy. If you suffered gastroparesis, we can help you seek compensation for your injuries."
+            howWeHelp: "We are investigating claims of severe gastrointestinal injuries linked to Ozempic and Wegovy. If you suffered gastroparesis, we can help you seek compensation for your injuries.",
+            additionalSections: [
+                {
+                    title: "Stomach Paralysis (Gastroparesis)",
+                    content: "Ozempic (semaglutide) works by slowing digestion. However, in some patients, it causes the stomach to stop working entirely (paralysis). This leads to severe vomiting, rotting food in the stomach, and hospitalization."
+                },
+                {
+                    title: "Failure to Warn",
+                    content: "Lawsuits allege that Novo Nordisk failed to adequately warn doctors and patients that the 'delayed gastric emptying' could result in permanent or severe gastroparesis."
+                },
+                {
+                    title: "Common Injuries",
+                    content: "*   **Cyclic Vomiting Syndrome:** Uncontrollable vomiting.\\n*   **Dehydration/Malnutrition:** Requiring IVs.\\n*   **Tooth Loss:** From chronic vomiting acid."
+                },
+                {
+                    title: "FAQ",
+                    content: "**Q: What if I used generic semaglutide?**\\nA: Compounded or generic versions may have different legal issues. We are currently focusing on name-brand Ozempic, Wegovy, and Mounjaro."
+                }
+            ]
         },
         'truvada': {
             title: 'Truvada',
@@ -346,7 +628,25 @@ export const en = {
                 "Keep records of your TDF drug prescriptions.",
                 "Contact an attorney if you have been diagnosed with kidney failure or osteoporosis."
             ],
-            howWeHelp: "We represent patients harmed by TDF drugs like Truvada. We argue that the manufacturer delayed releasing a safer alternative (TAF) to maximize profits, causing unnecessary harm to patients."
+            howWeHelp: "We represent patients harmed by TDF drugs like Truvada. We argue that the manufacturer delayed releasing a safer alternative (TAF) to maximize profits, causing unnecessary harm to patients.",
+            additionalSections: [
+                {
+                    title: "TDF vs. TAF Drugs",
+                    content: "Gilead had a safer version (TAF) in the lab but arguably delayed its release to keep making money on the TDF patent. TDF is more toxic to kidneys and bones because higher doses are required."
+                },
+                {
+                    title: "Injuries",
+                    content: "*   **Chronic Kidney Disease (CKD):** Gradual loss of kidney function.\\n*   **Acute Kidney Failure:** Requiring dialysis.\\n*   **Osteoporosis/Osteopenia:** Bone density loss.\\n*   **Bone Fractures:** Unexplained breaks."
+                },
+                {
+                    title: "Drugs Involved",
+                    content: "Truvada, Viread, Atripla, Complera, and Stribild."
+                },
+                {
+                    title: "FAQ",
+                    content: "**Q: Do I have to stop taking my HIV meds?**\\nA: NO. Never stop medication without a doctor. Switch to safer alternatives if advised."
+                }
+            ]
         },
     }
 };
