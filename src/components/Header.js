@@ -54,6 +54,8 @@ const Header = ({ lang, setLang, setRoute, t, isScrolled, handleLangChange }) =>
                         <button onClick={() => handleLangChange('ko')} className={`text-[10px] font-bold ${lang === 'ko' ? 'text-red-500' : 'text-gray-400 hover:text-white'}`}>한국어</button>
                         <span className="text-gray-600 text-[10px]">|</span>
                         <button onClick={() => handleLangChange('zh')} className={`text-[10px] font-bold ${lang === 'zh' ? 'text-red-500' : 'text-gray-400 hover:text-white'}`}>中文</button>
+                        <span className="text-gray-600 text-[10px]">|</span>
+                        <button onClick={() => handleLangChange('vi')} className={`text-[10px] font-bold ${lang === 'vi' ? 'text-red-500' : 'text-gray-400 hover:text-white'}`}>Tiếng Việt</button>
                     </div>
 
                     <a href="tel:555-000-0000" className="bg-red-700 hover:bg-red-800 text-white px-6 py-3 font-black text-xs uppercase tracking-widest shadow-lg transition transform hover:scale-105 flex items-center border border-red-600 whitespace-nowrap">
@@ -92,13 +94,13 @@ const Header = ({ lang, setLang, setRoute, t, isScrolled, handleLangChange }) =>
                         </button>
 
                         <div className="flex flex-wrap justify-center gap-4 mt-8">
-                            {['en', 'es', 'ko', 'zh'].map((l) => (
+                            {['en', 'es', 'ko', 'zh', 'vi'].map((l) => (
                                 <button
                                     key={l}
                                     onClick={() => { handleLangChange(l); setMobileMenuOpen(false); }}
                                     className={`px-4 py-2 border ${lang === l ? 'border-red-600 text-red-500' : 'border-gray-700 text-gray-400'} rounded uppercase font-bold`}
                                 >
-                                    {l === 'en' ? 'English' : l === 'es' ? 'Español' : l === 'ko' ? '한국어' : '中文'}
+                                    {l === 'en' ? 'English' : l === 'es' ? 'Español' : l === 'ko' ? '한국어' : l === 'zh' ? '中文' : 'Tiếng Việt'}
                                 </button>
                             ))}
                         </div>

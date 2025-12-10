@@ -26,7 +26,7 @@ export default function App() {
   // Check for cookie on initial load
   useEffect(() => {
     const savedLang = getCookie('site_lang');
-    if (savedLang && ['en', 'es', 'ko', 'zh'].includes(savedLang)) {
+    if (savedLang && ['en', 'es', 'ko', 'zh', 'vi'].includes(savedLang)) {
       // eslint-disable-next-line react-hooks/exhaustive-deps
       setLang(savedLang);
     }
