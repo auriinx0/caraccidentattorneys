@@ -30,8 +30,11 @@ const DetailPage = ({ areaId, t, setRoute }) => {
     const relatedAreas = AREA_STRUCT.filter(a => a.categoryId === areaStruct.categoryId && a.id !== areaId);
 
     // Content Parser for Bold and Lists
-    const renderContent = (content) => {
-        if (!content) return null;
+    const renderContent = (rawContent) => {
+        if (!rawContent) return null;
+
+        // Fix: Normalize literal "\n" strings (common in translated JSON) to actual newlines
+        const content = rawContent.replace(/\\n/g, '\n');
 
         // Split by double newline to separate paragraphs/blocks
         const blocks = content.split('\n\n');

@@ -28,7 +28,14 @@ export const ko = {
         whatToDoTitle: "사고 후 대처 방법",
         howWeHelpTitle: "우리가 도울 수 있는 방법"
     },
-    categories: { 'cat-vehicle': { title: '자동차 사고', desc: '자동차, 트럭, 오토바이 등.' }, 'cat-products': { title: '위험한 제품', desc: '결함이 있는 약물, 의료 기기 및 소비자 제품.' }, 'cat-injury': { title: '개인 상해', desc: '미끄러짐, 낙상, 뇌 손상 및 일반 과실.' } },
+    verdicts: {
+        title: "우리의",
+        titleSpan: "판결",
+        subtitle: "우리는 결과를 약속하는 것뿐만 아니라, 그것을 실현합니다. 고객을 위해 정의를 확보한 우리의 기록을 확인하십시오.",
+        comingSoonTitle: "곧 공개 예정",
+        comingSoonDesc: "현재 최신 사건 결과를 정리 중입니다. 곧 다시 확인해 주세요."
+    },
+    categories: { 'cat-vehicle': { title: '자동차 사고', desc: '자동차, 트럭, 오토바이 등.' }, 'cat-products': { title: '위험한 제품', desc: '결함이 있는 약물, 의료 기기 및 소비자 제품.' }, 'cat-injury': { title: '개인 상해', desc: '미끄러짐, 낙상, 뇌 손상 및 일반적인 과실.' } },
     areas: {
         'car-accidents': {
             title: '자동차 사고',

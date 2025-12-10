@@ -28,6 +28,13 @@ export const es = {
         whatToDoTitle: "Qué Hacer Después de un Accidente",
         howWeHelpTitle: "Cómo Podemos Ayudar"
     },
+    verdicts: {
+        title: "Nuestros",
+        titleSpan: "Veredictos",
+        subtitle: "No solo prometemos resultados; los entregamos. Vea nuestro historial de asegurar justicia para nuestros clientes.",
+        comingSoonTitle: "Próximamente",
+        comingSoonDesc: "Actualmente estamos recopilando nuestros últimos resultados de casos. Vuelva pronto."
+    },
     categories: { 'cat-vehicle': { title: 'Accidentes de Vehículos', desc: 'Autos, camiones, motocicletas y más.' }, 'cat-products': { title: 'Productos Peligrosos', desc: 'Medicamentos defectuosos, dispositivos médicos y productos de consumo.' }, 'cat-injury': { title: 'Lesiones Personales', desc: 'Resbalones, caídas, lesiones cerebrales y negligencia general.' } },
     areas: {
         'car-accidents': {

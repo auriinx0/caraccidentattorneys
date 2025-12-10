@@ -53,6 +53,13 @@ export const en = {
         whatToDoTitle: "What To Do After an Accident",
         howWeHelpTitle: "How We Can Help"
     },
+    verdicts: {
+        title: "Our",
+        titleSpan: "Verdicts",
+        subtitle: "We don't just promise results; we deliver them. See our track record of securing justice for our clients.",
+        comingSoonTitle: "Coming Soon",
+        comingSoonDesc: "We are currently compiling our latest case results. Check back shortly."
+    },
     categories: { 'cat-vehicle': { title: 'Motor Vehicle Accidents', desc: 'Cars, Trucks, Motorcycles, and more.' }, 'cat-products': { title: 'Dangerous Products', desc: 'Defective drugs, medical devices, and consumer products.' }, 'cat-injury': { title: 'Personal Injury', desc: 'Slips, falls, brain injuries, and general negligence.' } },
     areas: {
         'car-accidents': {

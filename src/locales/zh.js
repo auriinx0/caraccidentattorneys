@@ -28,6 +28,13 @@ export const zh = {
         whatToDoTitle: "事故发生后该怎么办",
         howWeHelpTitle: "我们如何提供帮助"
     },
+    verdicts: {
+        title: "我们的",
+        titleSpan: "判决",
+        subtitle: "我们不仅承诺结果，而且交付结果。查看我们为客户伸张正义的记录。",
+        comingSoonTitle: "即将推出",
+        comingSoonDesc: "我们目前正在整理最新的案件结果。请稍后回来查看。"
+    },
     categories: { 'cat-vehicle': { title: '机动车事故', desc: '汽车、卡车、摩托车等。' }, 'cat-products': { title: '危险产品', desc: '有缺陷的药物、医疗器械和消费品。' }, 'cat-injury': { title: '人身伤害', desc: '滑倒、跌倒、脑损伤和一般过失。' } },
     areas: {
         'car-accidents': {
