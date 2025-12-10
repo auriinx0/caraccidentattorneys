@@ -24,12 +24,24 @@ export default function App() {
 
   // --- COOKIE EFFECT ---
   // Check for cookie on initial load
+  // --- COOKIE & AUTO-DETECT EFFECT ---
   useEffect(() => {
     const savedLang = getCookie('site_lang');
-    if (savedLang && ['en', 'es', 'ko', 'zh', 'vi'].includes(savedLang)) {
-      // eslint-disable-next-line react-hooks/exhaustive-deps
+    const supportedLangs = ['en', 'es', 'ko', 'zh', 'vi'];
+
+    if (savedLang && supportedLangs.includes(savedLang)) {
       setLang(savedLang);
+    } else {
+      // Auto-detect from browser
+      const browserLang = typeof navigator !== 'undefined' ? (navigator.language || navigator.userLanguage) : 'en';
+      const shortLang = browserLang ? browserLang.split('-')[0] : 'en';
+
+      if (supportedLangs.includes(shortLang)) {
+        setLang(shortLang);
+        setCookie('site_lang', shortLang, 365);
+      }
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {
