@@ -6,11 +6,15 @@ export const vi = {
         freeConsult: "Tư Vấn Miễn Phí"
     },
     hero: {
-        title: "Công Lý Cho",
-        titleSpan: "Người Bị Thương",
-        subtitle: "Các luật sư tai nạn xe hơi tận tâm đấu tranh cho khoản bồi thường mà bạn xứng đáng.",
-        cta: "Đánh Giá Vụ Việc Miễn Phí",
-        subCta: "Không Thắng, Không Tính Phí."
+        subSlogan: "Các luật sư tận tâm đại diện cho nạn nhân thương tích. Bạn không phải trả tiền trừ khi chúng tôi thắng.",
+        stat1: "$1 Tỷ+",
+        stat1Label: "Đã Thu Hồi",
+        slogans: [
+            { l1: "Hàng Tỷ Đã Thắng.", l2: "Chúng Tôi Thắng." },
+            { l1: "Không Phí.", l2: "Cho Đến Khi Thắng." },
+            { l1: "Gọi Trước 911.", l2: "Để Chiến Thắng." },
+            { l1: "Công Lý Cho Bạn.", l2: "Bình Yên Cho Tâm Trí." }
+        ]
     },
     sections: {
         areasTitle: "Lĩnh Vực Hành Nghề",
@@ -22,12 +26,20 @@ export const vi = {
     },
     form: {
         title: "Nhận Đánh Giá Vụ Việc Miễn Phí",
-        subtitle: "Hãy cho chúng tôi biết chuyện gì đã xảy ra. Chúng tôi ở đây để giúp đỡ.",
-        name: "Họ Tên",
-        email: "Email",
-        phone: "Số Điện Thoại",
-        message: "Cho chúng tôi biết về tai nạn của bạn...",
-        submit: "Gửi Đánh Giá Miễn Phí"
+        subtitle: "Văn phòng chúng tôi sẽ liên hệ với bạn trong vòng 24 giờ.",
+        nameLabel: "Họ Tên",
+        phoneLabel: "Số Điện Thoại",
+        emailLabel: "Địa Chỉ Email",
+        stateLabel: "Tiểu Bang Xảy Ra Tai Nạn",
+        dateLabel: "Ngày Xảy Ra Tai Nạn",
+        timeLabel: "Thời Gian Xảy Ra Tai Nạn",
+        accidentLabel: "Mô Tả Tai Nạn",
+        injuryLabel: "Loại Thương Tích",
+        submitBtn: "Gửi",
+        disclaimer: "*Bằng cách nhấn 'Gửi', bạn đồng ý nhận cuộc gọi và thông báo SMS.",
+        sending: "Đang gửi...",
+        success: "Yêu cầu đã được gửi thành công!",
+        error: "Lỗi. Vui lòng thử lại."
     },
     footer: {
         about: "Luật sư tai nạn xe hơi, đấu tranh vì công lý.",
