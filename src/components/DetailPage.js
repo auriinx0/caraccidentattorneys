@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { ChevronRight, CheckCircle } from 'lucide-react';
+import { ChevronRight, CheckCircle, AlertTriangle, Activity, Shield, Clock, Home } from 'lucide-react';
 import { AREA_STRUCT } from '../constants';
 import IntakeForm from './IntakeForm';
 
@@ -28,104 +28,206 @@ const DetailPage = ({ areaId, t, setRoute }) => {
     if (!areaStruct) return null;
     const areaInfo = t.areas[areaId];
 
+    // JSON-LD Structured Data
+    const jsonLd = {
+        "@context": "https://schema.org",
+        "@type": "LegalService",
+        "name": `${areaInfo.title} - Car Accident Attorneys`,
+        "description": areaInfo.about ? areaInfo.about.substring(0, 160) : areaInfo.desc,
+        "url": typeof window !== 'undefined' ? window.location.href : '',
+        "provider": {
+            "@type": "Attorney",
+            "name": "Car Accident Attorneys"
+        }
+    };
+
     return (
         <div className="bg-white min-h-screen pt-20">
-            <div className="bg-[#1a1a1a] text-white py-20 relative overflow-hidden">
+            {/* JSON-LD */}
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+            />
+
+            {/* Hero Section */}
+            <div className="bg-[#111] text-white py-24 relative overflow-hidden">
                 <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10"></div>
+                {/* Abstract decorative elements */}
+                <div className="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-red-900/20 to-transparent"></div>
+
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-                    <button onClick={() => setRoute(`category-${areaStruct.categoryId}`)} className="text-gray-400 hover:text-white mb-6 flex items-center text-xs font-bold uppercase tracking-widest hover:text-red-500 transition">
-                        <ChevronRight className="h-4 w-4 rotate-180 mr-1" /> {t.nav.practiceAreas}
-                    </button>
-                    <h1 className="font-serif text-4xl md:text-6xl font-bold mb-4">{areaInfo.title}</h1>
-                    <div className="h-1 w-24 bg-red-600"></div>
+                    {/* Breadcrumbs */}
+                    <nav className="flex items-center space-x-2 text-sm text-gray-400 mb-8 uppercase tracking-wider font-medium">
+                        <button onClick={() => setRoute('home')} className="hover:text-white transition flex items-center">
+                            <Home className="w-4 h-4 mr-1" /> {t.nav.home}
+                        </button>
+                        <ChevronRight className="w-4 h-4 text-gray-600" />
+                        <button onClick={() => setRoute(`category-${areaStruct.categoryId}`)} className="hover:text-white transition">
+                            {t.nav.practiceAreas}
+                        </button>
+                        <ChevronRight className="w-4 h-4 text-gray-600" />
+                        <span className="text-red-500 font-bold">{areaInfo.title}</span>
+                    </nav>
+
+                    <h1 className="font-serif text-5xl md:text-7xl font-bold mb-6 leading-tight">
+                        {areaInfo.title}
+                        <span className="block text-red-600 text-2xl md:text-3xl mt-2 font-sans font-normal tracking-wide uppercase">
+                            {areaInfo.desc}
+                        </span>
+                    </h1>
+                    <div className="h-2 w-32 bg-red-600 shadow-[0_0_15px_rgba(220,38,38,0.5)]"></div>
                 </div>
             </div>
 
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-                <div className="grid lg:grid-cols-3 gap-16">
-                    <div className="lg:col-span-2 space-y-8">
-                        <div className="prose prose-lg text-gray-700">
-                            <p className="text-xl leading-relaxed font-serif text-gray-900">
-                                {t.detailPage.introPart1} <strong>{areaInfo.title}</strong> {t.detailPage.introPart2}
+                <div className="grid lg:grid-cols-12 gap-12">
+
+                    {/* Main Content - Left Column */}
+                    <main className="lg:col-span-8">
+                        <article className="prose prose-xl prose-red max-w-none text-gray-700">
+                            <p className="lead text-2xl font-serif text-gray-900 border-l-4 border-red-600 pl-6 italic">
+                                {t.detailPage.introPart1} <strong className="text-red-700">{areaInfo.title}</strong> {t.detailPage.introPart2}
                             </p>
 
                             {/* About Section */}
                             {areaInfo.about && (
-                                <>
-                                    <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4 uppercase tracking-wide">{t.detailPage.aboutTitle}</h3>
-                                    <div className="whitespace-pre-line">{areaInfo.about}</div>
-                                </>
-                            )}
-
-                            {/* Statistics Section */}
-                            {areaInfo.statistics && (
-                                <div className="bg-gray-50 p-6 rounded-lg border border-gray-200 mt-8">
-                                    <h3 className="text-xl font-bold text-red-700 mb-4 uppercase tracking-wide flex items-center">
-                                        Key Statistics
-                                    </h3>
-                                    <div className={`min-h-[60px] transition-opacity duration-500 flex items-center ${fade ? 'opacity-100' : 'opacity-0'}`}>
-                                        <p className="text-lg font-medium text-gray-800">
-                                            {Array.isArray(areaInfo.statistics)
-                                                ? areaInfo.statistics[statIndex]
-                                                : areaInfo.statistics}
-                                        </p>
+                                <section className="mt-12">
+                                    <h2 className="text-3xl font-bold text-gray-900 flex items-center mb-6">
+                                        <Shield className="w-8 h-8 text-red-600 mr-3" />
+                                        {t.detailPage.aboutTitle}
+                                    </h2>
+                                    <div className="whitespace-pre-line leading-relaxed text-gray-700">
+                                        {areaInfo.about}
                                     </div>
-                                </div>
+                                </section>
                             )}
 
-                            {/* What To Do Section */}
+                            {/* Statistics Section - Redesigned */}
+                            {areaInfo.statistics && (
+                                <section className="my-16 relative group">
+                                    <div className="absolute inset-0 bg-gray-900 transform -skew-y-2 rounded-3xl shadow-2xl"></div>
+                                    <div className="relative bg-white border border-gray-200 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                                        <div className="flex items-center mb-6">
+                                            <div className="p-3 bg-red-100 rounded-lg">
+                                                <Activity className="w-8 h-8 text-red-600" />
+                                            </div>
+                                            <h3 className="text-xl font-bold text-gray-900 ml-4 uppercase tracking-wider">
+                                                Key Statistics
+                                            </h3>
+                                        </div>
+
+                                        <div className="min-h-[100px] flex items-center justify-center text-center">
+                                            <p className={`text-2xl md:text-3xl font-serif font-bold text-gray-800 transition-all duration-500 transform ${fade ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
+                                                {Array.isArray(areaInfo.statistics)
+                                                    ? areaInfo.statistics[statIndex]
+                                                    : areaInfo.statistics}
+                                            </p>
+                                        </div>
+
+                                        {Array.isArray(areaInfo.statistics) && (
+                                            <div className="flex justify-center space-x-2 mt-6">
+                                                {areaInfo.statistics.map((_, idx) => (
+                                                    <div
+                                                        key={idx}
+                                                        className={`h-1.5 rounded-full transition-all duration-300 ${idx === statIndex ? 'w-8 bg-red-600' : 'w-2 bg-gray-300'}`}
+                                                    />
+                                                ))}
+                                            </div>
+                                        )}
+                                    </div>
+                                </section>
+                            )}
+
+                            {/* What To Do Section - Redesigned as Timeline */}
                             {areaInfo.whatToDo && (
-                                <>
-                                    <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4 uppercase tracking-wide">{t.detailPage.whatToDoTitle}</h3>
+                                <section className="mt-16">
+                                    <h2 className="text-3xl font-bold text-gray-900 flex items-center mb-8">
+                                        <AlertTriangle className="w-8 h-8 text-red-600 mr-3" />
+                                        {t.detailPage.whatToDoTitle}
+                                    </h2>
+
                                     {Array.isArray(areaInfo.whatToDo) ? (
-                                        <ul className="list-none space-y-3 mb-8">
+                                        <div className="relative border-l-2 border-red-200 ml-3 space-y-8 pl-8 py-2">
                                             {areaInfo.whatToDo.map((item, i) => (
-                                                <li key={i} className="flex items-start">
-                                                    <span className="flex-shrink-0 h-6 w-6 rounded-full bg-red-100 text-red-600 flex items-center justify-center text-sm font-bold mr-3 mt-0.5">{i + 1}</span>
-                                                    <span className="text-gray-700">{item}</span>
-                                                </li>
+                                                <div key={i} className="relative group">
+                                                    <span className="absolute -left-[41px] top-0 flex h-8 w-8 items-center justify-center rounded-full bg-red-600 text-white font-bold text-sm ring-4 ring-white shadow-md group-hover:scale-110 transition-transform">
+                                                        {i + 1}
+                                                    </span>
+                                                    <div className="bg-gray-50 p-6 rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+                                                        <p className="text-gray-800 font-medium m-0">{item}</p>
+                                                    </div>
+                                                </div>
                                             ))}
-                                        </ul>
+                                        </div>
                                     ) : (
-                                        <div className="whitespace-pre-line mb-8">{areaInfo.whatToDo}</div>
+                                        <div className="whitespace-pre-line bg-yellow-50 p-6 rounded-lg border-l-4 border-yellow-400">
+                                            {areaInfo.whatToDo}
+                                        </div>
                                     )}
-                                </>
+                                </section>
                             )}
 
-                            {/* Additional Sections (e.g. Rear Ending) */}
+                            {/* Additional Sections */}
                             {areaInfo.additionalSections && areaInfo.additionalSections.map((section, idx) => (
-                                <div key={idx} className="mt-8">
-                                    <h3 className="text-2xl font-bold text-gray-900 mb-4 uppercase tracking-wide">{section.title}</h3>
-                                    <div className="whitespace-pre-line text-gray-700">{section.content}</div>
-                                </div>
+                                <section key={idx} className="mt-16">
+                                    <h2 className="text-3xl font-bold text-gray-900 mb-6 border-b border-gray-200 pb-4">
+                                        {section.title}
+                                    </h2>
+                                    <div className="whitespace-pre-line text-gray-700 leading-relaxed bg-white">
+                                        {section.content}
+                                    </div>
+                                </section>
                             ))}
 
-                            <div className="bg-gray-100 p-8 border-l-4 border-red-700 my-8">
-                                <h4 className="text-lg font-bold text-gray-900 mb-4 uppercase">{t.detailPage.commitTitle}</h4>
-                                <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            {/* How We Help */}
+                            {areaInfo.howWeHelp && (
+                                <section className="mt-16 bg-red-900 text-white p-8 rounded-2xl relative overflow-hidden">
+                                    <div className="absolute top-0 right-0 p-8 opacity-10">
+                                        <Shield className="w-64 h-64" />
+                                    </div>
+                                    <h2 className="text-3xl font-bold text-white mb-6 relative z-10">
+                                        {t.detailPage.howWeHelpTitle}
+                                    </h2>
+                                    <div className="whitespace-pre-line text-red-50 text-lg relative z-10 leading-relaxed">
+                                        {areaInfo.howWeHelp}
+                                    </div>
+                                </section>
+                            )}
+                        </article>
+                    </main>
+
+                    {/* Sidebar - Right Column */}
+                    <aside className="lg:col-span-4 space-y-8">
+                        <div className="sticky top-24 space-y-8">
+                            {/* Free Consultation Card */}
+                            <div className="bg-white rounded-xl shadow-xl border border-gray-100 overflow-hidden">
+                                <div className="bg-red-700 p-4 text-center">
+                                    <h3 className="text-xl font-bold text-white uppercase tracking-wider">{t.form.title}</h3>
+                                </div>
+                                <div className="p-6">
+                                    <p className="text-gray-600 text-sm mb-6 text-center">{t.form.subtitle}</p>
+                                    <IntakeForm t={t} />
+                                </div>
+                            </div>
+
+                            {/* Why Choose Us Minimal */}
+                            <div className="bg-gray-50 rounded-xl p-6 border border-gray-200">
+                                <h4 className="font-bold text-gray-900 mb-4 uppercase text-sm tracking-wider flex items-center">
+                                    <CheckCircle className="w-4 h-4 text-red-600 mr-2" />
+                                    {t.detailPage.commitTitle}
+                                </h4>
+                                <ul className="space-y-3">
                                     {t.detailPage.commitments.map((item, i) => (
-                                        <li key={i} className="flex items-center text-gray-800 text-sm font-semibold">
-                                            <CheckCircle className="h-4 w-4 text-red-600 mr-2" />
+                                        <li key={i} className="flex items-start text-sm text-gray-700">
+                                            <span className="w-1.5 h-1.5 bg-red-500 rounded-full mt-1.5 mr-2 flex-shrink-0"></span>
                                             {item}
                                         </li>
                                     ))}
                                 </ul>
                             </div>
+                        </div>
+                    </aside>
 
-                            {/* How We Help Section */}
-                            {areaInfo.howWeHelp && (
-                                <>
-                                    <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4 uppercase tracking-wide">{t.detailPage.howWeHelpTitle}</h3>
-                                    <div className="whitespace-pre-line">{areaInfo.howWeHelp}</div>
-                                </>
-                            )}
-                        </div>
-                    </div>
-                    <div className="space-y-8">
-                        <div className="sticky top-28">
-                            <IntakeForm t={t} />
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
