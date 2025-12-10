@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { ChevronRight, CheckCircle, AlertTriangle, Activity, Shield, Clock, Home, ArrowRight } from 'lucide-react';
 import { AREA_STRUCT } from '../constants';
 import IntakeForm from './IntakeForm';
+import Quiz from './Quiz';
 
 const DetailPage = ({ areaId, t, setRoute }) => {
     const areaStruct = AREA_STRUCT.find(a => a.id === areaId);
@@ -256,6 +257,11 @@ const DetailPage = ({ areaId, t, setRoute }) => {
                                         {areaInfo.howWeHelp}
                                     </div>
                                 </section>
+                            )}
+
+                            {/* Mini Quiz Widget */}
+                            {areaInfo.quiz && (
+                                <Quiz data={areaInfo.quiz} />
                             )}
                         </article>
                     </main>

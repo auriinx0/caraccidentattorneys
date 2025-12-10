@@ -101,14 +101,18 @@ export const vi = {
                 {
                     title: "Tôi nên làm gì nếu bị đâm từ phía sau?",
                     content: "Va chạm từ phía sau là loại tai nạn ô tô phổ biến nhất. Chúng thường do lái xe mất tập trung, bám đuôi hoặc dừng đột ngột. Nếu bạn bị đâm từ phía sau, hầu như luôn là lỗi của người lái xe kia, nhưng việc chứng minh mức độ thương tích của bạn là rất quan trọng.\n\n**Các bước cần thực hiện:**\n1. **Kiểm tra thương tích:** Chấn thương cổ là phổ biến và các triệu chứng có thể không xuất hiện ngay lập tức.\n2. **Ghi lại hiện trường:** Chụp ảnh cả hai phương tiện, đặc biệt là phần hư hỏng.\n3. **Không thừa nhận lỗi:** Thậm chí nói 'Tôi ổn' có thể bị sử dụng chống lại bạn sau này.\n4. **Đánh giá y tế:** Gặp bác sĩ để loại trừ các thương tích ẩn như chấn động hoặc tổn thương cột sống."
-                },
-                {
-                    title: "Câu Hỏi Thường Gặp (FAQ)",
-                    content: "**H: Tôi có bao nhiêu thời gian để nộp đơn khiếu nại?**\nĐ: Thời hiệu thay đổi theo từng tiểu bang, nhưng thường là 2 năm kể từ ngày xảy ra tai nạn.\n\n**H: Nếu người lái xe kia không có bảo hiểm thì sao?**\nĐ: Bạn có thể nộp đơn khiếu nại theo phạm vi bảo hiểm Người Lái Xe Không Có Bảo Hiểm của chính mình.\n\n**H: Tôi có nên chấp nhận lời đề nghị giải quyết đầu tiên không?**\nĐ: Không. Các lời đề nghị ban đầu hầu như luôn thấp hơn giá trị thực của vụ việc của bạn. Luôn tham khảo ý kiến luật sư trước."
                 }
-            ]
+            ],
+            quiz: {
+                title: "Trắc Nghiệm Tai Nạn Ô Tô",
+                questions: [
+                    { q: "Làm gì sau tai nạn?", options: ["Xin lỗi", "Gọi 911 và Y tế", "Lái xe bỏ đi"], answer: 1, explanation: "Luôn gọi 911 để lập biên bản. Xin lỗi có thể bị coi là nhận lỗi." },
+                    { q: "Tại sao không nên nhận lời đề nghị đầu tiên?", options: ["Quá thấp", "Bất hợp pháp", "Luôn công bằng"], answer: 0, explanation: "Đề nghị ban đầu thường thấp hơn nhiều so với giá trị thực của vụ việc." },
+                    { q: "Nguyên nhân phổ biến nhất?", options: ["Thời tiết", "Mất tập trung", "Hỏng hóc"], answer: 1, explanation: "Lái xe mất tập trung là nguyên nhân hàng đầu gây tai nạn." }
+                ]
+            }
         },
-        'motorcycle-accidents': {
+        'motorcycle': {
             title: 'Tai Nạn Xe Máy',
             desc: 'Bảo vệ người đi xe máy.',
             about: "Người đi xe máy phải đối mặt với những nguy hiểm đặc biệt trên đường. Thiếu sự bảo vệ của khung kim loại bao quanh, người lái dễ bị thương tích nghiêm trọng hơn nhiều so với người ngồi trong ô tô. Người lái xe thường không nhìn thấy xe mô tô hoặc đánh giá sai tốc độ của chúng.",
@@ -137,14 +141,18 @@ export const vi = {
                 {
                     title: "Luật Mũ Bảo Hiểm & Chia Sẻ Làn Đường",
                     content: "**Luật Mũ Bảo Hiểm:** Luật mũ bảo hiểm khác nhau tùy theo tiểu bang. Ở một số bang, mũ bảo hiểm là bắt buộc đối với tất cả mọi người; ở những bang khác, chỉ dành cho những tay lái trẻ tuổi. Việc không đội mũ bảo hiểm có thể ảnh hưởng đến khoản bồi thường của bạn nếu chấn thương đầu có liên quan, nhưng nó không ngăn cản bạn khởi kiện.\n\n**Chia Sẻ Làn Đường (Lane Splitting):** Đi xe giữa các làn xe đang di chuyển chậm hoặc dừng lại là hợp pháp ở một số nơi (như California) nhưng bất hợp pháp ở hầu hết các nơi khác. Biết luật địa phương là rất quan trọng để xác định lỗi."
-                },
-                {
-                    title: "Câu Hỏi Thường Gặp (FAQ)",
-                    content: "**H: Tôi có thể nhận bồi thường nếu tôi không đội mũ bảo hiểm không?**\nĐ: Có, nhưng khoản bồi thường cho chấn thương đầu của bạn có thể bị giảm nếu mũ bảo hiểm có thể ngăn ngừa được chấn thương đó.\n\n**H: Nếu một chiếc ô tô ép tôi ra khỏi đường nhưng không chạm vào tôi thì sao?**\nĐ: Đây được gọi là 'tài xế ma'. Báo cáo cảnh sát và nhân chứng là rất quan trọng để chứng minh những vụ việc này."
                 }
-            ]
+            ],
+            quiz: {
+                title: "An Toàn Xe Máy",
+                questions: [
+                    { q: "Ai thường có lỗi trong tai nạn xe máy vs ô tô?", options: ["Xe máy", "Ô tô", "50/50"], answer: 1, explanation: "Ô tô thường không nhìn thấy xe máy hoặc đánh giá sai tốc độ." },
+                    { q: "Nguyên nhân tử vong hàng đầu?", options: ["Gãy chân", "Chấn thương đầu", "Trầy xước"], answer: 1, explanation: "Mũ bảo hiểm giảm đáng kể nguy cơ này." },
+                    { q: "Chạy giữa làn xe (Lane splitting)?", options: ["Hợp pháp ở một số nơi", "Luôn bất hợp pháp", "Luôn hợp pháp"], answer: 0, explanation: "Hợp pháp ở California, nhưng bất hợp pháp ở nhiều nơi khác." }
+                ]
+            }
         },
-        'truck-accidents': {
+        'commercial': {
             title: 'Tai Nạn Xe Tải',
             desc: 'Xe bán tải & xe thương mại.',
             about: "Tai nạn liên quan đến xe bán tải 18 bánh và xe thương mại lớn thường tàn khốc do kích thước và trọng lượng tuyệt đối của các phương tiện này. Những vụ việc này cũng phức tạp về mặt pháp lý vì chúng thường liên quan đến nhiều bên chịu trách nhiệm, bao gồm tài xế, công ty vận tải đường bộ, người bốc xếp hàng hóa và nhà sản xuất xe tải.",
@@ -173,14 +181,18 @@ export const vi = {
                 {
                     title: "Bằng Chứng Quan Trọng (Hộp Đen)",
                     content: "Xe tải hiện đại có Mô-đun Điều Khiển Điện Tử (ECM) hoặc 'hộp đen'. Dữ liệu này ghi lại tốc độ, phanh và RPM động cơ trước khi va chạm. Chúng tôi hành động nhanh chóng để gửi thư cấm hủy hoại bằng chứng nhằm ngăn chặn công ty vận tải xóa dữ liệu quan trọng này."
-                },
-                {
-                    title: "Câu Hỏi Thường Gặp (FAQ)",
-                    content: "**H: Ai chịu trách nhiệm, tài xế hay công ty?**\nĐ: Thường là cả hai. Công ty thường phải chịu trách nhiệm về hành động của nhân viên mình.\n\n**H: Công ty vận tải đường bộ đang gọi cho tôi, tôi có nên trả lời không?**\nĐ: Không. Chuyển họ đến luật sư của bạn. Họ được đào tạo để giảm thiểu khoản thanh toán của bạn."
                 }
-            ]
+            ],
+            quiz: {
+                title: "Kiến Thức Xe Tải",
+                questions: [
+                    { q: "Hộp đen (Black Box) là gì?", options: ["Hộp cơm trưa", "Ghi lại dữ liệu ECM", "Radio"], answer: 1, explanation: "Nó ghi lại tốc độ và phanh trước khi va chạm." },
+                    { q: "Tại sao xe tải nguy hiểm?", options: ["Tài xế tệ", "Nặng gấp 20-30 lần", "Không có phanh"], answer: 1, explanation: "Khối lượng lớn tạo ra lực va chạm khủng khiếp." },
+                    { q: "Điểm mù lớn gọi là gì?", options: ["No-Zone", "Khu vui chơi", "Khu an toàn"], answer: 0, explanation: "Khu vực mà tài xế xe tải không thể nhìn thấy bạn." }
+                ]
+            }
         },
-        'rideshare-accidents': {
+        'rideshare': {
             title: 'Tai Nạn Đi Chung Xe',
             desc: 'Uber & Lyft.',
             about: "Tai nạn liên quan đến Uber, Lyft hoặc các dịch vụ đi chung xe khác đưa ra một lớp phức tạp về bảo hiểm. Việc xác định ai sẽ trả tiền—bảo hiểm cá nhân của tài xế hay chính sách thương mại của công ty đi chung xe—phụ thuộc vào tình trạng của tài xế tại thời điểm xảy ra tai nạn.",
@@ -209,12 +221,16 @@ export const vi = {
                 {
                     title: "Tấn Công Tình Dục & Hành Vi Sai Trái",
                     content: "Các khiếu nại đi chung xe không chỉ giới hạn ở các vụ va chạm. Chúng tôi cũng đại diện cho các nạn nhân bị tài xế tấn công, quấy rối hoặc bắt cóc. Các công ty này có trách nhiệm kiểm tra lý lịch nhân viên của họ."
-                },
-                {
-                    title: "Câu Hỏi Thường Gặp (FAQ)",
-                    content: "**H: Tôi có thể kiện Uber hoặc Lyft trực tiếp không?**\nĐ: Khó khăn, vì họ phân loại tài xế là 'nhà thầu độc lập', nhưng chúng tôi có thể theo đuổi các chính sách bảo hiểm lớn của họ.\n\n**H: Nếu tôi là tài xế Uber bị người khác đâm thì sao?**\nĐ: Bạn có thể đủ điều kiện nhận bảo hiểm tai nạn lao động hoặc bảo hiểm lái xe không có bảo hiểm của công ty đi chung xe."
                 }
-            ]
+            ],
+            quiz: {
+                title: "Kiến Thức Đi Chung Xe",
+                questions: [
+                    { q: "Bảo hiểm phụ thuộc vào gì?", options: ["Loại xe", "Trạng thái ứng dụng", "Thời tiết"], answer: 1, explanation: "Trạng thái tắt/bật/đang chở khách quyết định mức bảo hiểm." },
+                    { q: "Tài xế Uber là nhân viên?", options: ["Đúng", "Sai (Nhà thầu)", "Đôi khi"], answer: 1, explanation: "Họ thường được coi là nhà thầu độc lập." },
+                    { q: "Hành khách được bảo hiểm không?", options: ["Có", "Không", "Chỉ khi tài xế có lỗi"], answer: 0, explanation: "Hành khách luôn được bảo vệ bởi chính sách bảo hiểm lớn." }
+                ]
+            }
         },
         'drunk-driving': {
             title: 'Lái Xe Say Rượu',
@@ -252,7 +268,7 @@ export const vi = {
                 }
             ]
         },
-        'pedestrian-accidents': {
+        'pedestrian': {
             title: 'Tai Nạn Người Đi Bộ',
             desc: 'Chấn thương qua đường.',
             about: "Người đi bộ hoàn toàn dễ bị tổn thương khi va chạm với xe cơ giới. Ngay cả các vụ tai nạn tốc độ thấp cũng có thể dẫn đến gãy xương nghiêm trọng, chấn thương đầu và tổn thương nội tạng. Người lái xe thường không nhường đường hoặc bị phân tâm, dẫn đến bi kịch.",
@@ -281,14 +297,18 @@ export const vi = {
                 {
                     title: "Tai Nạn Bỏ Trốn (Hit-and-Run)",
                     content: "Nhiều người lái xe gây tai nạn cho người đi bộ thường bỏ trốn vì sợ hãi. Chúng tôi làm việc với cảnh sát để truy tìm họ bằng cách sử dụng camera an ninh và các mảnh vỡ xe. Nếu không tìm thấy, chúng tôi giúp bạn nộp đơn yêu cầu bồi thường qua bảo hiểm ô tô của chính bạn (UM)."
-                },
-                {
-                    title: "Câu Hỏi Thường Gặp (FAQ)",
-                    content: "**H: Nếu tôi đang đi ẩu (jaywalking) thì sao? Tôi vẫn có thể kiện chứ?**\nĐ: Có thể. Nếu người lái xe vẫn sơ suất (ví dụ: chạy quá tốc độ hoặc nhắn tin), bạn có thể chia sẻ một phần lỗi nhưng vẫn được bồi thường (tùy thuộc vào tiểu bang).\n\n**H: Tôi không có bảo hiểm ô tô, ai sẽ trả tiền bệnh viện?**\nĐ: Bảo hiểm của người lái xe phải chi trả. Nếu họ bỏ trốn, bảo hiểm y tế của bạn hoặc các quỹ bồi thường nạn nhân tội phạm có thể giúp đỡ."
                 }
-            ]
+            ],
+            quiz: {
+                title: "An Toàn Người Đi Bộ",
+                questions: [
+                    { q: "Ai có quyền ưu tiên?", options: ["Ô tô", "Người đi bộ (thường là)", "Xe buýt"], answer: 1, explanation: "Pháp luật thường bảo vệ người đi bộ." },
+                    { q: "Làm gì nếu tài xế bỏ trốn?", options: ["Không làm gì", "Dùng bảo hiểm UM của bạn", "Khóc"], answer: 1, explanation: "Bảo hiểm UM của bạn có thể chi trả." },
+                    { q: "Mức độ thương tích?", options: ["Nhẹ", "Nghiêm trọng/Tử vong", "Không có"], answer: 1, explanation: "Không có sự bảo vệ dẫn đến chấn thương nặng." }
+                ]
+            }
         },
-        'talc-litigation': {
+        'talc': {
             title: 'Tố Tụng Phấn Rôm',
             desc: 'Ung thư buồng trứng.',
             about: "Nghiên cứu khoa học đã liên kết việc sử dụng các sản phẩm chứa bột talc để vệ sinh bộ phận sinh dục với việc tăng nguy cơ ung thư buồng trứng. Nhiều nhà sản xuất đã biết về những rủi ro này nhưng không cảnh báo người tiêu dùng. Chúng tôi đại diện cho những phụ nữ đã bị ung thư buồng trứng sau khi sử dụng lâu dài các sản phẩm chứa bột talc.",
@@ -317,12 +337,16 @@ export const vi = {
                 {
                     title: "Tình Trạng Các Vụ Kiện",
                     content: "Các bồi thẩm đoàn đã trao hàng tỷ đô la trong các phán quyết chống lại các công ty như J&J. Các thỏa thuận dàn xếp đang diễn ra và thay đổi liên tục. Bạn cần nộp đơn ngay bây giờ để bảo vệ quyền lợi của mình trước khi thời hiệu hết hạn."
-                },
-                {
-                    title: "Câu Hỏi Thường Gặp (FAQ)",
-                    content: "**H: Có tốn tiền để tham gia vụ kiện này không?**\nĐ: Không. Chúng tôi làm việc theo phí dự phòng - chỉ nhận thù lao khi bạn thắng.\n\n**H: Nếu tôi không còn giữ biên lai mua hàng thì sao?**\nĐ: Lời khai tuyên thệ về quá trình sử dụng của bạn thường là đủ."
                 }
-            ]
+            ],
+            quiz: {
+                title: "An Toàn Phấn Rôm",
+                questions: [
+                    { q: "Chất nguy hiểm nào trong Talc?", options: ["Amiăng", "Bụi", "Hương liệu"], answer: 0, explanation: "Amiăng gây ung thư." },
+                    { q: "Liên quan đến ung thư gì?", options: ["Phổi", "Buồng trứng", "Da"], answer: 1, explanation: "Sử dụng cho vệ sinh phụ nữ liên quan đến ung thư buồng trứng." },
+                    { q: "J&J đã biết từ khi nào?", options: ["Vài năm", "Nhiều thập kỷ", "Không biết"], answer: 1, explanation: "Tài liệu nội bộ cho thấy họ đã biết từ những năm 70." }
+                ]
+            }
         },
         'medical-malpractice': {
             title: 'Sơ Suất Y Tế',
@@ -432,7 +456,7 @@ export const vi = {
                 }
             ]
         },
-        'slip-and-fall': {
+        'slip-fall': {
             title: 'Trượt Ngã',
             desc: 'Trách nhiệm cơ sở.',
             about: "Chủ sở hữu bất động sản có trách nhiệm giữ cho cơ sở của họ an toàn. Nếu bạn bị ngã do sàn ướt, mặt đường không bằng phẳng hoặc ánh sáng kém, bạn có thể có quyền yêu cầu bồi thường. Những vụ việc này phụ thuộc vào việc chứng minh rằng chủ sở hữu đã biết (hoặc nên biết) về mối nguy hiểm và không khắc phục nó.",
@@ -461,12 +485,16 @@ export const vi = {
                 {
                     title: "So Sánh Lỗi (Comparative Negligence)",
                     content: "Bên bảo vệ thường lập luận rằng bạn \"đáng lẽ phải nhìn thấy nó\". Chúng tôi chống lại điều này bằng cách chứng minh mối nguy hiểm là khó thấy hoặc bạn bị phân tâm một cách hợp lý (ví dụ: đang nhìn màn hình sản phẩm)."
-                },
-                {
-                    title: "Câu Hỏi Thường Gặp (FAQ)",
-                    content: "**H: Nếu tôi ngã tại nhà bạn bè thì sao? Tôi không muốn kiện bạn mình.**\nĐ: Bạn đang kiện công ty bảo hiểm chủ nhà của họ, không phải cá nhân họ. Đó là lý do tại sao họ mua bảo hiểm.\n\n**H: Biển báo 'Sàn Ướt' có miễn trừ trách nhiệm cho họ không?**\nĐ: Không hoàn toàn. Nếu biển báo không ở đúng chỗ hoặc mối nguy hiểm đã tồn tại quá lâu một cách bất hợp lý, bạn vẫn có thể thắng."
                 }
-            ]
+            ],
+            quiz: {
+                title: "An Toàn Trượt Ngã",
+                questions: [
+                    { q: "\"Thông báo ngầm định\" là gì?", options: ["Biển báo", "Đáng lẽ phải biết", "Thông báo bằng miệng"], answer: 1, explanation: "Mối nguy hiểm tồn tại đủ lâu để chủ sở hữu phải biết." },
+                    { q: "Có nên lập báo cáo tai nạn?", options: ["Có", "Không", "Chỉ khi chảy máu"], answer: 0, explanation: "Tạo hồ sơ chính thức về vụ việc." },
+                    { q: "Nguyên nhân hàng đầu gây mất ngày công?", options: ["Cúm", "Trượt ngã", "Tai nạn xe"], answer: 1, explanation: "Ngã là nguyên nhân lớn gây chấn thương nơi làm việc." }
+                ]
+            }
         },
         'dog-bite': {
             title: 'Chó Cắn',
@@ -540,7 +568,7 @@ export const vi = {
                 }
             ]
         },
-        'construction-accidents': {
+        'construction': {
             title: 'Tai Nạn Xây Dựng',
             desc: 'Mối nguy hiểm tại công trường.',
             about: "Các công trường xây dựng vốn dĩ rất nguy hiểm. Tai nạn thường liên quan đến ngã từ độ cao, hỏng hóc thiết bị, sập giàn giáo hoặc vật rơi. Những vụ việc này thường liên quan đến các quy định an toàn phức tạp và nhiều nhà thầu.",
@@ -574,7 +602,187 @@ export const vi = {
                     title: "Câu Hỏi Thường Gặp (FAQ)",
                     content: "**H: Tôi là người nhập cư không có giấy tờ, tôi có thể kiện không?**\nĐ: CÓ. Ở hầu hết các bang (như NY, CA), bạn có quyền được hưởng môi trường làm việc an toàn và bồi thường đầy đủ bất kể tình trạng nhập cư. Chúng tôi bảo vệ quyền lợi của bạn.\n\n**H: Tôi có thể nhận cả Workers' Comp và tiền kiện không?**\nĐ: Có, và số tiền kiện thường lớn hơn nhiều."
                 }
-            ]
+            ],
+            quiz: {
+                title: "An Toàn Xây Dựng",
+                questions: [
+                    { q: "Nguyên nhân tử vong số 1?", options: ["Điện giật", "Ngã", "Máy móc"], answer: 1, explanation: "Ngã chiếm phần lớn." },
+                    { q: "Kiện bên thứ ba?", options: ["Không", "Có (ngoài chủ lao động)", "Chỉ chính phủ"], answer: 1, explanation: "Có thể kiện nhà thầu khác hoặc nhà sản xuất thiết bị." },
+                    { q: "Lao động không giấy tờ?", options: ["Không được kiện", "Có quyền kiện", "Bị trục xuất"], answer: 1, explanation: "Luật pháp bảo vệ tất cả người lao động." }
+                ]
+            }
+        },
+        'boating': {
+            title: 'Tai Nạn Thuyền',
+            desc: 'Thương tích trên mặt nước.',
+            about: "Tai nạn chèo thuyền thường xảy ra do người điều khiển thiếu kinh nghiệm, uống rượu hoặc thiết bị bị lỗi. Luật hàng hải có thể phức tạp, khác với luật giao thông đường bộ.",
+            statistics: ["Rượu là yếu tố hàng đầu trong các vụ tai nạn thuyền chết người.", "Bị rơi khỏi tàu là loại tai nạn phổ biến nhất.", "Hầu hết các trường hợp tử vong là do chết đuối."],
+            whatToDo: ["Báo cáo tai nạn cho Cảnh sát biển hoặc cơ quan địa phương.", "Tìm kiếm sự chăm sóc y tế ngay lập tức.", "Chụp ảnh hư hỏng và hiện trường.", "Lấy thông tin của các nhân chứng."],
+            howWeHelp: "Chúng tôi điều tra xem người điều khiển có say rượu (BUI) hoặc bất cẩn hay không. Chúng tôi hiểu các sắc thái của luật hàng hải để đảm bảo bạn được bồi thường.",
+            additionalSections: [
+                { title: "BUI (Lái Thuyền Khi Say)", content: "Lái thuyền dưới tác động của rượu (BUI) cũng nguy hiểm và bất hợp pháp như lái xe say rượu (DUI). Người điều khiển phải chịu trách nhiệm về thương tích của bạn." }
+            ],
+            quiz: {
+                title: "An Toàn Chèo Thuyền",
+                questions: [
+                    { q: "Nguyên nhân hàng đầu gây tai nạn thuyền?", options: ["Thời tiết", "Lỗi người lái / Rượu", "Cá mập"], answer: 1, explanation: "Thiếu kinh nghiệm và rượu là nguyên nhân chính." },
+                    { q: "Cần bằng lái để lái thuyền không?", options: ["Có, hầu hết các bang", "Không bao giờ", "Chỉ ngoài biển"], answer: 0, explanation: "Hầu hết các bang yêu cầu khóa học an toàn." },
+                    { q: "Luật DUI có áp dụng cho thuyền không?", options: ["Không", "Có (BUI)", "Chỉ ban đêm"], answer: 1, explanation: "Có, BUI là tội hình sự nghiêm trọng." }
+                ]
+            }
+        },
+        'bus': {
+            title: 'Tai Nạn Xe Buýt',
+            desc: 'Phương tiện giao thông công cộng.',
+            about: "Tai nạn xe buýt có thể liên quan đến xe buýt thành phố, xe buýt trường học hoặc xe khách tư nhân. Việc xác định trách nhiệm có thể khó khăn do sự tham gia của các thực thể chính phủ.",
+            statistics: ["Xe buýt liên tỉnh có tỷ lệ tai nạn cao hơn.", "Hành khách đứng dễ bị ngã khi dừng đột ngột.", "Điểm mù lớn gây nguy hiểm cho xe nhỏ và người đi bộ."],
+            whatToDo: ["Giữ vé xe buýt của bạn làm bằng chứng.", "Ghi lại số xe buýt và tuyến đường.", "Báo cáo thương tích cho tài xế trước khi rời đi."],
+            howWeHelp: "Chúng tôi xử lý các thủ tục phức tạp liên quan đến việc kiện các cơ quan chính phủ (như xe buýt thành phố) để đảm bảo bạn không bỏ lỡ thời hạn nghiêm ngặt.",
+            additionalSections: [
+                { title: "Miễn Trừ Chủ Quyền", content: "Kiện chính phủ khó hơn kiện tư nhân. Có các quy tắc đặc biệt ('Miễn trừ chủ quyền') giới hạn thời gian và số tiền bạn có thể kiện." }
+            ],
+            quiz: {
+                title: "An Toàn Xe Buýt",
+                questions: [
+                    { q: "Điều gì làm cho việc kiện xe buýt khó khăn?", options: ["Luật giao thông", "Miễn trừ chủ quyền", "Không có lỗi"], answer: 1, explanation: "Bảo vệ chính phủ khỏi các vụ kiện tụng thông thường." },
+                    { q: "Ai thường bị kiện?", options: ["Tài xế", "Thành phố/Công ty", "Hành khách"], answer: 1, explanation: "Công ty vận tải hoặc thành phố thường chịu trách nhiệm." },
+                    { q: "Xe buýt trường học có dây an toàn không?", options: ["Luôn có", "Không bao giờ", "Tùy bang/năm"], answer: 2, explanation: "Nhiều xe buýt cũ không có dây an toàn." }
+                ]
+            }
+        },
+        'passenger': {
+            title: 'Hành Khách Bị Thương',
+            desc: 'Yêu cầu bồi thường của hành khách.',
+            about: "Là hành khách, bạn hiếm khi có lỗi trong một vụ tai nạn. Bạn có quyền yêu cầu bồi thường từ bất kỳ tài xế nào (bao gồm cả bạn bè của bạn) gây ra tai nạn.",
+            statistics: ["Hành khách ghế trước có nguy cơ chấn thương cao hơn.", "Hành khách có thể được bảo hiểm bởi nhiều chính sách.", "Không ảnh hưởng đến phí bảo hiểm của chính bạn khi nộp đơn."],
+            whatToDo: ["Không nhận lỗi thay cho tài xế.", "Thu thập thông tin bảo hiểm của TẤT CẢ các tài xế.", "Tìm kiếm sự chăm sóc y tế ngay lập tức."],
+            howWeHelp: "Chúng tôi giúp bạn nộp đơn khiếu nại chống lại công ty bảo hiểm của người lái xe (ngay cả khi họ là bạn bè) để chi trả hóa đơn y tế của bạn. Đừng lo lắng, đó là lý do họ có bảo hiểm.",
+            additionalSections: [
+                { title: "Kiện Bạn Bè?", content: "Nhiều người ngần ngại kiện bạn mình. Hãy nhớ rằng, bạn đang kiện công ty BẢO HIỂM của họ để lấy tiền bồi thường, không phải lấy tiền từ túi của bạn bè bạn." }
+            ],
+            quiz: {
+                title: "Quyền Hành Khách",
+                questions: [
+                    { q: "Có thể kiện bạn bè lái xe không?", options: ["Không", "Có (Bảo hiểm)", "Chỉ khi họ đồng ý"], answer: 1, explanation: "Bạn đang yêu cầu bồi thường từ bảo hiểm của họ." },
+                    { q: "Bảo hiểm nào trả trước?", options: ["Bảo hiểm tài xế có lỗi", "Của bạn", "Chính phủ"], answer: 0, explanation: "Bảo hiểm của người gây tai nạn chịu trách nhiệm chính." },
+                    { q: "Hành khách có lỗi không?", options: ["Không bao giờ", "Hiếm khi", "Luôn luôn"], answer: 1, explanation: "Trừ khi bạn can thiệp vào việc lái xe." }
+                ]
+            }
+        },
+        'brain': {
+            title: 'Chấn Thương Sọ Não (TBI)',
+            desc: 'Chấn động & Tổn thương não.',
+            about: "TBI có thể thay đổi cuộc sống mãi mãi, ảnh hưởng đến trí nhớ, tính cách và khả năng làm việc. Chúng thường xảy ra do tai nạn xe hơi hoặc ngã.",
+            statistics: ["Ngã là nguyên nhân hàng đầu gây TBI.", "Các triệu chứng có thể xuất hiện sau vài tuần.", "TBI nhẹ (chấn động) vẫn có thể gây tổn thương lâu dài."],
+            whatToDo: ["Đến phòng cấp cứu ngay lập tức.", "Theo dõi các triệu chứng như đau đầu, chóng mặt, thay đổi tâm trạng.", "Gặp bác sĩ thần kinh."],
+            howWeHelp: "Chúng tôi làm việc với các chuyên gia y tế để chứng minh mức độ nghiêm trọng của chấn thương não của bạn, đảm bảo bạn nhận được bồi thường cho việc chăm sóc suốt đời nếu cần.",
+            additionalSections: [
+                { title: "Triệu Chứng Trì Hoãn", content: "Não bị bầm tím có thể không hiển thị ngay lập tức trên phim chụp CT. Các triệu chứng về nhận thức và cảm xúc có thể mất thời gian để phát triển." }
+            ],
+            quiz: {
+                title: "Kiến Thức TBI",
+                questions: [
+                    { q: "Có cần bất tỉnh mới bị TBI không?", options: ["Có", "Không", "Chỉ TBI nặng"], answer: 1, explanation: "Chấn động não có thể xảy ra mà không bị ngất." },
+                    { q: "Nguyên nhân phổ biến?", options: ["Đọc sách", "Ngã/Tai nạn", "Căng thẳng"], answer: 1, explanation: "Ngã và tai nạn xe là nguyên nhân hàng đầu." },
+                    { q: "Bác sĩ chuyên khoa?", options: ["Nha sĩ", "Bác sĩ thần kinh", "Bác sĩ da liễu"], answer: 1, explanation: "Chuyên gia về não và hệ thần kinh." }
+                ]
+            }
+        },
+        'mesh': {
+            title: 'Lưới Phẫu Thuật',
+            desc: 'Biến chứng lưới thoát vị.',
+            about: "Lưới phẫu thuật dùng để sửa chữa thoát vị thường bị lỗi, gây đau đớn, nhiễm trùng và tổn thương cơ quan nội tạng vĩnh viễn.",
+            statistics: ["Hàng ngàn vụ kiện đã được hợp nhất thành MDL.", "Tỷ lệ biến chứng cao với một số sản phẩm lưới.", "Phẫu thuật sửa chữa thường phức tạp hơn phẫu thuật ban đầu."],
+            whatToDo: ["Lấy hồ sơ phẫu thuật của bạn để xác định loại lưới.", "Gặp bác sĩ nếu bạn bị đau hoặc khó chịu.", "Liên hệ luật sư ngay lập tức."],
+            howWeHelp: "Chúng tôi đang kiện các nhà sản xuất lưới vì thiết kế sản phẩm bị lỗi và không cảnh báo bác sĩ về rủi ro. Bạn có thể được bồi thường đáng kể.",
+            additionalSections: [
+                { title: "Biến Chứng", content: "Lưới có thể di chuyển, co lại hoặc ăn mòn vào các mô và cơ quan lân cận, gây đau đớn dữ dội và nhiễm trùng mãn tính." }
+            ],
+            quiz: {
+                title: "Kiến Thức Lưới",
+                questions: [
+                    { q: "Công dụng của lưới?", options: ["Sửa thoát vị", "Gãy xương", "Tim mạch"], answer: 0, explanation: "Gia cố mô yếu trong phẫu thuật thoát vị." },
+                    { q: "Biến chứng nghiêm trọng?", options: ["Dị ứng", "Ăn mòn/Di chuyển", "Rụng tóc"], answer: 1, explanation: "Lưới có thể cắt vào cơ quan nội tạng." },
+                    { q: "MDL là gì?", options: ["Phòng khám", "Kiện tụng đa quận", "Nhãn hiệu"], answer: 1, explanation: "Quy trình pháp lý cho nhiều vụ kiện tương tự." }
+                ]
+            }
+        },
+        'hair': {
+            title: 'Thuốc Duỗi Tóc',
+            desc: 'Nguy cơ ung thư tử cung.',
+            about: "Các sản phẩm duỗi tóc hóa học đã được liên kết với nguy cơ ung thư tử cung và ung thư buồng trứng cao hơn do các hóa chất gây rối loạn nội tiết.",
+            statistics: ["Phụ nữ sử dụng thường xuyên có nguy cơ mắc ung thư tử cung cao gấp đôi.", "Hóa chất như phthalates và paraben thường được tìm thấy.", "Các sản phẩm này thường nhắm vào phụ nữ da đen."],
+            whatToDo: ["Ngừng sử dụng các sản phẩm duỗi tóc hóa học.", "Theo dõi sức khỏe sinh sản của bạn.", "Lưu giữ bằng chứng mua hàng nếu có thể."],
+            howWeHelp: "Chúng tôi đại diện cho những phụ nữ bị ung thư sau khi sử dụng các sản phẩm này lâu dài. Chúng tôi đấu tranh để buộc các công ty mỹ phẩm phải chịu trách nhiệm.",
+            additionalSections: [
+                { title: "Hóa Chất Độc Hại", content: "Sản phẩm chứa EDCs (hóa chất gây rối loạn nội tiết) bắt chước estrogen trong cơ thể, thúc đẩy sự phát triển của tế bào ung thư." }
+            ],
+            quiz: {
+                title: "An Toàn Sản Phẩm Tóc",
+                questions: [
+                    { q: "Hóa chất gây hại?", options: ["Nước", "Phthalates/EDC", "Xà phòng"], answer: 1, explanation: "Gây rối loạn hormone." },
+                    { q: "Liên quan ung thư nào?", options: ["Phổi", "Tử cung/Buồng trứng", "Da"], answer: 1, explanation: "Liên quan đến hệ sinh sản nữ." },
+                    { q: "Tần suất rủi ro?", options: ["1 lần/năm", "4+ lần/năm", "Không bao giờ"], answer: 1, explanation: "Sử dụng thường xuyên làm tăng nguy cơ." }
+                ]
+            }
+        },
+        'roundup': {
+            title: 'Roundup',
+            desc: 'Thuốc diệt cỏ gây ung thư.',
+            about: "Glyphosate, thành phần chính trong Roundup, đã được liên kết với Ung thư hạch không Hodgkin (NHL). Monsanto (nay là Bayer) đã phải đối mặt với hàng ngàn vụ kiện.",
+            statistics: ["Hàng tỷ đô la đã được trao cho các nạn nhân.", "WHO phân loại glyphosate là chất có thể gây ung thư.", "Nông dân và người làm vườn có nguy cơ cao nhất."],
+            whatToDo: ["Ngừng tiếp xúc với Roundup.", "Khám sức khỏe nếu bạn có các hạch bạch huyết sưng to.", "Liên hệ luật sư nếu bạn được chẩn đoán mắc NHL."],
+            howWeHelp: "Chúng tôi giúp các nạn nhân của Roundup đòi bồi thường cho chi phí y tế và sự đau đớn. Các bằng chứng cho thấy công ty đã biết về rủi ro nhưng che giấu nó.",
+            additionalSections: [
+                { title: "Ung Thư Hạch (NHL)", content: "Đây là loại ung thư tấn công hệ thống miễn dịch. Tiếp xúc lâu dài với Roundup làm tăng đáng kể nguy cơ mắc bệnh này." }
+            ],
+            quiz: {
+                title: "Rủi Ro Roundup",
+                questions: [
+                    { q: "Thành phần nguy hiểm?", options: ["Glyphosate", "Nitơ", "Nước"], answer: 0, explanation: "Hoạt chất chính liên quan đến ung thư." },
+                    { q: "Loại ung thư?", options: ["Phổi", "U lympho (NHL)", "Da"], answer: 1, explanation: "Ung thư hạch không Hodgkin." },
+                    { q: "Ai nguy cơ cao nhất?", options: ["Nhân viên văn phòng", "Nông dân/Làm vườn", "Phi công"], answer: 1, explanation: "Do tiếp xúc thường xuyên." }
+                ]
+            }
+        },
+        'ozempic': {
+            title: 'Ozempic',
+            desc: 'Liệt dạ dày (Gastroparesis).',
+            about: "Thuốc giảm cân và tiểu đường phổ biến này có thể gây ra chứng liệt dạ dày nghiêm trọng, dẫn đến nôn mửa dữ dội và mất nước.",
+            statistics: ["Hàng ngàn báo cáo về các vấn đề tiêu hóa nghiêm trọng.", "Nhãn thuốc ban đầu không cảnh báo đầy đủ về nguy cơ liệt dạ dày vĩnh viễn.", "Nhiều người phải nhập viện cấp cứu."],
+            whatToDo: ["Dừng thuốc nếu bác sĩ khuyên.", "Tìm kiếm sự chăm sóc y tế nếu nôn mửa liên tục.", "Tham khảo ý kiến luật sư."],
+            howWeHelp: "Chúng tôi đang điều tra các tuyên bố rằng nhà sản xuất đã không cảnh báo đầy đủ cho bệnh nhân và bác sĩ về mức độ nghiêm trọng của các tác dụng phụ này.",
+            additionalSections: [
+                { title: "Liệt Dạ Dày Là Gì?", content: "Dạ dày không thể làm rỗng thức ăn theo cách bình thường, dẫn đến buồn nôn, nôn mửa và đau bụng dữ dội." }
+            ],
+            quiz: {
+                title: "Tác Dụng Phụ Ozempic",
+                questions: [
+                    { q: "Tình trạng dạ dày?", options: ["Ợ nóng", "Liệt dạ dày (Gastroparesis)", "Đói"], answer: 1, explanation: "Dạ dày ngừng tiêu hóa thức ăn." },
+                    { q: "Triệu chứng chính?", options: ["Năng lượng", "Nôn mửa dữ dội", "Ngủ ngon"], answer: 1, explanation: "Nôn ra thức ăn cũ chưa tiêu hóa." },
+                    { q: "Cảnh báo đầy đủ?", options: ["Có", "Không đầy đủ", "Không biết"], answer: 1, explanation: "Nhãn thuốc bị cáo buộc là thiếu cảnh báo." }
+                ]
+            }
+        },
+        'truvada': {
+            title: 'Truvada',
+            desc: 'Tổn thương thận & xương.',
+            about: "Thuốc HIV này chứa TDF, có độc tính cao đối với thận và xương. Nhà sản xuất đã trì hoãn việc phát hành phiên bản an toàn hơn (TAF) để tối đa hóa lợi nhuận.",
+            statistics: ["Suy thận và loãng xương là tác dụng phụ nghiêm trọng.", "Gilead Sciences bị cáo buộc đặt lợi nhuận lên trên an toàn bệnh nhân.", "Thuốc an toàn hơn đã có sẵn nhưng bị giữ lại."],
+            whatToDo: ["Theo dõi chức năng thận và mật độ xương.", "Không ngừng thuốc HIV mà không có ý kiến bác sĩ.", "Hỏi về việc chuyển sang thuốc dựa trên TAF."],
+            howWeHelp: "Chúng tôi kiện Gilead vì đã giữ lại loại thuốc an toàn hơn, khiến bệnh nhân phải chịu đựng những tổn thương không cần thiết đối với thận và xương của họ.",
+            additionalSections: [
+                { title: "Lợi Nhuận Trên Bệnh Nhân", content: "Vụ kiện cáo buộc rằng Gilead đã chờ cho đến khi bằng sáng chế TDF sắp hết hạn mới phát hành TAF an toàn hơn, để duy trì độc quyền thị trường." }
+            ],
+            quiz: {
+                title: "Sự Thật Truvada",
+                questions: [
+                    { q: "Tổn thương cơ quan nào?", options: ["Tim", "Thận và Xương", "Gan"], answer: 1, explanation: "Gây suy thận và mất mật độ xương." },
+                    { q: "Tại sao chậm ra thuốc mới?", options: ["Không hiệu quả", "Lợi nhuận", "Bất hợp pháp"], answer: 1, explanation: "Tối đa hóa lợi nhuận từ bằng sáng chế cũ." },
+                    { q: "Nên tự ý dừng thuốc?", options: ["Có", "Không", "Chỉ cuối tuần"], answer: 1, explanation: "Luôn hỏi ý kiến bác sĩ trước khi thay đổi thuốc." }
+                ]
+            }
         }
     }
 };
+

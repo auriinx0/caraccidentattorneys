@@ -653,7 +653,456 @@ export const en = {
                     title: "FAQ",
                     content: "**Q: Do I have to stop taking my HIV meds?**\\nA: NO. Never stop medication without a doctor. Switch to safer alternatives if advised."
                 }
-            ]
+            ],
+            quiz: {
+                title: "Rideshare Rights Quiz",
+                questions: [
+                    { q: "If you are a passenger in an Uber, are you covered?", options: ["No", "Yes, up to $1 Million", "Only if you have your own insurance"], answer: 1, explanation: "Uber/Lyft provide $1M liability coverage for passengers during an active trip." },
+                    { q: "Who do you report the accident to?", options: ["Just the driver", "Uber/Lyft and the Police", "No one"], answer: 1, explanation: "You must report it to the app company and the police to document the incident." },
+                    { q: "Are rideshare drivers employees?", options: ["Yes", "No, independent contractors", "It depends on the state"], answer: 1, explanation: "They are typically classified as independent contractors, which complicates liability suits." }
+                ]
+            }
         },
+        'drunk-driving': {
+            title: 'Drunk Driving Accidents',
+            desc: 'DUI Victims.',
+            about: "Being hit by a drunk driver is a traumatic and infuriating experience. These accidents are 100% preventable. In addition to civil liability, these drivers often face criminal charges. We help victims seek justice and compensation for their unnecessary suffering.",
+            statistics: [
+                "About 28 people in the US die in drunk-driving crashes every day.",
+                "Alcohol reduces brain function, thinking, and muscle coordination.",
+                "Drunk driving crashes cost more than $44 billion annually."
+            ],
+            whatToDo: [
+                "Call 911 and report that you suspect the other driver is impaired.",
+                "Watch for signs of intoxication (slurred speech, smell of alcohol).",
+                "Cooperat with responding police, but focus on your health.",
+                "Attend criminal proceedings if possible, or have your attorney do so.",
+                "Do not negotiate with the drunk driver directly."
+            ],
+            howWeHelp: "We pursue not just compensatory damages, but punitive damages as well, intended to punish the driver for their reckless behavior. We also investigate if a bar or restaurant over-served the driver (dram shop laws).",
+            additionalSections: [
+                {
+                    title: "Punitive Damages",
+                    content: "In DUI cases, normal compensation covers your bills. **Punitive Damages** are extra money awarded by the court to punish the driver for their gross recklessness and to deter others. These can significantly increase settlement values."
+                },
+                {
+                    title: "Dram Shop Laws",
+                    content: "In many states, bars, restaurants, or hosts who serve alcohol to a visibly intoxicated person who then causes a crash can be held liable. We trace where the driver was drinking to find additional sources of compensation."
+                },
+                {
+                    title: "Criminal vs. Civil",
+                    content: "The criminal case (to punish the driver with jail/fines) is separate from your civil case (to get you money). Even if the driver isn't convicted criminally (or pleads down), we can still win the civil suit and recover funds for you."
+                },
+                {
+                    title: "FAQ",
+                    content: "**Q: Do I have to wait for the criminal trial to finish?**\\nA: No, we can file the civil lawsuit immediately, though a criminal conviction helps our case.\\n\\n**Q: What if the drunk driver has no insurance?**\\nA: Your own Uninsured Motorist (UM) coverage can pay you in this scenario."
+                }
+            ],
+            quiz: {
+                title: "DUI Liability Quiz",
+                questions: [
+                    { q: "What are 'Punitive Damages'?", options: ["Money for medical bills", "Money to punish the driver", "Money for car repairs"], answer: 1, explanation: "Punitive damages are designed to punish reckless behavior like drunk driving." },
+                    { q: "Can a bar be held liable for serving a drunk driver?", options: ["Yes (Dram Shop Laws)", "No, never", "Only on weekends"], answer: 0, explanation: "Bars can be liable if they over-serve a visibly intoxicated person." },
+                    { q: "Do you need a criminal conviction to sue?", options: ["Yes", "No", "Maybe"], answer: 1, explanation: "Civil and criminal courts are separate; you can win money even if they avoid jail." }
+                ]
+            }
+        },
+        'pedestrian-accidents': {
+            title: 'Pedestrian Accidents',
+            desc: 'Crosswalk injuries.',
+            about: "Pedestrians are completely vulnerable in a collision with a motor vehicle. Even low-speed accidents can result in severe fractures, head trauma, and internal organ damage. Drivers often fail to yield or are distracted, leading to tragedy.",
+            statistics: [
+                "Pedestrian deaths have increased by over 50% in the last decade.",
+                "Most pedestrian deaths occur in urban areas at non-intersection locations.",
+                "Children and the elderly are at highest risk."
+            ],
+            whatToDo: [
+                "Move out of the road to safety if possible.",
+                "Call 911 immediately, even if you think you aren't hurt bad.",
+                "Get witness contact info; they are crucial.",
+                "Seek urgent medical care.",
+                "Save torn clothing and shoes as evidence."
+            ],
+            howWeHelp: "We work with accident reconstructionists to prove the driver had ample time to see you and stop. We fight to ensure you have the resources needed for the long recovery process that often accompanies pedestrian injuries.",
+            additionalSections: [
+                {
+                    title: "Pedestrian Rights & Crosswalks",
+                    content: "Drivers must yield to pedestrians in crosswalks (marked or unmarked). However, pedestrians also have a duty to obey signals and not dart into traffic. We analyze local traffic laws to establish right-of-way."
+                },
+                {
+                    title: "Common Injuries",
+                    content: "Impacts often involve two stages: the vehicle strike (broken hips/legs) and the secondary impact hitting the pavement (head/spine trauma). Recovery is often prolonged and requires extensive rehab."
+                },
+                {
+                    title: "Hit-and-Run",
+                    content: "Many drivers who hit pedestrians flee out of fear. We work with police to track them down using security cameras and vehicle debris. If they aren't found, we help you file under your own auto insurance (UM)."
+                },
+                {
+                    title: "FAQ",
+                    content: "**Q: What if I was jaywalking? Can I still sue?**\\nA: Possibly. If the driver was still negligent (e.g., speeding or texting), you might share some fault but still recover compensation (depending on the state).\\n\\n**Q: I don't have car insurance, who pays the hospital?**\\nA: The driver's insurance should pay. If they fled, your health insurance or crime victim funds may help."
+                }
+            ],
+            quiz: {
+                title: "Pedestrian Safety Quiz",
+                questions: [
+                    { q: "Who usually has the right of way in a crosswalk?", options: ["The Car", "The Pedestrian", "Whoever is faster"], answer: 1, explanation: "Drivers must legally yield to pedestrians in marked or unmarked crosswalks." },
+                    { q: "What is a 'secondary impact'?", options: ["Being hit by two cars", "Hitting the ground after the car hits you", "A minor bruise"], answer: 1, explanation: "Often the ground causes more injury than the car bumper itself." },
+                    { q: "Can you sue if you were jaywalking?", options: ["Never", "Always", "Sometimes, if the driver was negligent"], answer: 2, explanation: "Even if jaywalking, drivers have a duty to avoid hitting you if possible." }
+                ]
+            }
+        },
+        'talc-litigation': {
+            title: 'Talcum Powder Litigation',
+            desc: 'Ovarian cancer.',
+            about: "Scientific research has linked the use of talc-containing products for genital hygiene to an increased risk of ovarian cancer. Many manufacturers knew of these risks but failed to warn consumers. We represent women who have developed ovarian cancer after long-term use of talc products.",
+            statistics: [
+                "Thousands of lawsuits have been filed against major talc manufacturers.",
+                "Studies show a 30-60% increased risk of ovarian cancer with talc use.",
+                "Talc particles have been found deeply embedded in ovarian tumors."
+            ],
+            whatToDo: [
+                "Stop using any talc products immediately.",
+                "Gather medical records diagnosing ovarian cancer.",
+                "Preserve proof of past talc use (old bottles, receipts) if possible.",
+                "Write down your history of product usage.",
+                "Consult with an attorney specializing in mass torts/toxic exposure."
+            ],
+            howWeHelp: "This falls under product liability and mass tort litigation. We join forces with a national network of attorneys to hold giant pharmaceutical corporations accountable, seeking compensation for medical bills, pain and suffering, and loss of enjoyment of life.",
+            additionalSections: [
+                {
+                    title: "The Science: Talc & Cancer",
+                    content: "Natural talc often occurs near asbestos, a known carcinogen. Even asbestos-free talc may cause inflammation and cancer when particles travel up the reproductive tract and lodge in the ovaries."
+                },
+                {
+                    title: "Who Qualifies?",
+                    content: "Women who had a history of using talcum powder (Johnson's Baby Powder, Shower to Shower) for feminine hygiene for years and were later diagnosed with ovarian or fallopian tube cancer."
+                },
+                {
+                    title: "Status of Lawsuits",
+                    content: "Juries have awarded billions in verdicts against companies like J&J. Settlements are ongoing and fluid. You need to file now to preserve your rights before statutes of limitations expire."
+                },
+                {
+                    title: "FAQ",
+                    content: "**Q: Does it cost money to join this lawsuit?**\\nA: No. We work on a contingency fee - we only get paid if you win.\\n\\n**Q: What if I don't have receipts?**\\nA: Sworn testimony about your usage history is often sufficient."
+                }
+            ],
+            quiz: {
+                title: "Talc Litigation Quiz",
+                questions: [
+                    { q: "What dangerous mineral is often found with Talc?", options: ["Gold", "Asbestos", "Lead"], answer: 1, explanation: "Asbestos is a known carcinogen often found in talc deposits." },
+                    { q: "What type of cancer is linked to talc use?", options: ["Lung Cancer", "Ovarian Cancer", "Skin Cancer"], answer: 1, explanation: "Usage for feminine hygiene has been linked to ovarian cancer." },
+                    { q: "Do you need receipts to file a claim?", options: ["Yes, for every bottle", "No, testimony usually works", "Impossible to file without them"], answer: 1, explanation: "Most people don't keep receipts for years; testimony is key." }
+                ]
+            }
+        },
+        'medical-malpractice': {
+            title: 'Medical Malpractice',
+            desc: 'Doctor & hospital negligence.',
+            about: "We trust doctors and nurses with our lives. When that trust is broken through negligence or preventable error, the results can be devastating. Medical malpractice cases are complex and require proving that the care provided fell below the accepted standard.",
+            statistics: [
+                "Medical errors are the third leading cause of death in the US.",
+                "Thousands of patients suffer permanent injury annually due to surgical mistakes.",
+                "Misdiagnosis accounts for a significant portion of malpractice claims."
+            ],
+            whatToDo: [
+                "Seek a second medical opinion or corrective care immediately.",
+                "Request a full copy of your medical records right away.",
+                "Do not discuss the case with hospital risk management.",
+                "Keep a detailed journal of your symptoms and interactions with providers.",
+                "Contact a malpractice lawyer ASAP."
+            ],
+            howWeHelp: "We have in-house and external medical experts review your records. We pinpoint where the failure in care occurred and build a rock-solid case to prove that your injury was a direct result of negligence.",
+            additionalSections: [
+                {
+                    title: "Common Types of Malpractice",
+                    content: "Includes:\\n*   **Misdiagnosis/Delayed Diagnosis:** Failing to spot cancer, heart attack, or stroke in time.\\n*   **Surgical Errors:** Operating on the wrong body part, leaving instruments inside, or nicking organs.\\n*   **Medication Errors:** Wrong dosage or wrong drug.\\n*   **Birth Injuries:** Causing cerebral palsy or Erb's palsy in newborns."
+                },
+                {
+                    title: "Standard of Care",
+                    content: "The law doesn't require doctors to be perfect, but they must act as a reasonably competent doctor would in the same situation. Proving a breach of this 'standard of care' is the core of the lawsuit."
+                },
+                {
+                    title: "Informed Consent",
+                    content: "If a doctor performs a procedure without fully explaining the risks, and you are injured by one of those risks, you may have a case even if the surgery was performed perfectly."
+                },
+                {
+                    title: "FAQ",
+                    content: "**Q: How long do these cases take?**\\nA: Malpractice cases often take years because they are technically dense and aggressively fought by hospitals.\\n\\n**Q: I signed a waiver, can I still sue?**\\nA: Yes. You cannot 'sign away' your right to proper care. The paper just acknowledges known risks, not negligence."
+                }
+            ],
+            quiz: {
+                title: "Malpractice Quiz",
+                questions: [
+                    { q: "What must be proven in a malpractice case?", options: ["The doctor was rude", "The doctor breached the 'Standard of Care'", "The surgery failed"], answer: 1, explanation: "Bad outcomes happen; malpractice is specifically about violating standard medical practices." },
+                    { q: "Can you sue if you signed a waiver?", options: ["No, never", "Yes", "Only if the doctor agrees"], answer: 1, explanation: "Waivers cover known risks, not negligence or mistakes." },
+                    { q: "What is a common form of malpractice?", options: ["Long wait times", "Misdiagnosis", "Cold hospital food"], answer: 1, explanation: "failing to diagnose a serious condition is a major cause of harm." }
+                ]
+            }
+        },
+        'nursing-home-abuse': {
+            title: 'Nursing Home Abuse',
+            desc: 'Protecting the elderly.',
+            about: "Our elders deserve to be treated with dignity and respect. Unfortunately, many nursing homes prioritize profit over people, leading to understaffing and neglect. Abuse can be physical, emotional, or financial.",
+            statistics: [
+                "1 in 6 people over 60 have experienced abuse in community settings.",
+                "Bedsores are a common sign of neglect and can be fatal.",
+                "Abuse is vastly underreported."
+            ],
+            whatToDo: [
+                "Call 911 if there is immediate danger.",
+                "Document signs of abuse: bruises, weight loss, poor hygiene, fear of staff.",
+                "Report concerns to facility administrators and the state Ombudsman.",
+                "Consider moving your loved one to a safer facility.",
+                "Consult an attorney to hold the facility accountable."
+            ],
+            howWeHelp: "We investigate the facility's history, staffing records, and compliance with state regulations. We fight to ensure your loved one is safe and compensated for the pain and indignity they suffered.",
+            additionalSections: [
+                {
+                    title: "Warning Signs",
+                    content: "Look for:\\n*   **Physical:** Unexplained bedsores, frequent falls, dehydration/malnutrition, poor hygiene.\\n*   **Emotional:** Withdrawal, agitation, fear of specific caregivers.\\n*   **Financial:** Missing money, sudden will changes, unexplained fees."
+                },
+                {
+                    title: "Understaffing & Profit",
+                    content: "Many neglect cases stem from corporate homes intentionally understaffing to save money. Overworked aides cannot turn patients (leading to sores) or assist with hygiene/feeding properly."
+                },
+                {
+                    title: "Reporting & Inspections",
+                    content: "Every state has licensing and inspection agencies. We pull the facility's past violation reports to prove a pattern of negligent behavior."
+                },
+                {
+                    title: "FAQ",
+                    content: "**Q: How do I prove a fall was negligence?**\\nA: Facilities must have fall prevention plans. If they didn't follow it (e.g., no call bell, no supervision), they are liable.\\n\\n**Q: Can I put a hidden camera in my mom's room?**\\nA: Laws vary by state. Ask a lawyer first to avoid privacy violations."
+                }
+            ],
+            quiz: {
+                title: "Elder Abuse Quiz",
+                questions: [
+                    { q: "What is a common sign of physical neglect?", options: ["Bedsores", "Grey hair", "Watching TV"], answer: 0, explanation: "Bedsores result from not being turned/moved often enough." },
+                    { q: "Why does neglect often happen?", options: ["Patients are annoying", "Understaffing to save money", "Accidents"], answer: 1, explanation: "Corporate greed leading to low staffing is a major systemic cause." },
+                    { q: "What should you do if you suspect abuse?", options: ["Ignore it", "Document it and report it", "Wait and see"], answer: 1, explanation: "Always document signs and report to authorities/Ombudsman." }
+                ]
+            }
+        },
+        'wrongful-death': {
+            title: 'Wrongful Death',
+            desc: 'Justice for families.',
+            about: "Losing a loved one due to someone else's carelessness is devastating. While no amount of money can replace a family member, a wrongful death claim can provide financial stability and a sense of justice. These claims often arise from car crashes, medical errors, or workplace accidents.",
+            statistics: [
+                "Unintentional injuries are the leading cause of death in early life years.",
+                "Claims must be filed by the personal representative of the estate or eligible family members.",
+                "Damages can include funeral costs, lost future income, and loss of companionship."
+            ],
+            whatToDo: [
+                "Prioritize your family's emotional needs, but don't delay seeking counsel too long due to statutes of limitations.",
+                "Appoint a representative for the deceased's estate.",
+                "Gather all documents related to the accident and death.",
+                "Do not throw away any evidence belonging to the deceased that might be relevant.",
+                "Contact a compassionate attorney."
+            ],
+            howWeHelp: "We handle the legal aspects with the utmost sensitivity, allowing you to focus on grieving and healing. We work with economists to quantify the lifetime financial value of your loved one to secure your family's future.",
+            additionalSections: [
+                {
+                    title: "Who Can File?",
+                    content: "Typically the spouse, children, or parents of the deceased. In some scenarios, siblings or other financial dependents can file. State laws vary on priority."
+                },
+                {
+                    title: "Types of Damages",
+                    content: "Includes:\\n*   **Economic:** Lost future wages, benefits (pension, insurance), medical bills pre-death, funeral/burial costs.\\n*   **Non-Economic:** Loss of love, companionship, guidance (for children), and survivor's pain and suffering."
+                },
+                {
+                    title: "Different from Criminal Cases",
+                    content: "A murderer might not go to jail (like O.J. Simpson) but can still be found liable in civil court for 'wrongful death' and forced to pay the family. The burden of proof is lower."
+                },
+                {
+                    title: "FAQ",
+                    content: "**Q: Are death settlements taxable?**\\nA: According to the IRS, most wrongful death compensatory damages are tax-free.\\n\\n**Q: Is the lawsuit public?**\\nA: Court filings are public, but we often settle privately to protect the family's privacy."
+                }
+            ],
+            quiz: {
+                title: "Wrongful Death Quiz",
+                questions: [
+                    { q: "Who can typically file a wrongful death claim?", options: ["Neighbors", "Close family members (Spouse/Children)", "Anyone"], answer: 1, explanation: "Usually limited to immediate family or dependents." },
+                    { q: "What can you be compensated for?", options: ["Lost future wages", "Sadness only", "Nothing"], answer: 0, explanation: "You can recover the income the deceased would have earned." },
+                    { q: "Is the burden of proof higher or lower than criminal court?", options: ["Higher", "Lower", "The same"], answer: 1, explanation: "Civil court requires a 'preponderance of evidence' (51%), easier than criminal court." }
+                ]
+            }
+        },
+        'slip-and-fall': {
+            title: 'Slip & Fall',
+            desc: 'Premises liability.',
+            about: "Property owners have a duty to keep their premises safe. If you fall due to a wet floor, uneven pavement, or poor lighting, you may have a claim. These cases hinge on proving the owner knew (or should have known) about the hazard and failed to fix it.",
+            statistics: [
+                "Slips and falls are the leading cause of workers' comp claims.",
+                "Falls are the leading cause of traumatic brain injuries.",
+                "Floors and flooring materials contribute to over 2 million fall injuries annually."
+            ],
+            whatToDo: [
+                "Report the accident to the manager or owner immediately.",
+                "Take photos of the hazard (water, ice, broken tile) before it gets cleaned up.",
+                "Get witness info.",
+                "Seek medical attention and document your injuries.",
+                "Keep the shoes and clothes you were wearing."
+            ],
+            howWeHelp: "We move fast to secure surveillance footage and maintenance records. We prove the property owner was negligent in maintaining a safe environment, forcing them to take responsibility for your injury.",
+            additionalSections: [
+                {
+                    title: "Proving 'Notice'",
+                    content: "The key is proving the store owner knew about the spill. We look for:\\n*   **Actual Notice:** Someone told an employee.\\n*   **Constructive Notice:** The spill was there long enough (sticky, footprints) that they *should* have seen and cleaned it."
+                },
+                {
+                    title: "Common Locations",
+                    content: "Grocery stores (spills), building entrances (ice/snow), parking lots (potholes, poor lighting), and stairs (loose railings)."
+                },
+                {
+                    title: "Comparative Negligence",
+                    content: "The defense will argue you 'should have watched where you were going'. We counter this by showing the hazard was hard to see or you were reasonably distracted (e.g., looking at store displays)."
+                },
+                {
+                    title: "FAQ",
+                    content: "**Q: What if I fell at a friend's house? I don't want to sue them.**\\nA: You sue their homeowner's insurance company, not them personally. That's why they have insurance.\\n\\n**Q: Does a 'Wet Floor' sign get them off the hook?**\\nA: Not always. If the sign was poorly placed or the hazard existed unreasonably long, you can still win."
+                }
+            ],
+            quiz: {
+                title: "Premises Liability Quiz",
+                questions: [
+                    { q: "What is the most critical evidence to get?", options: ["Photos of the hazard", "The manager's name", "A drink"], answer: 0, explanation: "Photos prove the hazard existed before they cleaned it up." },
+                    { q: "What does 'Constructive Notice' mean?", options: ["They got a letter", "They should have known about the hazard", "They ignored a sign"], answer: 1, explanation: "It means the hazard was there long enough that a reasonable owner would have fixed it." },
+                    { q: "Do 'Wet Floor' signs prevent all lawsuits?", options: ["Yes, always", "No", "Only if yellow"], answer: 1, explanation: "Not if the sign was hidden or the hazard was gross negligence." }
+                ]
+            }
+        },
+        'dog-bite': {
+            title: 'Dog Bites',
+            desc: 'Animal attack injuries.',
+            about: "Dog bites can cause severe physical damage, permanent scarring, and lasting psychological trauma, especially in children. Dog owners are often held strictly liable for the actions of their pets.",
+            statistics: [
+                "Over 4.5 million dog bites occur annually in the US.",
+                "Children are the most common victims and likely to be severely injured.",
+                "The average cost of a dog bite claim has risen significantly."
+            ],
+            whatToDo: [
+                "Identify the dog's owner and get proof of vaccination.",
+                "Wash the wound immediately and seek medical care (infection risk is high).",
+                "Report the incident to local animal control.",
+                "Photograph the injuries and (if safe) the dog.",
+                "Do not sign anything from the dog owner."
+            ],
+            howWeHelp: "We understand local dog bite statutes and strict liability laws. We work to secure compensation for medical bills, including future plastic surgery for scarring, and therapy for emotional trauma.",
+            additionalSections: [
+                {
+                    title: "Strict Liability vs One Bite",
+                    content: "In many states (Strict Liability), owners are liable even if the dog never bit anyone before. In others ('One Bite Rule'), you must prove the owner knew the dog was aggressive. We know the law for your case."
+                },
+                {
+                    title: "Scarring & Plastic Surgery",
+                    content: "Bites often leave jagged, permanent scars, especially on children's faces. Settlements must include the cost of future reconstructive surgeries, which are expensive."
+                },
+                {
+                    title: "Infection & Rabies",
+                    content: "Animal bites have high infection rates. If the dog's vaccine status is unknown, victims may need painful rabies shots."
+                },
+                {
+                    title: "FAQ",
+                    content: "**Q: It was a neighbor's dog, should I sue?**\\nA: Homeowner's insurance usually pays. You aren't taking money from your neighbor's pocket.\\n\\n**Q: The dog was provoked?**\\nA: Children are often exempt from 'provocation' defenses. We will defend the victim's rights."
+                }
+            ],
+            quiz: {
+                title: "Dog Bite Quiz",
+                questions: [
+                    { q: "Who is liable for a dog bite?", options: ["The dog", "The owner", "No one"], answer: 1, explanation: "Owners are responsible for their pets' actions." },
+                    { q: "Why is medical care urgent?", options: ["To get a bandage", "High risk of infection/Rabies", "To sleep"], answer: 1, explanation: "Animal mouths are dirty; infection is a major risk." },
+                    { q: "Does Homeowner's Insurance cover this?", options: ["Usually yes", "Never", "Only for cats"], answer: 0, explanation: "Most homeowner policies cover liability for dog attacks." }
+                ]
+            }
+        },
+        'workers-comp': {
+            title: 'Workers\' Compensation',
+            desc: 'Injuries on the job.',
+            about: "If you are injured at work, you are entitled to workers' comp benefits regardless of fault. These cover medical costs and a portion of lost wages. However, insurers often try to minimize or deny claims.",
+            statistics: [
+                "Millions of workers are injured on the job annually.",
+                "Slips, falls, and overexertion are leading causes.",
+                "Many valid claims are initially denied, requiring appeal."
+            ],
+            whatToDo: [
+                "Report the injury to your supervisor in writing immediately.",
+                "Seek medical care and tell the doctor it is work-related.",
+                "Write down witness names.",
+                "Keep copies of all reports and medical docs.",
+                "Consult a lawyer if your claim is delayed or denied."
+            ],
+            howWeHelp: "We help you navigate the bureaucratic workers' comp system. We ensure your claim is filed correctly, appeal denials, and also evaluate if a third party (like an equipment manufacturer) might be liable for an additional lawsuit.",
+            additionalSections: [
+                {
+                    title: "Benefits You Are Owed",
+                    content: "**Medical Care:** All reasonable treatment costs (no co-pays).\\n**Lost Wages:** Typically 2/3 of your average weekly wage while off work.\\n**Permanent Disability:** Lump sum if you lose permanent function.\\n**Vocational Rehab:** Retraining if you can't do your old job."
+                },
+                {
+                    title: "Third-Party Claims",
+                    content: "You usually can't sue your employer (only get Comp). HOWEVER, if someone else caused the accident (delivery driver, subcontractor, faulty machine), you CAN sue that third party for **full** damages, including pain and suffering."
+                },
+                {
+                    title: "No Retaliation",
+                    content: "It is illegal to fire you for filing a workers' comp claim. If they retaliate, we can sue for wrongful termination."
+                },
+                {
+                    title: "FAQ",
+                    content: "**Q: Can I pick my own doctor?**\\nA: Depends on the state. Some allow it, some require you to use their list.\\n\\n**Q: It was my fault, do I get paid?**\\nA: Yes. Workers' comp is 'no-fault'. You are covered even if you were clumsy, provided you weren't drunk or fighting."
+                }
+            ],
+            quiz: {
+                title: "Workers' Comp Quiz",
+                questions: [
+                    { q: "Do you have to prove your boss was at fault?", options: ["Yes", "No", "Sometimes"], answer: 1, explanation: "Workers' comp is a no-fault system." },
+                    { q: "Can you be fired for filing a claim?", options: ["Yes", "No, it's illegal", "Only on Fridays"], answer: 1, explanation: "Retaliation for filing a claim is strictly prohibited." },
+                    { q: "What if a machine caused the injury?", options: ["Sue the machine maker", "Nothing", "Quit"], answer: 0, explanation: "You may have a 'Third Party Claim' against the manufacturer." }
+                ]
+            }
+        },
+        'construction-accidents': {
+            title: 'Construction Accidents',
+            desc: 'Job site hazards.',
+            about: "Construction sites are inherently dangerous. Accidents often involve falls, equipment failure, scaffolding collapses, or falling objects. These cases often involve complex safety regulations and multiple contractors.",
+            statistics: [
+                "Construction has the highest rate of workplace fatalities.",
+                "The 'Fatal Four' (falls, struck by object, electrocution, caught-in) cause most deaths.",
+                "OSHA violations are common in accident investigations."
+            ],
+            whatToDo: [
+                "Seek immediate medical help.",
+                "Report the accident to the foreman.",
+                "Identify any equipment or machinery involved.",
+                "Photograph the scene and safety conditions (or lack thereof).",
+                "Do not speak to insurance reps before consulting a lawyer."
+            ],
+            howWeHelp: "We investigate whether OSHA safety regulations were violated. We identify all potential liable parties beyond your direct employer (like general contractors, property owners, or equipment manufacturers) to ensure maximum compensation.",
+            additionalSections: [
+                {
+                    title: "Labor Law & OSHA",
+                    content: "Laws protecting construction workers are strict. For example, New York Labor Law (Scaffold Law) imposes absolute liability on owners if a worker falls from height without proper protection. We use OSHA violations to prove negligence."
+                },
+                {
+                    title: "Third-Party Liability",
+                    content: "Besides Workers' Comp, you can often sue:\\n*   **General Contractor:** For failing to oversee safety.\\n*   **Building Owner:** For dangerous site conditions.\\n*   **Manufacturers:** For defective ladders, scaffolds, or power tools."
+                },
+                {
+                    title: "The Fatal Four",
+                    content: "Top 4 construction killers:\\n1.  **Falls:** Roofs, ladders, scaffolds.\\n2.  **Electrocution:** Touching overhead wires.\\n3.  **Struck-By:** Falling tools or swinging materials.\\n4.  **Caught-In:** Crushed by machines or collapsing trenches."
+                },
+                {
+                    title: "FAQ",
+                    content: "**Q: I'm an undocumented immigrant, can I sue?**\\nA: YES. In most states (like NY, CA), you have the right to safe work and full compensation regardless of status. We protect your rights.\\n\\n**Q: Can I get both Workers' Comp and lawsuit money?**\\nA: Yes, and the lawsuit money is usually much larger."
+                }
+            ],
+            quiz: {
+                title: "Construction Safety Quiz",
+                questions: [
+                    { q: "What is the #1 cause of construction deaths?", options: ["Fires", "Falls", "Chemicals"], answer: 1, explanation: "Falls account for the majority of construction fatalities." },
+                    { q: "Can undocumented workers sue for injuries?", options: ["No", "Yes", "Only if they pay a fee"], answer: 1, explanation: "Yes, safety laws protect all workers regardless of immigration status." },
+                    { q: "What is a 'Third Party Claim'?", options: ["Suing your boss", "Suing someone other than your employer", "Suing the government"], answer: 1, explanation: "It allows you to recover more damages than just workers' comp." }
+                ]
+            }
+        }
     }
 };
+

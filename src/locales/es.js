@@ -78,9 +78,16 @@ export const es = {
                 },
                 {
                     title: "Preguntas Frecuentes",
-                    content: "**P: ¿Cuánto tiempo tengo para presentar un reclamo?**\\nR: El estatuto de limitaciones varía, pero típicamente es de 2 años.\\n\\n**P: ¿Qué pasa si el otro conductor no tiene seguro?**\\nR: Puede presentar un reclamo bajo su propia cobertura de Automovilista Sin Seguro.\\n\\n**P: ¿Debo aceptar la primera oferta?**\\nR: No. Las ofertas iniciales son casi siempre más bajas que el valor real de su caso."
                 }
-            ]
+            ],
+            quiz: {
+                title: "Cuestionario sobre Accidentes de Auto",
+                questions: [
+                    { q: "¿Qué debe hacer inmediatamente después de un accidente de auto?", options: ["Disculparse con el otro conductor", "Llamar al 911 y buscar atención médica", "Irse si no hay daños mayores"], answer: 1, explanation: "Siempre llame al 911 para crear un informe oficial y verifique si hay lesiones. Nunca se disculpe, ya que puede interpretarse como admitir la culpa." },
+                    { q: "¿Por qué no debe aceptar la primera oferta de liquidación?", options: ["Suele ser demasiado baja", "Es ilegal aceptarla", "Las aseguradoras siempre ofrecen el máximo primero"], answer: 0, explanation: "Las ofertas iniciales son casi siempre intentos bajos para cerrar el caso a bajo costo antes de conocer el alcance total de sus lesiones." },
+                    { q: "¿Cuál es la causa más común de accidentes de auto?", options: ["Clima", "Conducción distraída", "Falla mecánica"], answer: 1, explanation: "La conducción distraída (enviar mensajes de texto, comer, etc.) es una causa principal de accidentes prevenibles." }
+                ]
+            }
         },
         'motorcycle': {
             title: 'Accidentes de Motocicleta',
@@ -110,9 +117,16 @@ export const es = {
                 },
                 {
                     title: "Preguntas Frecuentes",
-                    content: "**P: ¿Es legal filtrar carriles?**\\nR: Depende de su estado. En California es legal.\\n\\n**P: ¿Tengo que usar casco?**\\nR: Las leyes varían, pero usar uno reduce el riesgo de lesiones y fortalece su reclamo legal."
                 }
-            ]
+            ],
+            quiz: {
+                title: "Seguridad en Motocicletas",
+                questions: [
+                    { q: "¿Quién suele tener la culpa en accidentes moto vs auto?", options: ["El motociclista", "El conductor del auto", "Siempre es 50/50"], answer: 1, explanation: "Los estudios muestran que los conductores de autos a menudo no ven a los motociclistas o juzgan mal su velocidad." },
+                    { q: "¿Cuál es la principal causa de muerte en choques de moto?", options: ["Raspaduras", "Lesiones en la cabeza", "Piernas rotas"], answer: 1, explanation: "Las lesiones en la cabeza son la principal causa de muerte. Usar un casco reduce significativamente este riesgo." },
+                    { q: "¿Qué es 'Lane Splitting'?", options: ["Conducir en el arcén", "Conducir entre carriles de tráfico", "Compartir carril con otra moto"], answer: 1, explanation: "Es conducir entre autos en movimiento o detenidos. Es legal en algunos estados como CA." }
+                ]
+            }
         },
         'commercial': {
             title: 'Accidentes de Camiones',
@@ -145,9 +159,16 @@ export const es = {
                 },
                 {
                     title: "Preguntas Frecuentes",
-                    content: "**P: ¿Qué es una 'Caja Negra'?**\\nR: Un Registrador de Datos de Eventos (EDR) que registra velocidad y frenado. Es evidencia crucial.\\n\\n**P: ¿Cuánto seguro tienen los camiones?**\\nR: Tienen límites de responsabilidad mucho más altos (a menudo $750k - $5M)."
                 }
-            ]
+            ],
+            quiz: {
+                title: "Desafío de Accidentes de Camiones",
+                questions: [
+                    { q: "¿Qué es la 'No-Zone'?", options: ["Un área de estacionamiento restringida", "Los puntos ciegos del camión", "Una carretera cerrada a camiones"], answer: 1, explanation: "La 'No-Zone' se refiere a los grandes puntos ciegos alrededor de un camión donde el conductor no puede verlo." },
+                    { q: "¿Qué dispositivo registra la velocidad y el frenado de un camión?", options: ["GPS", "El motor", "La 'Caja Negra' (ECM)"], answer: 2, explanation: "La mayoría de los camiones comerciales tienen un Módulo de Control Electrónico que registra datos críticos antes de un impacto." },
+                    { q: "¿Por qué son más peligrosos los accidentes de camiones?", options: ["Los conductores son menos hábiles", "Los camiones pesan 20-30 veces más", "Los camiones no tienen frenos"], answer: 1, explanation: "La masa de un semirremolque genera una fuerza inmensa en una colisión." }
+                ]
+            }
         },
         'boating': {
             title: 'Accidentes de Navegación',
@@ -178,7 +199,15 @@ export const es = {
                     title: "Preguntas Frecuentes",
                     content: "**P: ¿Necesito licencia para operar un barco?**\\nR: La mayoría de los estados requieren un curso de seguridad.\\n\\n**P: ¿Quién es responsable de un accidente por estela?**\\nR: Los operadores son responsables del daño causado por su estela."
                 }
-            ]
+            ],
+            quiz: {
+                title: "Seguridad Náutica",
+                questions: [
+                    { q: "¿Cuál es la causa #1 de accidentes de barco?", options: ["Clima", "Error del operador / Alcohol", "Falla del motor"], answer: 1, explanation: "La inexperiencia del operador y el consumo de alcohol son las principales causas." },
+                    { q: "¿Necesitas una licencia para conducir un barco?", options: ["Sí, en la mayoría de los estados", "No, nunca", "Solo en el océano"], answer: 0, explanation: "La mayoría de los estados ahora requieren un curso de seguridad náutica." },
+                    { q: "¿Se aplican las leyes de DUI a los barcos?", options: ["No", "Sí (BUI)", "Solo de noche"], answer: 1, explanation: "Sí, operar bajo la influencia (BUI) es un delito grave." }
+                ]
+            }
         },
         'bus': {
             title: 'Accidentes de Autobús',
@@ -209,7 +238,15 @@ export const es = {
                     title: "Preguntas Frecuentes",
                     content: "**P: ¿Puedo demandar si era pasajero?**\\nR: Sí, los pasajeros rara vez tienen la culpa.\\n\\n**P: ¿Qué pasa si el autobús es del gobierno?**\\nR: Contacte a un abogado inmediatamente. Perder el plazo puede prohibir su demanda."
                 }
-            ]
+            ],
+            quiz: {
+                title: "Seguridad en Autobuses",
+                questions: [
+                    { q: "¿Qué ley dificulta las demandas por accidentes de autobús?", options: ["Ley de Tránsito", "Inmunidad Soberana", "Sin Culpa"], answer: 1, explanation: "La Inmunidad Soberana protege a las entidades gubernamentales, requiriendo procedimientos especiales y plazos estrictos." },
+                    { q: "¿A quién demandan la mayoría de los pasajeros lesionados?", options: ["Al conductor del autobús", "A la ciudad", "A todas las partes responsables"], answer: 2, explanation: "A menudo incluye a la compañía de autobuses, al conductor, a la ciudad o a conductores de otros vehículos." },
+                    { q: "¿Los autobuses escolares tienen cinturones de seguridad?", options: ["Siempre", "Nunca", "Depende del estado/año"], answer: 2, explanation: "Las leyes varían ampliamente; muchos autobuses antiguos no los tienen." }
+                ]
+            }
         },
         'rideshare': {
             title: 'Uber y Lyft',
@@ -240,7 +277,15 @@ export const es = {
                     title: "Preguntas Frecuentes",
                     content: "**P: ¿Puedo demandar a Uber/Lyft directamente?**\\nR: Es difícil (contratistas independientes), pero puede demandar por su cobertura de seguro.\\n\\n**P: ¿Qué pasa si era pasajero?**\\nR: Está totalmente cubierto por la póliza de $1 Millón."
                 }
-            ]
+            ],
+            quiz: {
+                title: "Conocimiento de Viajes Compartidos",
+                questions: [
+                    { q: "¿Qué determina la cobertura de seguro de Uber?", options: ["El tipo de coche", "El estado de la aplicación del conductor", "La hora del día"], answer: 1, explanation: "Período 1 (App apagada), 2 (Esperando), y 3 (Con pasajero) tienen diferentes límites." },
+                    { q: "¿Está cubierto si el conductor de Uber lo golpea?", options: ["Sí", "No", "Solo si es culpa de Uber"], answer: 0, explanation: "Sí, a través del seguro del conductor o la póliza de responsabilidad corporativa de Uber." },
+                    { q: "¿Los conductores de Uber son empleados?", options: ["Sí", "No, contratistas", "A veces"], answer: 1, explanation: "Son contratistas independientes, lo que protege a Uber de cierta responsabilidad directa." }
+                ]
+            }
         },
         'pedestrian': {
             title: 'Accidentes de Peatones',
@@ -276,7 +321,15 @@ export const es = {
                     title: "Preguntas Frecuentes",
                     content: "**P: ¿Puedo recuperar daños si crucé imprudentemente?**\\nR: Posiblemente. Las leyes de negligencia comparativa pueden permitirle recuperar daños parciales.\\n\\n**P: ¿Qué pasa si fue un atropello y fuga?**\\nR: Su propio seguro de Automovilista Sin Seguro (UM) puede cubrir sus lesiones."
                 }
-            ]
+            ],
+            quiz: {
+                title: "Seguridad Peatonal",
+                questions: [
+                    { q: "¿Los peatones siempre tienen el derecho de paso?", options: ["Sí, siempre", "No, solo en cruces", "Generalmente, pero no imprudentemente"], answer: 2, explanation: "Los peatones deben obedecer las señales, pero los conductores deben ejercer el debido cuidado siempre." },
+                    { q: "¿Cuál es la lesión más común en peatones?", options: ["Muñeca rota", "Pierna rota / Pélvica", "Latigazo"], answer: 1, explanation: "El parachoques del coche golpea las piernas primero, a menudo causando fracturas graves." },
+                    { q: "¿Qué pasa en un atropello y fuga?", options: ["Mala suerte", "Use su seguro UM", "La ciudad paga"], answer: 1, explanation: "Su propia cobertura de Automovilista Sin Seguro (UM) cubre sus daños si el conductor huye." }
+                ]
+            }
         },
         'passenger': {
             title: 'Lesiones de Pasajeros',
@@ -307,7 +360,15 @@ export const es = {
                     title: "Preguntas Frecuentes",
                     content: "**P: ¿Subirán mis primas si presento un reclamo como pasajero?**\\nR: Generalmente no. Usted no conducía.\\n\\n**P: ¿Qué pasa si ambos conductores tuvieron la culpa?**\\nR: Puede cobrar compensación de ambas pólizas de seguro."
                 }
-            ]
+            ],
+            quiz: {
+                title: "Derechos del Pasajero",
+                questions: [
+                    { q: "¿Puede demandar al conductor si es su amigo?", options: ["No", "Sí", "Solo si están de acuerdo"], answer: 1, explanation: "Sí, la demanda busca compensación de su compañía de seguros, no de sus activos personales." },
+                    { q: "¿Qué seguro paga primero?", options: ["El del conductor", "Salud del pasajero", "Gobierno"], answer: 0, explanation: "El seguro del conductor culpable es el principal." },
+                    { q: "¿Los pasajeros pueden tener la culpa?", options: ["Nunca", "Rara vez (ej. agarrar el volante)", "Siempre"], answer: 1, explanation: "Es extremadamente raro, a menos que el pasajero interfiera físicamente con el conductor." }
+                ]
+            }
         },
         'slip-fall': {
             title: 'Resbalones y Caídas',
@@ -333,12 +394,16 @@ export const es = {
                 {
                     title: "Peligros Comunes",
                     content: "*   **Pisos Mojados:** Derrames en tiendas.\\n*   **Aceras Heladas:** Falta de salar o limpiar.\\n*   **Pavimento Irregular:** Grietas en estacionamientos.\\n*   **Mala Iluminación:** Ocultando escalones."
-                },
-                {
-                    title: "Preguntas Frecuentes",
-                    content: "**P: ¿Qué es 'Aviso Constructivo'?**\\nR: Significa que el derrame estuvo allí el tiempo suficiente para que la tienda *debería* haberlo visto.\\n\\n**P: ¿Debo llenar un reporte de incidente?**\\nR: Sí, pero sea breve y factual. No admita culpa."
                 }
-            ]
+            ],
+            quiz: {
+                title: "Seguridad de Resbalones y Caídas",
+                questions: [
+                    { q: "¿Cuál es la causa número 1 de días perdidos en el trabajo?", options: ["Gripe", "Resbalones y Caídas", "Accidentes de coche"], answer: 1, explanation: "Las caídas son una causa principal de lesiones ocupacionales y días de trabajo perdidos." },
+                    { q: "¿Qué debe hacer inmediatamente después de caer?", options: ["Irse a casa avergonzado", "Reportarlo y tomar fotos", "Gritarle al empleado"], answer: 1, explanation: "Reportar el accidente crea un registro oficial. Las fotos prueban el peligro antes de que se limpie." },
+                    { q: "¿Pagan siempre las tiendas por las caídas?", options: ["Sí, automáticamente", "No, debe probar negligencia", "Solo si compra algo"], answer: 1, explanation: "Debe demostrar que la tienda sabía o debería haber sabido sobre el peligro y no lo solucionó." }
+                ]
+            }
         },
         'construction': {
             title: 'Accidentes de Construcción',
@@ -364,12 +429,16 @@ export const es = {
                 {
                     title: "Accidentes Comunes",
                     content: "*   **Caídas de Andamios:** Falta de barandillas.\\n*   **Objetos que Caen:** Herramientas desde alturas.\\n*   **Accidentes de Grúa:** Error del operador.\\n*   **Electrocución:** Contacto con líneas eléctricas."
-                },
-                {
-                    title: "Preguntas Frecuentes",
-                    content: "**P: ¿Puedo demandar si solo estaba visitando el sitio?**\\nR: Sí, los no empleados tienen plenos derechos de demandar por negligencia.\\n\\n**P: ¿Quién paga mis facturas médicas?**\\nR: La compensación laboral debería pagar de inmediato."
                 }
-            ]
+            ],
+            quiz: {
+                title: "Seguridad en la Construcción",
+                questions: [
+                    { q: "¿Cuál es la causa #1 de muertes en la construcción?", options: ["Incendios", "Caídas", "Productos químicos"], answer: 1, explanation: "Las caídas representan la mayoría de las muertes en la construcción." },
+                    { q: "¿Pueden los trabajadores indocumentados demandar por lesiones?", options: ["No", "Sí", "Solo si pagan una tarifa"], answer: 1, explanation: "Sí, las leyes de seguridad protegen a todos los trabajadores independientemente de su estatus migratorio." },
+                    { q: "¿Qué es un 'Reclamo de Terceros'?", options: ["Demandar a su jefe", "Demandar a alguien que no es su empleador", "Demandar al gobierno"], answer: 1, explanation: "Le permite recuperar más daños que solo la compensación laboral." }
+                ]
+            }
         },
         'brain': {
             title: 'Lesiones Cerebrales',
@@ -399,12 +468,16 @@ export const es = {
                 {
                     title: "Costos de por Vida",
                     content: "Las lesiones cerebrales graves a menudo requieren:\\n*   Cuidado en el hogar 24/7.\\n*   Terapia de rehabilitación cognitiva.\\n*   Modificaciones en el hogar."
-                },
-                {
-                    title: "Preguntas Frecuentes",
-                    content: "**P: ¿Puedo tener un TBI sin perder el conocimiento?**\\nR: Sí. Las conmociones a menudo ocurren sin desmayarse.\\n\\n**P: ¿Por qué necesito un especialista?**\\nR: Las lesiones cerebrales son complejas. Necesita un neurólogo para documentar el daño."
                 }
-            ]
+            ],
+            quiz: {
+                title: "Hechos sobre Lesiones Cerebrales",
+                questions: [
+                    { q: "¿Necesita perder el conocimiento para tener un TBI?", options: ["Sí", "No", "Solo para casos graves"], answer: 1, explanation: "Puede sufrir una conmoción cerebral u otra lesión cerebral sin desmayarse nunca." },
+                    { q: "¿Cuál es una causa común de TBI?", options: ["Leer demasiado", "Caídas", "Estrés"], answer: 1, explanation: "Las caídas son la causa principal, especialmente entre adultos mayores y niños." },
+                    { q: "¿Los síntomas de TBI aparecen inmediatamente?", options: ["Siempre", "A veces días o semanas después", "Nunca"], answer: 1, explanation: "Los síntomas pueden retrasarse, por lo que la atención médica inmediata es crucial incluso si se siente bien." }
+                ]
+            }
         },
         'mesh': {
             title: 'Malla Quirúrgica',
@@ -433,12 +506,16 @@ export const es = {
                 {
                     title: "Litigio Masivo vs. Demanda Colectiva",
                     content: "Estos casos son típicamente **Litigios Multidistritales (MDL)**. Esto significa que ud. tiene su *propia* demanda individual basada en sus lesiones específicas."
-                },
-                {
-                    title: "Preguntas Frecuentes",
-                    content: "**P: ¿Cómo sé si tengo malla?**\\nR: Podemos solicitar sus registros de cirugía para identificar el producto.\\n\\n**P: ¿Es demasiado tarde para demandar?**\\nR: Los plazos son estrictos. Contáctenos inmediatamente para verificar su fecha límite."
                 }
-            ]
+            ],
+            quiz: {
+                title: "Retiro de Malla Herniaria",
+                questions: [
+                    { q: "¿Para qué se usa la malla quirúrgica?", options: ["Reparar hernias", "Arreglar huesos rotos", "Cirugía cardíaca"], answer: 0, explanation: "Se usa comúnmente para reforzar tejidos débiles en reparaciones de hernias." },
+                    { q: "¿Cuál es una complicación grave de la malla?", options: ["Alergia al metal", "Erosión en órganos", "Pérdida de cabello"], answer: 1, explanation: "La malla defectuosa puede migrar y erosionarse en órganos cercanos, causando dolor severo." },
+                    { q: "¿Qué es un MDL?", options: ["Una clínica médica", "Litigio Multidistrital", "Una marca de malla"], answer: 1, explanation: "Es un procedimiento legal especial para manejar muchos casos similares (como malla masiva) de manera eficiente." }
+                ]
+            }
         },
         'hair': {
             title: 'Alisadores de Cabello',
@@ -468,7 +545,15 @@ export const es = {
                     title: "Marcas Involucradas",
                     content: "Marcas como Dark & Lovely, Motions, Olive Oil, y otras."
                 }
-            ]
+            ],
+            quiz: {
+                title: "Seguridad de Productos para el Cabello",
+                questions: [
+                    { q: "¿Qué químico en los alisadores está vinculado al cáncer?", options: ["Agua", "Ftalatos / Disruptores Endocrinos", "Jabón"], answer: 1, explanation: "Los químicos que interfieren con las hormonas pueden aumentar el riesgo de cáncer reproductivo." },
+                    { q: "¿Con qué frecuencia de uso aumenta el riesgo?", options: ["Una vez al año", "4+ veces al año", "Nunca"], answer: 1, explanation: "El uso frecuente (cada 8 semanas o más) duplica consistentemente el riesgo." },
+                    { q: "¿Qué tipos de cáncer están vinculados?", options: ["Pulmón", "Útero y Ovario", "Piel"], answer: 1, explanation: "Los estudios muestran un fuerte vínculo con los cánceres del sistema reproductivo femenino." }
+                ]
+            }
         },
         'roundup': {
             title: 'Roundup',
@@ -498,7 +583,15 @@ export const es = {
                     title: "Daños Recuperables",
                     content: "*   Facturas médicas pasadas y futuras.\\n*   Ingresos perdidos.\\n*   Dolor y sufrimiento."
                 }
-            ]
+            ],
+            quiz: {
+                title: "Riesgos de Roundup",
+                questions: [
+                    { q: "¿Qué ingrediente de Roundup es peligroso?", options: ["Glifosato", "Nitrógeno", "Agua"], answer: 0, explanation: "El glifosato es el ingrediente activo vinculado al cáncer." },
+                    { q: "¿A qué tipo de cáncer está vinculado Roundup?", options: ["Cáncer de pulmón", "Linfoma no Hodgkin", "Cáncer de piel"], answer: 1, explanation: "Juries han encontrado repetidamente que Roundup causa LNH." },
+                    { q: "¿Quién tiene mayor riesgo?", options: ["Oficinistas", "Agricultores y Jardineros", "Pilotos"], answer: 1, explanation: "Aquellos con alta exposición ocupacional enfrentan los mayores riesgos." }
+                ]
+            }
         },
         'talc': {
             title: 'Talco de J&J',
@@ -532,7 +625,15 @@ export const es = {
                     title: "Preguntas Frecuentes",
                     content: "**P: ¿Es segura la maicena?**\\nR: Sí, la maicena no contiene asbesto. Las demandas involucran polvo a base de *talco*."
                 }
-            ]
+            ],
+            quiz: {
+                title: "Seguridad del Talco",
+                questions: [
+                    { q: "¿Qué sustancia peligrosa se encontró en el talco?", options: ["Asbesto", "Plomo", "Polvo"], answer: 0, explanation: "El asbesto es un carcinógeno conocido que ocurre naturalmente cerca de las minas de talco." },
+                    { q: "¿El talco causa qué tipo de cáncer?", options: ["Cáncer de ovario", "Cáncer de hígado", "Cáncer de cerebro"], answer: 0, explanation: "Cuando se usa para la higiene femenina, las fibras de asbesto pueden migrar a los ovarios." },
+                    { q: "¿J&J sabía sobre el asbesto?", options: ["No, fue una sorpresa", "Sí, durante décadas", "Solo recientemente"], answer: 1, explanation: "Documentos internos muestran que sabían sobre la contaminación desde la década de 1970." }
+                ]
+            }
         },
         'ozempic': {
             title: 'Ozempic',
@@ -562,7 +663,15 @@ export const es = {
                     title: "Lesiones Comunes",
                     content: "*   **Síndrome de Vómitos Cíclicos:** Vómitos incontrolables.\\n*   **Deshidratación/Malnutrición:** Requiriendo sueros.\\n*   **Pérdida de Dientes:** Por ácido de vómito crónico."
                 }
-            ]
+            ],
+            quiz: {
+                title: "Efectos Secundarios de Ozempic",
+                questions: [
+                    { q: "¿Qué condición estomacal causa Ozempic?", options: ["Acidez", "Gastroparesia (Parálisis Estomacal)", "Hambre"], answer: 1, explanation: "Puede ralentizar el estómago hasta el punto en que deja de procesar alimentos." },
+                    { q: "¿Cuál es un síntoma de gastroparesia?", options: ["Aumento de energía", "Vómitos severos / cíclicos", "Mejor sueño"], answer: 1, explanation: "Los pacientes a menudo vomitan alimentos no digeridos comidos días antes." },
+                    { q: "¿Advierten las etiquetas sobre parálisis permanente?", options: ["Sí, claramente", "No adecuadamente", "Nadie lo sabía"], answer: 1, explanation: "Las demandas alegan que la etiqueta minimiza el riesgo de daño permanente." }
+                ]
+            }
         },
         'truvada': {
             title: 'Truvada',
@@ -596,7 +705,15 @@ export const es = {
                     title: "Preguntas Frecuentes",
                     content: "**P: ¿Debo dejar mis medicamentos de VIH?**\\nR: NO. Nunca deje la medicación sin un médico. Cambie a alternativas más seguras si se le aconseja."
                 }
-            ]
-        },
+            ],
+            quiz: {
+                title: "Hechos sobre Truvada",
+                questions: [
+                    { q: "¿Qué órganos daña Truvada (TDF)?", options: ["Corazón y Pulmones", "Riñones y Huesos", "Hígado y Ojos"], answer: 1, explanation: "TDF es altamente tóxico para los riñones y causa pérdida de densidad ósea." },
+                    { q: "¿Por qué Gilead no lanzó el medicamento más seguro (TAF)?", options: ["No funcionaba", "Ganancias (protección de patente)", "Era ilegal"], answer: 1, explanation: "Retrasaron el medicamento más seguro para maximizar las ganancias de la patente de TDF." },
+                    { q: "¿Debe dejar de tomar medicamentos para el VIH?", options: ["Sí, inmediatamente", "No, hable con su médico", "Solo los fines de semana"], answer: 1, explanation: "Nunca deje la medicación que salva vidas sin supervisión médica. Pida alternativas más seguras." }
+                ]
+            }
+        }
     }
 };
