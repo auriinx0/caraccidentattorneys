@@ -63,7 +63,11 @@ export const vi = {
         comingSoonTitle: "Sắp Ra Mắt",
         comingSoonDesc: "Chúng tôi hiện đang tổng hợp các kết quả vụ việc mới nhất. Vui lòng kiểm tra lại sau."
     },
-    categories: { 'cat-vehicle': { title: 'Tai Nạn Xe Cơ Giới', desc: 'Ô tô, Xe tải, Xe máy, và hơn thế nữa.' }, 'cat-products': { title: 'Sản Phẩm Nguy Hiểm', desc: 'Thuốc, thiết bị y tế và sản phẩm tiêu dùng bị lỗi.' }, 'cat-injury': { title: 'Thương Tích Cá Nhân', desc: 'Trượt ngã, chấn thương não và sơ suất chung.' } },
+    categories: {
+        'cat-vehicle': { title: 'Tai Nạn Xe Cơ Giới', desc: 'Ô tô, Xe tải, Xe máy, và hơn thế nữa.' },
+        'cat-products': { title: 'Sản Phẩm Nguy Hiểm', desc: 'Thuốc, thiết bị y tế và sản phẩm tiêu dùng bị lỗi.' },
+        'cat-injury': { title: 'Thương Tích Cá Nhân', desc: 'Trượt ngã, chấn thương não và sơ suất chung.' }
+    },
     areas: {
         'car-accidents': {
             title: 'Tai Nạn Ô Tô',
