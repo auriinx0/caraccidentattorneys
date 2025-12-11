@@ -8,6 +8,7 @@ import Testimonials from '../components/Testimonials';
 import CategoryPage from '../components/CategoryPage';
 import DetailPage from '../components/DetailPage';
 import Footer from '../components/Footer';
+import LocationSection from '../components/LocationSection';
 import { TRANSLATIONS } from '../locales';
 import { getCookie, setCookie } from '../utils';
 
@@ -114,6 +115,8 @@ export default function App() {
             </button>
           </div>
         </section>
+
+        <LocationSection />
       </>
     );
   } else if (route.startsWith('category-')) {
