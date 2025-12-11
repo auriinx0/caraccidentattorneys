@@ -1,5 +1,5 @@
 export const en = {
-    nav: { home: "Home", practiceAreas: "Practice Areas", results: "Case Results", contact: "Contact Us", freeConsult: "Free Consultation" },
+    nav: { home: "Home", practiceAreas: "Practice Areas", results: "Case Results", blog: "Blog", contact: "Contact Us", freeConsult: "Free Consultation" },
     hero: {
         subSlogan: "Relentless representation for injury victims. You don't pay unless we win.",
         stat1: "$1 Billion+", stat1Label: "Recovered",

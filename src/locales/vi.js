@@ -3,6 +3,8 @@ export const vi = {
         home: "Trang Chủ",
         practiceAreas: "Lĩnh Vực Hành Nghề",
         results: "Kết Quả",
+        blog: "Blog",
+        contact: "Liên Hệ",
         freeConsult: "Tư Vấn Miễn Phí"
     },
     hero: {

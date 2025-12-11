@@ -16,6 +16,7 @@ import Link from 'next/link';
 // --- Main App Component ---
 
 import VerdictsPage from '../components/VerdictsPage';
+import BlogPage from '../components/BlogPage';
 
 export default function App() {
   const [lang, setLang] = useState('en');
@@ -123,6 +124,8 @@ export default function App() {
     content = <DetailPage areaId={areaId} t={t} setRoute={setRoute} />;
   } else if (route === 'results') {
     content = <VerdictsPage t={t} />;
+  } else if (route === 'blog') {
+    content = <BlogPage />;
   } else if (route === 'practiceAreas') {
     // Direct navigation to categories view, defaulting to vehicle or a main hub
     // For now, let's route to the main vehicle category or just show the main categories component again if needed

@@ -1,5 +1,5 @@
 export const zh = {
-    nav: { home: "主页", practiceAreas: "业务领域", results: "案例结果", contact: "联系我们", freeConsult: "免费咨询" },
+    nav: { home: "主页", practiceAreas: "业务领域", results: "案例结果", blog: "博客", contact: "联系我们", freeConsult: "免费咨询" },
     hero: { subSlogan: "为受害者提供不懈的代理。除非我们胜诉，否则您无需付费。", stat1: "$10亿+", stat1Label: "已收回", slogans: [{ l1: "赢得数十亿。", l2: "我们赢了。" }, { l1: "无费用。", l2: "直到我们胜诉。" }, { l1: "在拨打 911 之前致电我们。", l2: "我们可以赢。" }, { l1: "为您伸张正义。", l2: "让您安心。" }] },
     form: { title: "免费案例评估", subtitle: "我们的办公室将在 24 小时内与您联系。", nameLabel: "全名", phoneLabel: "电话号码", emailLabel: "电子邮件地址", stateLabel: "事故发生州", dateLabel: "事故日期", timeLabel: "事故时间", accidentLabel: "描述事故", injuryLabel: "受伤类型", submitBtn: "提交", disclaimer: "*按“提交”即表示您同意接收电话和短信通知。", sending: "发送中...", success: "请求已成功发送！", error: "错误。请重试。" },
     sections: { areasTitle: "我们的业务领域", areasSubtitle: "选择一个类别以查看特定案例类型", viewAll: "查看所有案例", learnMore: "了解更多", whyUs: "为什么选择 Car Accident Attorneys？", callToAction: "不要等待。迟到的正义就是拒绝正义。" },

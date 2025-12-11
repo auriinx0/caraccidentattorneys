@@ -43,6 +43,12 @@ const Header = ({ lang, setLang, setRoute, t, isScrolled, handleLangChange }) =>
                     >
                         {t.nav.results}
                     </button>
+                    <button
+                        onClick={() => setRoute('blog')}
+                        className="text-gray-300 hover:text-white text-xs font-bold uppercase tracking-widest transition hover:text-red-500"
+                    >
+                        {t.nav.blog}
+                    </button>
 
                     {/* Language Selector */}
                     <div className="flex items-center space-x-2 bg-black/40 px-3 py-1 border border-gray-700 rounded-sm">
@@ -91,6 +97,12 @@ const Header = ({ lang, setLang, setRoute, t, isScrolled, handleLangChange }) =>
                             className="text-white text-2xl font-serif font-bold uppercase tracking-widest"
                         >
                             {t.nav.results}
+                        </button>
+                        <button
+                            onClick={() => { setRoute('blog'); setMobileMenuOpen(false); }}
+                            className="text-white text-2xl font-serif font-bold uppercase tracking-widest"
+                        >
+                            {t.nav.blog}
                         </button>
 
                         <div className="flex flex-wrap justify-center gap-4 mt-8">

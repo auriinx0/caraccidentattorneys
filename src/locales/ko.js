@@ -1,5 +1,5 @@
 export const ko = {
-    nav: { home: "홈", practiceAreas: "업무 분야", results: "승소 사례", contact: "문의하기", freeConsult: "무료 상담" },
+    nav: { home: "홈", practiceAreas: "업무 분야", results: "승소 사례", blog: "블로그", contact: "문의하기", freeConsult: "무료 상담" },
     hero: { subSlogan: "피해자를 위한 끊임없는 대변. 승소하지 않으면 수임료를 받지 않습니다.", stat1: "$10억+", stat1Label: "보상금 회수", slogans: [{ l1: "수십억 달러 승소.", l2: "우리는 이깁니다." }, { l1: "수임료 0원.", l2: "승소할 때까지." }, { l1: "911보다 먼저 전화하세요.", l2: "우리가 승리합니다." }, { l1: "부상에 대한 정의.", l2: "마음의 평화." }] },
     form: { title: "무료 사건 검토", subtitle: "무료 견적을 받아보세요.", namePlaceholder: "성함", phonePlaceholder: "전화번호", emailPlaceholder: "이메일 주소", detailsPlaceholder: "사건 경위를 말씀해 주세요...", submitBtn: "무료 견적 및 상담 지금 연락하세요", sending: "전송 중...", success: "요청이 전송되었습니다!", error: "오류가 발생했습니다. 다시 시도해 주세요.", stateLabel: "사고 발생 주", dateLabel: "사고 날짜", timeLabel: "사고 시간", accidentLabel: "사고 경위", injuryLabel: "부상 유형" },
     sections: { areasTitle: "전문 분야", areasSubtitle: "특정 사건 유형을 보려면 카테고리를 선택하세요", viewAll: "모든 사례 보기", learnMore: "더 알아보기", whyUs: "왜 Car Accident Attorneys를 선택해야 할까요?", callToAction: "기다리지 마십시오. 지체된 정의는 정의가 아닙니다." },

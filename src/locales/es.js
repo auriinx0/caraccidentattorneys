@@ -1,5 +1,5 @@
 export const es = {
-    nav: { home: "Inicio", practiceAreas: "Áreas de Práctica", results: "Resultados", contact: "Contáctenos", freeConsult: "Consulta Gratis" },
+    nav: { home: "Inicio", practiceAreas: "Áreas de Práctica", results: "Resultados", blog: "Blog", contact: "Contáctenos", freeConsult: "Consulta Gratis" },
     hero: { subSlogan: "Representación implacable para víctimas. No paga a menos que ganemos.", stat1: "$1 Billón+", stat1Label: "Recuperado", slogans: [{ l1: "Billones Ganados.", l2: "Ganamos." }, { l1: "Sin Honorarios.", l2: "Hasta Que Ganemos." }, { l1: "Llámenos Antes del 911.", l2: "Podemos Ganar." }, { l1: "Justicia Para Su Lesión.", l2: "Paz Para Su Mente." }] },
     form: { title: "Evaluación Gratuita", subtitle: "Nuestra oficina se comunicará con usted dentro de las 24 horas.", nameLabel: "Nombre Completo", phoneLabel: "Número de Teléfono", emailLabel: "Correo Electrónico", stateLabel: "Estado", dateLabel: "Fecha del Accidente", timeLabel: "Hora del Accidente", accidentLabel: "Describa el Accidente", injuryLabel: "Tipo de Lesión", submitBtn: "Enviar", disclaimer: "*Al presionar 'Enviar' usted acepta recibir llamadas y notificaciones SMS.", sending: "Enviando...", success: "¡Solicitud Enviada!", error: "Error. Intente de nuevo." },
     sections: { areasTitle: "Nuestras Áreas de Práctica", areasSubtitle: "Seleccione una categoría para ver tipos de casos específicos", viewAll: "Ver Todos los Casos", learnMore: "Aprende Más", whyUs: "¿Por qué elegir Car Accident Attorneys?", callToAction: "No Espere. Justicia Retrasada es Justicia Denegada." },
@@ -717,3 +717,4 @@ export const es = {
         }
     }
 };
+c
