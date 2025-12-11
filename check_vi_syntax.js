@@ -22,6 +22,8 @@ try {
         console.log('vi.categories exists.');
     }
 
+    if (!vi.testimonials || !vi.testimonials.reviews) console.error('MISSING TESTIMONIALS/REVIEWS');
+
     // Check keys
     const expectedCategories = ['cat-vehicle', 'cat-products', 'cat-injury'];
     expectedCategories.forEach(id => {

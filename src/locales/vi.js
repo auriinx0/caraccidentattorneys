@@ -56,6 +56,18 @@ export const vi = {
         whatToDoTitle: "Làm Gì Sau Tai Nạn",
         howWeHelpTitle: "Chúng Tôi Có Thể Giúp Như Thế Nào"
     },
+    testimonials: {
+        title: "Khách Hàng Nói Gì",
+        subtitle: "Xem khách hàng nói gì về chúng tôi.",
+        googleRating: "Đánh Giá Google",
+        reviews: [
+            { name: "Sarah J.", text: "Họ đã chiến đấu vì tôi khi không ai khác làm điều đó. Tôi không thể đòi hỏi sự đại diện tốt hơn." },
+            { name: "Michael T.", text: "Chuyên nghiệp, nhạy bén và tàn nhẫn trong phòng xử án. Rất khuyến khích." },
+            { name: "Emily R.", text: "Tôi đã choáng ngợp sau vụ tai nạn của mình, nhưng họ đã lo liệu mọi thứ. Tôi đã nhận được nhiều hơn tôi mong đợi." },
+            { name: "David K.", text: "Đội ngũ pháp lý tốt nhất ở Las Vegas. Họ thực sự quan tâm đến khách hàng của mình." },
+            { name: "Jessica M.", text: "Giao tiếp tuyệt vời trong suốt quá trình. Tôi cảm thấy an toàn khi biết họ đang đứng về phía mình." }
+        ]
+    },
     verdicts: {
         title: "Bản Án",
         titleSpan: "Của Chúng Tôi",
