@@ -1,11 +1,14 @@
 import React, { useState } from 'react';
 import { Scale, Globe, Phone, Menu, X } from 'lucide-react';
 
-const Header = ({ lang, setLang, setRoute, t, isScrolled, handleLangChange }) => {
+const Header = ({ lang, setLang, route, setRoute, t, isScrolled, handleLangChange }) => {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
+    // Use dark background if scrolled OR if on blog page (since it has white background)
+    const useDarkHeader = isScrolled || route === 'blog';
+
     return (
-        <nav className={`fixed w-full z-[100] transition-all duration-300 ${isScrolled ? 'bg-[#1a1a1a] shadow-xl py-2' : 'bg-transparent py-4 md:py-6'}`}>
+        <nav className={`fixed w-full z-[100] transition-all duration-300 ${useDarkHeader ? 'bg-[#1a1a1a] shadow-xl py-2' : 'bg-transparent py-4 md:py-6'}`}>
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
 
                 {/* Logo - Fixed Single Line Layout */}
@@ -14,10 +17,10 @@ const Header = ({ lang, setLang, setRoute, t, isScrolled, handleLangChange }) =>
                     className="flex items-center cursor-pointer group z-50 relative"
                 >
                     <div className="bg-red-700 p-2 mr-3 shadow-lg">
-                        <Scale className="h-6 w-6 text-white" />
+                        <Scale className="h-5 w-5 md:h-6 md:w-6 text-white" />
                     </div>
                     <div className="flex items-center">
-                        <span className="font-serif text-lg md:text-2xl lg:text-3xl font-bold text-white tracking-wide uppercase">
+                        <span className="font-serif text-base md:text-xl lg:text-2xl font-bold text-white tracking-wide uppercase">
                             Car Accident<span className="text-red-600 ml-1">Attorneys</span>
                         </span>
                     </div>

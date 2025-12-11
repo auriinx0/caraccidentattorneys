@@ -152,6 +152,7 @@ export default function App() {
       <Header
         lang={lang}
         setLang={setLang}
+        route={route}
         setRoute={setRoute}
         t={t}
         isScrolled={isScrolled}
