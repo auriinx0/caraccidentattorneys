@@ -49,7 +49,12 @@ export const vi = {
         phone: "(555) 000-0000",
         rights: "Đã đăng ký bản quyền."
     },
-    detail: {
+    detailPage: {
+        introPart1: "Tại Car Accident Attorneys, chúng tôi chuyên về các vụ việc",
+        introPart2: ". Nếu bạn hoặc người thân bị thương, bạn cần một đội ngũ quyết liệt hiểu rõ sự phức tạp của các khiếu nại cụ thể này.",
+        whyTitle: "Tại Sao Bạn Cần Người Đại Diện",
+        whyText: "Các công ty bảo hiểm và các tập đoàn lớn có đội ngũ luật sư làm việc để từ chối hoặc giảm thiểu yêu cầu bồi thường của bạn. Không có sự đại diện pháp lý mạnh mẽ, bạn sẽ gặp bất lợi. Chúng tôi sẽ cân bằng sân chơi.",
+        commitTitle: "Cam Kết Của Chúng Tôi Với Bạn:",
         commitments: ["Không Chi Phí Trả Trước", "Điều Phối Chăm Sóc Y Tế", "Hỗ Trợ Thiệt Hại Tài Sản", "Thu Hồi Thu Nhập Đã Mất", "Bồi Thường Tối Đa", "Chuẩn Bị Xét Xử"],
         aboutTitle: "Về Vụ Việc Này",
         aboutText: "Chúng tôi điều tra từng chi tiết vụ việc của bạn. Từ việc thu thập cảnh quay giám sát đến thuê chuyên gia tái hiện tai nạn hoặc chuyên gia y tế, chúng tôi không bỏ sót điều gì để chứng minh trách nhiệm pháp lý và thiệt hại.",

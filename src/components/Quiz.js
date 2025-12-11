@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { CheckCircle, XCircle, RefreshCw, Trophy, HelpCircle } from 'lucide-react';
 
 const Quiz = ({ data }) => {
@@ -9,6 +9,11 @@ const Quiz = ({ data }) => {
     const [isCorrect, setIsCorrect] = useState(null);
 
     if (!data || !data.questions || data.questions.length === 0) return null;
+
+    // Reset quiz when data changes (e.g. navigating between pages)
+    useEffect(() => {
+        resetQuiz();
+    }, [data]);
 
     const handleOptionClick = (index) => {
         if (selectedOption !== null) return; // Prevent multiple clicks
