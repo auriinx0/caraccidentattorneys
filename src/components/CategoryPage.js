@@ -7,7 +7,10 @@ const CategoryPage = ({ catId, t, setRoute }) => {
     const categoryStruct = CATEGORY_STRUCT.find(c => c.id === catId);
     if (!categoryStruct) return null;
     const catInfo = t.categories[catId] || { title: 'Not Found', desc: '' };
-    const relevantAreas = AREA_STRUCT.filter(a => a.categoryId === catId).map(area => ({ ...area, ...t.areas[area.id] }));
+    const relevantAreas = AREA_STRUCT.filter(a => a.categoryId === catId).map(area => ({
+        ...area,
+        ...((t.areas && t.areas[area.id]) || {})
+    }));
 
     return (
         <div className="bg-[#1a1a1a] min-h-screen">
