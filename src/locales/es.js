@@ -717,4 +717,3 @@ export const es = {
         }
     }
 };
-c
