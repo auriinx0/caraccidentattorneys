@@ -7,6 +7,7 @@ import MainCategories from '../components/MainCategories';
 import Testimonials from '../components/Testimonials';
 import CategoryPage from '../components/CategoryPage';
 import DetailPage from '../components/DetailPage';
+import WhatToExpect from '../components/WhatToExpect';
 import Footer from '../components/Footer';
 import LocationSection from '../components/LocationSection';
 import { TRANSLATIONS } from '../locales';
@@ -99,6 +100,7 @@ export default function App() {
       <>
         <Hero t={t} />
         <MainCategories t={t} setRoute={setRoute} />
+        <WhatToExpect t={t} />
         <Testimonials t={t} />
         {/* "We Win" Banner */}
         <section className="py-24 bg-[#111] text-white relative overflow-hidden">

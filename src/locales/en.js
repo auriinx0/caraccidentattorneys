@@ -27,7 +27,24 @@ export const en = {
         success: "Request Sent Successfully!",
         error: "Error. Please try again."
     },
-    sections: { areasTitle: "Our Practice Areas", areasSubtitle: "Select a category to view specific case types", viewAll: "View All Cases", learnMore: "Learn More", whyUs: "Why Choose Car Accident Attorneys?", callToAction: "Don't Wait. Justice Delayed is Justice Denied." },
+    sections: {
+        areasTitle: "Our Practice Areas",
+        areasSubtitle: "Select a category to view specific case types",
+        viewAll: "View All Cases",
+        learnMore: "Learn More",
+        whyUs: "Why Choose Car Accident Attorneys?",
+        callToAction: "Don't Wait. Justice Delayed is Justice Denied."
+    },
+    process: {
+        title: "What to Expect",
+        subtitle: "Our Simple 3-Step Process to Justice",
+        step1: "Free Consultation",
+        step1Desc: "Tell us what happened. We'll listen, answer your questions, and evaluate your case for free.",
+        step2: "Investigation",
+        step2Desc: "We gather evidence, talk to witnesses, and build a rock-solid case while you focus on healing.",
+        step3: "We Fight for Your Check",
+        step3Desc: "We negotiate aggressively or go to trial to ensure you get the maximum compensation you deserve."
+    },
     footer: { copyright: "© 2025 Car Accident Attorneys. All Rights Reserved.", mainOffice: "Main Office", newClients: "New Clients" },
     testimonials: {
         title: "Client Success Stories",
