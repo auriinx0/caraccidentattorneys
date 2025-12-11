@@ -105,7 +105,15 @@ export const en = {
                     title: "FAQ",
                     content: "**Q: How long do I have to file a claim?**\\nA: The statute of limitations varies by state, but it is typically 2 years from the date of the accident.\\n\\n**Q: What if the other driver doesn't have insurance?**\\nA: You may be able to file a claim under your own Uninsured Motorist coverage.\\n\\n**Q: Should I accept the first settlement offer?**\\nA: No. Initial offers are almost always lower than your case's true value. Always consult an attorney first."
                 }
-            ]
+            ],
+            quiz: {
+                title: "Car Accident Findings",
+                questions: [
+                    { q: "What is the most common cause of rear-end collisions?", options: ["Distracted Driving", "Weather", "Speeding"], answer: 0, explanation: "Distracted driving is a leading cause of sudden stops and rear-end crashes." },
+                    { q: "What should you do immediately after an accident?", options: ["Call Insurance", "Call 911", "Drive Home"], answer: 1, explanation: "Ensuring safety and getting a police report is the first priority." },
+                    { q: "Why see a doctor even if you feel fine?", options: ["To get medication", "Hidden injuries like whiplash", "Insurance requires it"], answer: 1, explanation: "Adrenaline can mask symptoms of serious injuries like whiplash or concussions." }
+                ]
+            }
         },
         'motorcycle': {
             title: 'Motorcycle Accidents',
@@ -141,7 +149,15 @@ export const en = {
                     title: "FAQ",
                     content: "**Q: Is lane splitting legal?**\\nA: It depends on your state. In California, it is legal; in many others, it is not.\\n\\n**Q: Do I have to wear a helmet?**\\nA: Helmet laws vary by state, but wearing one significantly reduces injury risk and strengthens your legal claim."
                 }
-            ]
+            ],
+            quiz: {
+                title: "Motorcycle Safety Quiz",
+                questions: [
+                    { q: "How effective are helmets in preventing fatal injuries?", options: ["10%", "37%", "90%"], answer: 1, explanation: "Studies show helmets reduce the risk of death by approximately 37%." },
+                    { q: "Is lane splitting legal in all states?", options: ["Yes", "No", "Only on highways"], answer: 1, explanation: "Lane splitting laws vary significantly, with California being one of the few to explicitly allow it." },
+                    { q: "What is 'Road Rash'?", options: ["A skin condition", "Severe skin abrasion from pavement", "A type of helmet"], answer: 1, explanation: "Road rash is a painful injury caused by sliding across pavement without protective gear." }
+                ]
+            }
         },
         'commercial': {
             title: 'Truck Accidents',
@@ -176,7 +192,15 @@ export const en = {
                     title: "FAQ",
                     content: "**Q: What is a 'Black Box'?**\\nA: An Event Data Recorder (EDR) that records speed, braking, and steering data before a crash. It is crucial evidence.\\n\\n**Q: How much insurance do trucks carry?**\\nA: Commercial trucks are required to carry much higher liability limits (often $750,000 to $5,000,000) than passenger cars."
                 }
-            ]
+            ],
+            quiz: {
+                title: "Trucking Industry Quiz",
+                questions: [
+                    { q: "What is a 'Black Box' in a truck?", options: ["A storage unit", "Event Data Recorder (EDR)", "The engine"], answer: 1, explanation: "The EDR records crucial data like speed and braking just before a crash." },
+                    { q: "Who can be held liable in a truck accident?", options: ["The Driver only", "The Trucking Company only", "Multiple parties"], answer: 2, explanation: "Trucking cases often involve shared liability among several parties (driver, company, loader)." },
+                    { q: "What is a common cause of truck accidents?", options: ["Driver Fatigue", "Using turn signals", "Obeying speed limits"], answer: 0, explanation: "Driving beyond legal hour limits leads to fatigue and slower reaction times." }
+                ]
+            }
         },
         'boating': {
             title: 'Boating Accidents',
@@ -211,7 +235,15 @@ export const en = {
                     title: "FAQ",
                     content: "**Q: Do I need a license to operate a boat?**\\nA: Most states require a boating safety course certification.\\n\\n**Q: Who is liable for a wake accident?**\\nA: Boat operators are responsible for damage caused by their wake."
                 }
-            ]
+            ],
+            quiz: {
+                title: "Boating Safety Challenge",
+                questions: [
+                    { q: "What is the primary factor in fatal boating accidents?", options: ["Speeding", "Weather", "Alcohol use"], answer: 2, explanation: "Alcohol impairment is the leading known contributing factor in recreational boating deaths." },
+                    { q: "Do you need a license to operate a boat?", options: ["No, anyone can drive", "Yes, usually a safety certification", "Only for yachts"], answer: 1, explanation: "Most states require completion of a boating safety course." },
+                    { q: "Who is responsible for wake damage?", options: ["The boat operator", "The marina", "Other boats"], answer: 0, explanation: "Operators are legally responsible for damage caused by their boat's wake." }
+                ]
+            }
         },
         'bus': {
             title: 'Bus Accidents',
@@ -242,7 +274,15 @@ export const en = {
                     title: "FAQ",
                     content: "**Q: Can I sue if I was a passenger?**\\nA: Yes, passengers are rarely at fault.\\n\\n**Q: What if the bus is government-owned?**\\nA: Contact a lawyer immediately. Missing the short filing deadline (Notice of Claim) can permanently bar your right to sue."
                 }
-            ]
+            ],
+            quiz: {
+                title: "Bus Accident Knowledge",
+                questions: [
+                    { q: "What is the deadline for filing a claim against a city bus?", options: ["2 Years", "6 Months or less (Notice of Claim)", "No deadline"], answer: 1, explanation: "Government entities often have very strict, short notice deadlines." },
+                    { q: "Can a passenger sue if injured on a bus?", options: ["Yes, almost always", "No, never", "Only if standing"], answer: 0, explanation: "Passengers are rarely at fault and have rights to compensation." },
+                    { q: "Why are bus cases unique?", options: ["They are cheaper", "Sovereign Immunity may apply", "No insurance involved"], answer: 1, explanation: "Claims against government-owned buses must navigate sovereign immunity laws." }
+                ]
+            }
         },
         'rideshare': {
             title: 'Uber and Lyft Rideshare',
@@ -273,7 +313,15 @@ export const en = {
                     title: "FAQ",
                     content: "**Q: Can I sue Uber/Lyft directly?**\\nA: It is difficult because drivers are 'independent contractors,' but you can sue for their insurance coverage.\\n\\n**Q: What if I was a passenger?**\\nA: You are fully covered by the $1 Million policy in most cases."
                 }
-            ]
+            ],
+            quiz: {
+                title: "Rideshare Liability Quiz",
+                questions: [
+                    { q: "How much liability coverage applies during an active ride (Period 3)?", options: ["$50,000", "$1 Million", "$0"], answer: 1, explanation: "Uber and Lyft provide $1 million policies when a passenger is in the car." },
+                    { q: "Is it easy to sue Uber/Lyft directly?", options: ["Yes", "No, drivers are contractors", "Only on Tuesdays"], answer: 1, explanation: "Their 'independent contractor' model shields them from direct liability in many cases." },
+                    { q: "Whose insurance covers the driver when the app is OFF?", options: ["Uber's", "The driver's personal insurance", "The city's"], answer: 1, explanation: "When not working, the driver is covered only by their personal policy." }
+                ]
+            }
         },
         'pedestrian': {
             title: 'Pedestrian Accidents',
@@ -309,7 +357,15 @@ export const en = {
                     title: "FAQ",
                     content: "**Q: Can I recover damages if I was jaywalking?**\\nA: Possibly. Comparative negligence laws may allow you to recover partial damages if the driver was also at fault (e.g., speeding).\\n\\n**Q: What if it was a hit-and-run?**\\nA: Your own Uninsured Motorist (UM) insurance may cover your injuries."
                 }
-            ]
+            ],
+            quiz: {
+                title: "Pedestrian Safety Quiz",
+                questions: [
+                    { q: "Where do nearly 75% of pedestrian fatalities occur?", options: ["Rural roads", "Highways", "Urban areas"], answer: 2, explanation: "Urban settings with high traffic density pose the greatest risk." },
+                    { q: "Do pedestrians always have the right of way?", options: ["Yes, always", "No, they must follow signals too", "Only on Sundays"], answer: 1, explanation: "Pedestrians must obey traffic signals and use crosswalks where available." },
+                    { q: "Who pays if it's a hit-and-run?", options: ["No one", "The city", "Your Uninsured Motorist (UM) policy"], answer: 2, explanation: "Your own auto insurance's UM coverage protects you even as a pedestrian." }
+                ]
+            }
         },
         'passenger': {
             title: 'Passenger Injuries',
@@ -344,7 +400,15 @@ export const en = {
                     title: "FAQ",
                     content: "**Q: Will my premiums go up if I file a claim as a passenger?**\\nA: Generally, no. You were not driving.\\n\\n**Q: What if both drivers were at fault?**\\nA: You may be able to collect compensation from both insurance policies."
                 }
-            ]
+            ],
+            quiz: {
+                title: "Passenger Rights Quiz",
+                questions: [
+                    { q: "Will your insurance rates go up if you file a claim as a passenger?", options: ["Yes", "No", "Maybe"], answer: 1, explanation: "Generally, no, because you were not the one driving the vehicle." },
+                    { q: "Can you sue if the driver was a friend?", options: ["No, it's rude", "Yes, you sue their insurance", "Only for medical bills"], answer: 1, explanation: "You are filing a claim against their insurance company, not taking money from their pocket." },
+                    { q: "What is a common 'Dashboard Injury'?", options: ["Headache", "Knee/Leg fracture", "Wrist sprain"], answer: 1, explanation: "Knees striking the dashboard upon impact is a frequent cause of severe fractures." }
+                ]
+            }
         },
         'slip-fall': {
             title: 'Slip and Fall',
@@ -379,7 +443,15 @@ export const en = {
                     title: "FAQ",
                     content: "**Q: What is 'Constructive Notice'?**\\nA: It means the spill was there long enough that the store *should* have seen and cleaned it.\\n\\n**Q: Should I fill out an incident report?**\\nA: Yes, but keep it brief and factual. Do not admit fault."
                 }
-            ]
+            ],
+            quiz: {
+                title: "Slip and Fall Liability",
+                questions: [
+                    { q: "What is 'Constructive Notice'?", options: ["Written warning", "The owner *should* have known", "A sign on the door"], answer: 1, explanation: "It means the hazard existed long enough that reasonable care would have discovered it." },
+                    { q: "What is the leading cause of emergency room visits?", options: ["Car crashes", "Falls", "Sports injuries"], answer: 1, explanation: "Falls account for over 8 million ER visits annually." },
+                    { q: "Do you need to prove negligence in a slip and fall?", options: ["Yes", "No, it's automatic", "Only if it rained"], answer: 0, explanation: "You must prove the owner failed in their duty to keep the premises safe." }
+                ]
+            }
         },
         'construction': {
             title: 'Construction Zone Accidents',
@@ -414,7 +486,15 @@ export const en = {
                     title: "FAQ",
                     content: "**Q: Can I sue if I was visiting the site?**\\nA: Yes, non-employees have full rights to sue for negligence.\\n\\n**Q: Who pays for my medical bills?**\\nA: Workers' comp should pay immediately. A lawsuit can recover additional costs later."
                 }
-            ]
+            ],
+            quiz: {
+                title: "Construction Safety Quiz",
+                questions: [
+                    { q: "Which is one of the 'Fatal Four' construction hazards?", options: ["Falls", "Loud noise", "Dust"], answer: 0, explanation: "Falls are the leading cause of death in the construction industry." },
+                    { q: "Can you sue your employer for a workplace injury?", options: ["Yes", "No (Workers' Comp applies)", "Only if fired"], answer: 1, explanation: "Generally, workers' comp is the exclusive remedy against an employer, but third parties can be sued." },
+                    { q: "Who can be sued in a Third-Party claim?", options: ["Internal HR", "Subcontractors or manufacturers", "Co-workers"], answer: 1, explanation: "Negligent subcontractors, equipment makers, or property owners are valid targets for lawsuits." }
+                ]
+            }
         },
         'brain': {
             title: 'Brain Injuries',
@@ -449,7 +529,15 @@ export const en = {
                     title: "FAQ",
                     content: "**Q: Can I have a TBI without losing consciousness?**\\nA: Yes. Concussions often occur without blacking out.\\n\\n**Q: Why do I need a specialist?**\\nA: Brain injuries are complex. You need a neurologist to document the damage for your legal case."
                 }
-            ]
+            ],
+            quiz: {
+                title: "Brain Injury Awareness",
+                questions: [
+                    { q: "What is the #1 cause of TBI?", options: ["Sports", "Falls", "Car accidents"], answer: 1, explanation: "Falls are the leading cause of Traumatic Brain Injuries, especially in older adults." },
+                    { q: "Can you have a TBI without losing consciousness?", options: ["Yes", "No", "Only if bleeding"], answer: 0, explanation: "Concussions frequently occur without any loss of consciousness." },
+                    { q: "Which specialist treats TBIs?", options: ["Cardiologist", "Neurologist", "Dermatologist"], answer: 1, explanation: "Neurologists specialize in the brain and nervous system." }
+                ]
+            }
         },
         'mesh': {
             title: 'Surgical Mesh',
@@ -483,7 +571,15 @@ export const en = {
                     title: "FAQ",
                     content: "**Q: How do I know if I have mesh?**\\nA: We can request your surgery records (Operative Report) to identify the product ID.\\n\\n**Q: Is it too late to sue?**\\nA: Statutes of limitations are strict. Contact us immediately to check your deadline."
                 }
-            ]
+            ],
+            quiz: {
+                title: "Surgical Mesh Risks",
+                questions: [
+                    { q: "What is a major complication of surgical mesh?", options: ["Headaches", "Erosion into organs", "Weight gain"], answer: 1, explanation: "Mesh erosion occurs when the implant cuts through tissues or organs, causing severe pain." },
+                    { q: "Are these class action lawsuits?", options: ["Yes", "No, they are Mass Torts (MDLs)", "No, small claims"], answer: 1, explanation: "MDLs allow for individual settlements based on specific injuries, unlike class actions." },
+                    { q: "Has the FDA warned about mesh?", options: ["No", "Yes, thousands of reports", "They endorsed it"], answer: 1, explanation: "The FDA has received thousands of adverse event reports regarding transvaginal mesh." }
+                ]
+            }
         },
         'hair': {
             title: 'Hair Relaxer Lawsuit',
@@ -517,7 +613,15 @@ export const en = {
                     title: "FAQ",
                     content: "**Q: Are fibroids covered?**\\nA: Currently, most litigation focuses on cancer, but fibroid claims are being evaluated.\\n\\n**Q: Do I need receipts from years ago?**\\nA: No, affidavits and photos can help prove usage history."
                 }
-            ]
+            ],
+            quiz: {
+                title: "Hair Relaxer Safety",
+                questions: [
+                    { q: "Frequent use of hair relaxers is linked to which cancers?", options: ["Lung", "Uterine and Ovarian", "Skin"], answer: 1, explanation: "Studies have found a strong correlation between chemical straighteners and hormone-sensitive cancers." },
+                    { q: "Who is at highest risk?", options: ["Occasional users", "Women using it 4+ times a year", "Salon workers only"], answer: 1, explanation: "Frequent usage (every 8 weeks or more) significantly increases the risk." },
+                    { q: "What dangerous chemicals are involved?", options: ["EDCs (Endocrine Disruptors)", "Vitamins", "Water"], answer: 0, explanation: "Phthalates and other EDCs mimic estrogen, fueling cancer growth." }
+                ]
+            }
         },
         'roundup': {
             title: 'Roundup',
@@ -551,7 +655,15 @@ export const en = {
                     title: "FAQ",
                     content: "**Q: I have a different cancer, can I sue?**\\nA: The strongest scientific link is currently with Non-Hodgkin Lymphoma (NHL).\\n\\n**Q: Has Monsanto settled?**\\nA: Bayer (Monsanto's owner) has paid billions in settlements, but new cases are still being filed."
                 }
-            ]
+            ],
+            quiz: {
+                title: "Roundup Toxicity Quiz",
+                questions: [
+                    { q: "What is the active ingredient in Roundup?", options: ["Glyphosate", "Nitrogen", "H2O"], answer: 0, explanation: "Glyphosate has been classified as 'probably carcinogenic' by the IARC." },
+                    { q: "Which cancer is most linked to Roundup?", options: ["Lung Cancer", "Non-Hodgkin Lymphoma (NHL)", "Melanoma"], answer: 1, explanation: "Thousands of plaintiffs allege that Roundup exposure caused their NHL." },
+                    { q: "Who is most at risk?", options: ["Office workers", "Landscapers and Farmers", "Drivers"], answer: 1, explanation: "Those with high occupational exposure face the highest risks." }
+                ]
+            }
         },
         'talc': {
             title: 'J&J Talcum Powder',
@@ -585,7 +697,15 @@ export const en = {
                     title: "FAQ",
                     content: "**Q: Is cornstarch powder safe?**\\nA: Yes, cornstarch does not contain asbestos. The lawsuits involve *talc*-based powder."
                 }
-            ]
+            ],
+            quiz: {
+                title: "Talcum Powder Safety",
+                questions: [
+                    { q: "What harmful substance can contaminate talc?", options: ["Lead", "Asbestos", "Mold"], answer: 1, explanation: "Asbestos is often found near talc deposits and can contaminate the final product." },
+                    { q: "What did internal documents reveal?", options: ["J&J knew about asbestos", "It was safe", "Nothing"], answer: 0, explanation: "The 'Talc Papers' suggest executives knew of the risks for decades but failed to warn consumers." },
+                    { q: "What type of cancer is linked to genital talc use?", options: ["Ovarian Cancer", "Breast Cancer", "Liver Cancer"], answer: 0, explanation: "Asbestos fibers can travel to the ovaries, causing inflammation and cancer." }
+                ]
+            }
         },
         'ozempic': {
             title: 'Ozempic',
@@ -619,7 +739,15 @@ export const en = {
                     title: "FAQ",
                     content: "**Q: What if I used generic semaglutide?**\\nA: Compounded or generic versions may have different legal issues. We are currently focusing on name-brand Ozempic, Wegovy, and Mounjaro."
                 }
-            ]
+            ],
+            quiz: {
+                title: "Ozempic Side Effects",
+                questions: [
+                    { q: "What severe condition is linked to Ozempic?", options: ["Hair loss", "Gastroparesis (Stomach Paralysis)", "Insomnia"], answer: 1, explanation: "Stomach paralysis causes food to rot in the stomach, leading to severe vomiting." },
+                    { q: "What is the drug generic name?", options: ["Semaglutide", "Ibuprofen", "Acetaminophen"], answer: 0, explanation: "Ozempic and Wegovy are brand names for semaglutide." },
+                    { q: "What do lawsuits allege?", options: ["It doesn't work", "Failure to warn of severe risks", "It's too expensive"], answer: 1, explanation: "Plaintiffs argue manufacturers did not adequately warn about the risk of permanent stomach paralysis." }
+                ]
+            }
         },
         'truvada': {
             title: 'Truvada',
@@ -655,11 +783,11 @@ export const en = {
                 }
             ],
             quiz: {
-                title: "Rideshare Rights Quiz",
+                title: "Truvada Litigation Quiz",
                 questions: [
-                    { q: "If you are a passenger in an Uber, are you covered?", options: ["No", "Yes, up to $1 Million", "Only if you have your own insurance"], answer: 1, explanation: "Uber/Lyft provide $1M liability coverage for passengers during an active trip." },
-                    { q: "Who do you report the accident to?", options: ["Just the driver", "Uber/Lyft and the Police", "No one"], answer: 1, explanation: "You must report it to the app company and the police to document the incident." },
-                    { q: "Are rideshare drivers employees?", options: ["Yes", "No, independent contractors", "It depends on the state"], answer: 1, explanation: "They are typically classified as independent contractors, which complicates liability suits." }
+                    { q: "What are the main injuries linked to TDF drugs?", options: ["Headaches and Nausea", "Kidney Disease and Bone Density Loss", "Vision loss"], answer: 1, explanation: "TDF drugs accumulate in the kidneys and bones, causing damage over time." },
+                    { q: "What does the lawsuit allege Gilead did?", options: ["Sold expired pills", "Delayed a safer drug (TAF) to maximize profits", "Used wrong ingredients"], answer: 1, explanation: "Documents suggest Gilead sat on the safer TAF patent until the TDF patent was expiring." },
+                    { q: "Should you stop taking your HIV meds?", options: ["Yes, immediately", "No, consult a doctor first", "Only if you feel sick"], answer: 1, explanation: "Stopping HIV medication can be life-threatening. Always switch under medical supervision." }
                 ]
             }
         },
