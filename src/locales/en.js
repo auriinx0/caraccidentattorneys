@@ -103,7 +103,7 @@ export const en = {
                 },
                 {
                     title: "FAQ",
-                    content: "**Q: How long do I have to file a claim?**\\nA: The statute of limitations varies by state, but it is typically 2 years from the date of the accident.\\n\\n**Q: What if the other driver doesn't have insurance?**\\nA: You may be able to file a claim under your own Uninsured Motorist coverage.\\n\\n**Q: Should I accept the first settlement offer?**\\nA: No. Initial offers are almost always lower than your case's true value. Always consult an attorney first."
+                    content: "**Q: How long do I have to file a claim?**\\nA: The statute of limitations varies by state, but it is typically 2 years from the date of the accident.\\n\\n**Q: What if the other driver doesn't have insurance?**\\nA: You may be able to file a claim under your own Uninsured Motorist coverage.\\n\\n**Q: Should I accept the first settlement offer?**\\nA: No. Initial offers are almost always lower than your case's true value. Always consult an attorney first.\\n\\n**Q: Can I claim for future medical bills?**\\nA: Yes, a good settlement must account for future surgeries, therapy, and chronic pain management."
                 }
             ],
             quiz: {
@@ -146,8 +146,7 @@ export const en = {
                     content: "Insurance companies often try to blame the biker (e.g., speeding or reckless driving). We combat this bias by:\\n\\n*   Showing the driver failed to yield right of way.\\n*   Demonstrating the rider was obeying traffic laws.\\n*   Using helmet laws to protect your rights."
                 },
                 {
-                    title: "FAQ",
-                    content: "**Q: Is lane splitting legal?**\\nA: It depends on your state. In California, it is legal; in many others, it is not.\\n\\n**Q: Do I have to wear a helmet?**\\nA: Helmet laws vary by state, but wearing one significantly reduces injury risk and strengthens your legal claim."
+                    content: "**Q: Is lane splitting legal?**\\nA: It depends on your state. In California, it is legal; in many others, it is not.\\n\\n**Q: Do I have to wear a helmet?**\\nA: Helmet laws vary by state, but wearing one significantly reduces injury risk and strengthens your legal claim.\\n\\n**Q: What if I didn't see the car coming?**\\nA: Drivers often claim 'you came out of nowhere,' but we use accident reconstruction to prove they should have seen you."
                 }
             ],
             quiz: {
@@ -189,8 +188,7 @@ export const en = {
                     content: "Multiple parties may be responsible:\\n1.  **The Driver:** For error or negligence.\\n2.  **The Trucking Company:** For hiring practices or forcing illegal schedules.\\n3.  **The Maintenance Company:** For failing to repair the truck.\\n4.  **The Cargo Loader:** For improperly securing the load."
                 },
                 {
-                    title: "FAQ",
-                    content: "**Q: What is a 'Black Box'?**\\nA: An Event Data Recorder (EDR) that records speed, braking, and steering data before a crash. It is crucial evidence.\\n\\n**Q: How much insurance do trucks carry?**\\nA: Commercial trucks are required to carry much higher liability limits (often $750,000 to $5,000,000) than passenger cars."
+                    content: "**Q: What is a 'Black Box'?**\\nA: An Event Data Recorder (EDR) that records speed, braking, and steering data before a crash. It is crucial evidence.\\n\\n**Q: How much insurance do trucks carry?**\\nA: Commercial trucks are required to carry much higher liability limits (often $750,000 to $5,000,000) than passenger cars.\\n\\n**Q: Can I sue the truck driver's boss?**\\nA: Yes, under 'Respondeat Superior,' employers are often liable for their employees' actions on the job."
                 }
             ],
             quiz: {
@@ -440,8 +438,7 @@ export const en = {
                     content: "*   **Hip Fractures:** Especially dangerous for older adults.\\n*   **Head Injuries:** Striking the ground can cause TBI.\\n*   **Back Injuries:** Herniated discs from the impact."
                 },
                 {
-                    title: "FAQ",
-                    content: "**Q: What is 'Constructive Notice'?**\\nA: It means the spill was there long enough that the store *should* have seen and cleaned it.\\n\\n**Q: Should I fill out an incident report?**\\nA: Yes, but keep it brief and factual. Do not admit fault."
+                    content: "**Q: What is 'Constructive Notice'?**\\nA: It means the spill was there long enough that the store *should* have seen and cleaned it.\\n\\n**Q: Should I fill out an incident report?**\\nA: Yes, but keep it brief and factual. Do not admit fault.\\n\\n**Q: Who pays if I fall at a friend's house?**\\nA: Usually their homeowner's insurance policy covers your injuries."
                 }
             ],
             quiz: {

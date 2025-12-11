@@ -25,9 +25,31 @@ const Footer = ({ t }) => (
                     <ul className="space-y-4 text-sm text-gray-500">
                         <li className="flex items-start">
                             <MapPin className="h-5 w-5 mr-3 text-red-700 shrink-0" />
-                            <span>6835 W Tropicana Ave, Ste. 100<br />Las Vegas, NV 89103</span>
+                            <span>
+                                <a
+                                    href="https://www.google.com/maps/dir/?api=1&destination=6835+W+Tropicana+Ave+Suite+100+Las+Vegas+NV+89103"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="hover:text-white transition-colors"
+                                >
+                                    6835 W Tropicana Ave, Ste. 100<br />Las Vegas, NV 89103
+                                </a>
+                            </span>
                         </li>
                     </ul>
+                    {/* Embedded Map */}
+                    <div className="mt-6 rounded-lg overflow-hidden border border-gray-800 h-48 w-full">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3223.328905335965!2d-115.24156632426744!3d36.1095796063688!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c8c7a8b3b64c63%3A0x7d6b3846e2a22728!2s6835%20W%20Tropicana%20Ave%20%23100%2C%20Las%20Vegas%2C%20NV%2089103!5e0!3m2!1sen!2sus!4v1709420000000!5m2!1sen!2sus"
+                            width="100%"
+                            height="100%"
+                            style={{ border: 0 }}
+                            allowFullScreen=""
+                            loading="lazy"
+                            referrerPolicy="no-referrer-when-downgrade"
+                            title="Office Location"
+                        ></iframe>
+                    </div>
                 </div>
 
                 <div>
