@@ -46,104 +46,102 @@ const Header = ({ lang, setLang, route, setRoute, t, isScrolled, handleLangChang
                     >
                         {t.nav.results}
                     </button>
-                    {t.nav.results}
-                </button>
-                <a
-                    href="https://community.myfunlasvegas.com/index.php/lasvegas-column/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-gray-300 hover:text-white text-xs font-bold uppercase tracking-widest transition hover:text-red-500"
-                >
-                    Korean My Fun Blog
-                </a>
-                <button
-                    onClick={() => setRoute('blog')}
-                    className="text-gray-300 hover:text-white text-xs font-bold uppercase tracking-widest transition hover:text-red-500"
-                >
-                    {t.nav.blog}
-                </button>
-
-                {/* Language Selector */}
-                <div className="flex items-center space-x-2 bg-black/40 px-3 py-1 border border-gray-700 rounded-sm">
-                    <Globe className="h-3 w-3 text-gray-400" />
-                    <button onClick={() => handleLangChange('en')} className={`text-[10px] font-bold ${lang === 'en' ? 'text-red-500' : 'text-gray-400 hover:text-white'}`}>English</button>
-                    <span className="text-gray-600 text-[10px]">|</span>
-                    <button onClick={() => handleLangChange('es')} className={`text-[10px] font-bold ${lang === 'es' ? 'text-red-500' : 'text-gray-400 hover:text-white'}`}>Español</button>
-                    <span className="text-gray-600 text-[10px]">|</span>
-                    <button onClick={() => handleLangChange('ko')} className={`text-[10px] font-bold ${lang === 'ko' ? 'text-red-500' : 'text-gray-400 hover:text-white'}`}>한국어</button>
-                    <span className="text-gray-600 text-[10px]">|</span>
-                    <button onClick={() => handleLangChange('zh')} className={`text-[10px] font-bold ${lang === 'zh' ? 'text-red-500' : 'text-gray-400 hover:text-white'}`}>中文</button>
-                    <span className="text-gray-600 text-[10px]">|</span>
-                    <button onClick={() => handleLangChange('vi')} className={`text-[10px] font-bold ${lang === 'vi' ? 'text-red-500' : 'text-gray-400 hover:text-white'}`}>Tiếng Việt</button>
-                </div>
-
-                <a href="tel:555-000-0000" className="bg-red-700 hover:bg-red-800 text-white px-6 py-3 font-black text-xs uppercase tracking-widest shadow-lg transition transform hover:scale-105 flex items-center border border-red-600 whitespace-nowrap">
-                    <Phone className="h-3 w-3 mr-2 fill-current" />
-                    {t.nav.freeConsult}
-                </a>
-            </div>
-
-            {/* Mobile Menu Button */}
-            <div className="xl:hidden text-white flex items-center gap-4 z-50">
-                <button onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
-                    {mobileMenuOpen ? <X className="h-8 w-8 text-red-500" /> : <Menu className="h-8 w-8" />}
-                </button>
-            </div>
-
-            {/* Mobile Full Screen Menu Overlay */}
-            {mobileMenuOpen && (
-                <div className="fixed inset-0 bg-[#111] z-40 flex flex-col items-center justify-center p-8 space-y-8 animate-fade-in">
-                    <button
-                        onClick={() => { setRoute('home'); setMobileMenuOpen(false); }}
-                        className="text-white text-2xl font-serif font-bold uppercase tracking-widest"
-                    >
-                        {t.nav.home}
-                    </button>
-                    <button
-                        onClick={() => { setRoute('practiceAreas'); setMobileMenuOpen(false); }}
-                        className="text-white text-2xl font-serif font-bold uppercase tracking-widest"
-                    >
-                        {t.nav.practiceAreas}
-                    </button>
-                    <button
-                        onClick={() => { setRoute('results'); setMobileMenuOpen(false); }}
-                        className="text-white text-2xl font-serif font-bold uppercase tracking-widest"
-                    >
-                        {t.nav.results}
-                    </button>
                     <a
                         href="https://community.myfunlasvegas.com/index.php/lasvegas-column/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-white text-2xl font-serif font-bold uppercase tracking-widest"
+                        className="text-gray-300 hover:text-white text-xs font-bold uppercase tracking-widest transition hover:text-red-500"
                     >
                         Korean My Fun Blog
                     </a>
                     <button
-                        onClick={() => { setRoute('blog'); setMobileMenuOpen(false); }}
-                        className="text-white text-2xl font-serif font-bold uppercase tracking-widest"
+                        onClick={() => setRoute('blog')}
+                        className="text-gray-300 hover:text-white text-xs font-bold uppercase tracking-widest transition hover:text-red-500"
                     >
                         {t.nav.blog}
                     </button>
 
-                    <div className="flex flex-wrap justify-center gap-4 mt-8">
-                        {['en', 'es', 'ko', 'zh', 'vi'].map((l) => (
-                            <button
-                                key={l}
-                                onClick={() => { handleLangChange(l); setMobileMenuOpen(false); }}
-                                className={`px-4 py-2 border ${lang === l ? 'border-red-600 text-red-500' : 'border-gray-700 text-gray-400'} rounded uppercase font-bold`}
-                            >
-                                {l === 'en' ? 'English' : l === 'es' ? 'Español' : l === 'ko' ? '한국어' : l === 'zh' ? '中文' : 'Tiếng Việt'}
-                            </button>
-                        ))}
+                    {/* Language Selector */}
+                    <div className="flex items-center space-x-2 bg-black/40 px-3 py-1 border border-gray-700 rounded-sm">
+                        <Globe className="h-3 w-3 text-gray-400" />
+                        <button onClick={() => handleLangChange('en')} className={`text-[10px] font-bold ${lang === 'en' ? 'text-red-500' : 'text-gray-400 hover:text-white'}`}>English</button>
+                        <span className="text-gray-600 text-[10px]">|</span>
+                        <button onClick={() => handleLangChange('es')} className={`text-[10px] font-bold ${lang === 'es' ? 'text-red-500' : 'text-gray-400 hover:text-white'}`}>Español</button>
+                        <span className="text-gray-600 text-[10px]">|</span>
+                        <button onClick={() => handleLangChange('ko')} className={`text-[10px] font-bold ${lang === 'ko' ? 'text-red-500' : 'text-gray-400 hover:text-white'}`}>한국어</button>
+                        <span className="text-gray-600 text-[10px]">|</span>
+                        <button onClick={() => handleLangChange('zh')} className={`text-[10px] font-bold ${lang === 'zh' ? 'text-red-500' : 'text-gray-400 hover:text-white'}`}>中文</button>
+                        <span className="text-gray-600 text-[10px]">|</span>
+                        <button onClick={() => handleLangChange('vi')} className={`text-[10px] font-bold ${lang === 'vi' ? 'text-red-500' : 'text-gray-400 hover:text-white'}`}>Tiếng Việt</button>
                     </div>
 
-                    <a href="tel:555-000-0000" className="bg-red-700 text-white px-8 py-4 w-full text-center font-bold uppercase tracking-widest mt-8">
+                    <a href="tel:555-000-0000" className="bg-red-700 hover:bg-red-800 text-white px-6 py-3 font-black text-xs uppercase tracking-widest shadow-lg transition transform hover:scale-105 flex items-center border border-red-600 whitespace-nowrap">
+                        <Phone className="h-3 w-3 mr-2 fill-current" />
                         {t.nav.freeConsult}
                     </a>
                 </div>
-            )}
-        </div>
+
+                {/* Mobile Menu Button */}
+                <div className="xl:hidden text-white flex items-center gap-4 z-50">
+                    <button onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
+                        {mobileMenuOpen ? <X className="h-8 w-8 text-red-500" /> : <Menu className="h-8 w-8" />}
+                    </button>
+                </div>
+
+                {/* Mobile Full Screen Menu Overlay */}
+                {mobileMenuOpen && (
+                    <div className="fixed inset-0 bg-[#111] z-40 flex flex-col items-center justify-center p-8 space-y-8 animate-fade-in">
+                        <button
+                            onClick={() => { setRoute('home'); setMobileMenuOpen(false); }}
+                            className="text-white text-2xl font-serif font-bold uppercase tracking-widest"
+                        >
+                            {t.nav.home}
+                        </button>
+                        <button
+                            onClick={() => { setRoute('practiceAreas'); setMobileMenuOpen(false); }}
+                            className="text-white text-2xl font-serif font-bold uppercase tracking-widest"
+                        >
+                            {t.nav.practiceAreas}
+                        </button>
+                        <button
+                            onClick={() => { setRoute('results'); setMobileMenuOpen(false); }}
+                            className="text-white text-2xl font-serif font-bold uppercase tracking-widest"
+                        >
+                            {t.nav.results}
+                        </button>
+                        <a
+                            href="https://community.myfunlasvegas.com/index.php/lasvegas-column/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-white text-2xl font-serif font-bold uppercase tracking-widest"
+                        >
+                            Korean My Fun Blog
+                        </a>
+                        <button
+                            onClick={() => { setRoute('blog'); setMobileMenuOpen(false); }}
+                            className="text-white text-2xl font-serif font-bold uppercase tracking-widest"
+                        >
+                            {t.nav.blog}
+                        </button>
+
+                        <div className="flex flex-wrap justify-center gap-4 mt-8">
+                            {['en', 'es', 'ko', 'zh', 'vi'].map((l) => (
+                                <button
+                                    key={l}
+                                    onClick={() => { handleLangChange(l); setMobileMenuOpen(false); }}
+                                    className={`px-4 py-2 border ${lang === l ? 'border-red-600 text-red-500' : 'border-gray-700 text-gray-400'} rounded uppercase font-bold`}
+                                >
+                                    {l === 'en' ? 'English' : l === 'es' ? 'Español' : l === 'ko' ? '한국어' : l === 'zh' ? '中文' : 'Tiếng Việt'}
+                                </button>
+                            ))}
+                        </div>
+
+                        <a href="tel:555-000-0000" className="bg-red-700 text-white px-8 py-4 w-full text-center font-bold uppercase tracking-widest mt-8">
+                            {t.nav.freeConsult}
+                        </a>
+                    </div>
+                )}
+            </div>
         </nav >
     );
 };
