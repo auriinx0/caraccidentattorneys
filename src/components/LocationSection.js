@@ -34,9 +34,8 @@ const LocationSection = () => {
                                 <div>
                                     <p className="text-gray-900 font-bold mb-1">Address</p>
                                     <p className="text-gray-600 leading-relaxed">
-                                        6835 W Tropicana Ave<br />
-                                        Suite #100<br />
-                                        Las Vegas, NV 89103
+                                        4700 Spring Mountain Rd<br />
+                                        Las Vegas, NV 89102
                                     </p>
                                 </div>
                             </div>
@@ -44,7 +43,7 @@ const LocationSection = () => {
 
                         <div className="mt-10">
                             <a
-                                href="https://www.google.com/maps/dir/?api=1&destination=6835+W+Tropicana+Ave+Suite+100+Las+Vegas+NV+89103"
+                                href="https://www.google.com/maps/dir/?api=1&destination=4700+Spring+Mountain+Rd+Las+Vegas+NV+89102"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="block w-full text-center bg-red-600 hover:bg-red-700 text-white font-bold py-4 px-6 rounded-xl transition-all shadow-lg hover:shadow-xl hover:-translate-y-1 flex items-center justify-center uppercase tracking-wider text-sm"
@@ -58,7 +57,7 @@ const LocationSection = () => {
                     {/* Map Side */}
                     <div className="md:w-2/3 min-h-[400px] bg-gray-100 relative">
                         <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3223.328905335965!2d-115.24156632426744!3d36.1095796063688!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c8c7a8b3b64c63%3A0x7d6b3846e2a22728!2s6835%20W%20Tropicana%20Ave%20%23100%2C%20Las%20Vegas%2C%20NV%2089103!5e0!3m2!1sen!2sus!4v1709420000000!5m2!1sen!2sus"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3222.628873729964!2d-115.20573932426689!3d36.1265849060592!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c8c6a0c0b3b64c3%3A0x7d6b3846e2a22728!2s4700%20Spring%20Mountain%20Rd%2C%20Las%20Vegas%2C%20NV%2089102!5e0!3m2!1sen!2sus!4v1709420000000!5m2!1sen!2sus"
                             width="100%"
                             height="100%"
                             style={{ border: 0 }}

@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import IntakeForm from './IntakeForm';
+import Modal from './Modal';
+import { ChevronRight } from 'lucide-react';
 
 const Hero = ({ t }) => {
     const [index, setIndex] = useState(0);
     const [fade, setFade] = useState(true);
+    const [isModalOpen, setIsModalOpen] = useState(false);
 
     // Rotate slogans
     useEffect(() => {
@@ -57,11 +60,27 @@ const Hero = ({ t }) => {
                     </div>
                 </div>
 
-                {/* Right Content - Form */}
-                <div className="lg:ml-auto w-full max-w-md mx-auto">
-                    <IntakeForm t={t} />
+                {/* Right Content - CTA Button */}
+                <div className="lg:ml-auto w-full max-w-md mx-auto flex flex-col items-center justify-center">
+                    <button
+                        onClick={() => setIsModalOpen(true)}
+                        className="group relative w-full bg-red-700 hover:bg-red-800 text-white font-black text-xl md:text-2xl uppercase tracking-widest py-8 px-6 rounded shadow-2xl transform transition-all duration-300 hover:scale-105 hover:-translate-y-2 border-2 border-red-600 hover:border-red-500 overflow-hidden"
+                    >
+                        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent skew-x-12 translate-x-[-150%] group-hover:animate-shine" />
+                        <span className="relative z-10 flex items-center justify-center gap-3">
+                            View Your Claim Value Now!
+                            <ChevronRight className="w-8 h-8 animate-pulse" />
+                        </span>
+                        <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-red-400 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+                    </button>
+                    <p className="mt-4 text-gray-400 text-sm uppercase tracking-wider font-medium">Free Constultation • No Fee Unless We Win</p>
                 </div>
             </div>
+
+            {/* Modal */}
+            <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}>
+                <IntakeForm t={t} />
+            </Modal>
         </div>
     );
 };

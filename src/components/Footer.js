@@ -25,7 +25,7 @@ const Footer = ({ t }) => (
                     <ul className="space-y-4 text-sm text-gray-500">
                         <li className="flex items-start">
                             <MapPin className="h-5 w-5 mr-3 text-red-700 shrink-0" />
-                            <span>6835 W Tropicana Ave, Ste. 100<br />Las Vegas, NV 89103</span>
+                            <span>4700 Spring Mountain Rd<br />Las Vegas, NV 89102</span>
                         </li>
                     </ul>
                 </div>
