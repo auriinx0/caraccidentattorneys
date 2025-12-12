@@ -81,7 +81,7 @@ const BlogPage = () => {
             </div>
 
             {/* Read More Modal */}
-            <Modal isOpen={!!selectedPost} onClose={() => setSelectedPost(null)} maxWidth="max-w-4xl">
+            <Modal isOpen={!!selectedPost} onClose={() => setSelectedPost(null)} maxWidth="max-w-7xl">
                 {selectedPost && (
                     <div className="bg-white">
                         {/* Sticky Header */}
@@ -91,22 +91,11 @@ const BlogPage = () => {
                         </div>
 
                         {/* Scrollable Content */}
-                        <div className="px-8 pb-8">
+                        <div className="px-8 pb-12">
                             <div
-                                className="prose prose-lg prose-red max-w-none text-gray-700 leading-relaxed prose-headings:font-serif prose-headings:font-bold prose-p:mb-6 prose-a:text-red-700 hover:prose-a:text-red-800"
+                                className="prose prose-xl prose-red max-w-none text-gray-700 leading-relaxed prose-headings:font-serif prose-headings:font-bold prose-p:mb-6"
                                 dangerouslySetInnerHTML={{ __html: selectedPost.content }}
                             />
-                            <div className="mt-12 pt-8 border-t border-gray-100 flex justify-end">
-                                <a
-                                    href={selectedPost.link}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="text-xs text-gray-400 hover:text-red-700 uppercase tracking-widest font-bold flex items-center gap-2 group"
-                                >
-                                    View Original Source
-                                    <ChevronRight className="w-4 h-4 transform group-hover:translate-x-1 transition-transform" />
-                                </a>
-                            </div>
                         </div>
                     </div>
                 )}
