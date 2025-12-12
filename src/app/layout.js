@@ -14,6 +14,9 @@ const geistMono = Geist_Mono({
 export const metadata = {
   title: "Car Accident Attorneys",
   description: "Top-rated Las Vegas injury lawyers. Recovering billions for accident victims. Free consultation available 24/7.",
+  icons: {
+    icon: '/icon.png',
+  },
 };
 
 export default function RootLayout({ children }) {

@@ -81,26 +81,32 @@ const BlogPage = () => {
             </div>
 
             {/* Read More Modal */}
-            <Modal isOpen={!!selectedPost} onClose={() => setSelectedPost(null)}>
+            <Modal isOpen={!!selectedPost} onClose={() => setSelectedPost(null)} maxWidth="max-w-4xl">
                 {selectedPost && (
-                    <div className="p-8 bg-white">
-                        <div className="mb-6 border-b pb-4">
+                    <div className="bg-white">
+                        {/* Sticky Header */}
+                        <div className="sticky top-0 bg-white/95 backdrop-blur-sm z-10 px-8 py-6 border-b border-gray-100 mb-8">
                             <span className="text-red-700 font-bold uppercase tracking-widest text-xs mb-2 block">{selectedPost.date}</span>
-                            <h2 className="text-2xl md:text-3xl font-serif font-bold text-gray-900 mb-4">{selectedPost.title}</h2>
+                            <h2 className="text-2xl md:text-3xl font-serif font-bold text-gray-900 leading-tight">{selectedPost.title}</h2>
                         </div>
-                        <div
-                            className="prose prose-red max-w-none text-gray-700 leading-relaxed"
-                            dangerouslySetInnerHTML={{ __html: selectedPost.content }}
-                        />
-                        <div className="mt-8 pt-6 border-t border-gray-100 flex justify-end">
-                            <a
-                                href={selectedPost.link}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="text-xs text-gray-400 hover:text-red-700 uppercase tracking-widest font-bold"
-                            >
-                                View Original Source
-                            </a>
+
+                        {/* Scrollable Content */}
+                        <div className="px-8 pb-8">
+                            <div
+                                className="prose prose-lg prose-red max-w-none text-gray-700 leading-relaxed prose-headings:font-serif prose-headings:font-bold prose-p:mb-6 prose-a:text-red-700 hover:prose-a:text-red-800"
+                                dangerouslySetInnerHTML={{ __html: selectedPost.content }}
+                            />
+                            <div className="mt-12 pt-8 border-t border-gray-100 flex justify-end">
+                                <a
+                                    href={selectedPost.link}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="text-xs text-gray-400 hover:text-red-700 uppercase tracking-widest font-bold flex items-center gap-2 group"
+                                >
+                                    View Original Source
+                                    <ChevronRight className="w-4 h-4 transform group-hover:translate-x-1 transition-transform" />
+                                </a>
+                            </div>
                         </div>
                     </div>
                 )}

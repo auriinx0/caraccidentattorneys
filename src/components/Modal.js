@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { X } from 'lucide-react';
 
-const Modal = ({ isOpen, onClose, children }) => {
+const Modal = ({ isOpen, onClose, children, maxWidth }) => {
     const modalRef = useRef(null);
 
     // Close on escape key
@@ -35,7 +35,7 @@ const Modal = ({ isOpen, onClose, children }) => {
         >
             <div
                 ref={modalRef}
-                className="relative w-full max-w-lg transform transition-all duration-300 scale-100"
+                className={`relative w-full ${maxWidth || 'max-w-lg'} transform transition-all duration-300 scale-100`}
             >
                 {/* Close Button */}
                 <button
