@@ -15,7 +15,9 @@ export const metadata = {
   title: "Car Accident Attorneys",
   description: "Top-rated Las Vegas injury lawyers. Recovering billions for accident victims. Free consultation available 24/7.",
   icons: {
-    icon: '/icon.png',
+    icon: '/logo.png', // Or whatever you named your file
+    shortcut: '/logo.png',
+    apple: '/logo.png',
   },
 };
 
