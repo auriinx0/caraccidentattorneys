@@ -5,8 +5,8 @@ export const ko = {
     sections: { areasTitle: "전문 분야", areasSubtitle: "특정 사건 유형을 보려면 카테고리를 선택하세요", viewAll: "모든 사례 보기", learnMore: "더 알아보기", whyUs: "왜 Car Accident Attorneys를 선택해야 할까요?", callToAction: "기다리지 마십시오. 지체된 정의는 정의가 아닙니다." },
     footer: { copyright: "© 2025 Car Accident Attorneys. All Rights Reserved.", mainOffice: "본사", newClients: "신규 고객" },
     heroButton: {
-        claimValue: "View Your Claim Value Now!",
-        consultation: "Free Consultation • No Fee Unless We Win"
+        claimValue: "지금 귀하의 청구 가치를 확인하세요!",
+        consultation: "무료 상담 • 승소하지 않으면 수수료 없음"
     },
     location: {
         visitHeadquarters: "Visit Our Headquarters",

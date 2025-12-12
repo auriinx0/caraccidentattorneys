@@ -74,8 +74,8 @@ export const vi = {
         ]
     },
     heroButton: {
-        claimValue: "View Your Claim Value Now!",
-        consultation: "Free Consultation • No Fee Unless We Win"
+        claimValue: "Xem Giá Trị Yêu Cầu Bồi Thường Của Bạn Ngay Bây Giờ!",
+        consultation: "Tư Vấn Miễn Phí • Không Phải Trả Phí Trừ Khi Chúng Tôi Thắng"
     },
     location: {
         visitHeadquarters: "Visit Our Headquarters",

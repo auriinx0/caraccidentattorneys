@@ -17,8 +17,8 @@ export const zh = {
         ]
     },
     heroButton: {
-        claimValue: "View Your Claim Value Now!",
-        consultation: "Free Consultation • No Fee Unless We Win"
+        claimValue: "立即查看您的索赔价值！",
+        consultation: "免费咨询 • 不胜诉不收费"
     },
     location: {
         visitHeadquarters: "Visit Our Headquarters",

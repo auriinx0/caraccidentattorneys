@@ -17,8 +17,8 @@ export const es = {
         ]
     },
     heroButton: {
-        claimValue: "View Your Claim Value Now!",
-        consultation: "Free Consultation • No Fee Unless We Win"
+        claimValue: "¡Vea el Valor de su Caso Ahora!",
+        consultation: "Consulta Gratis • Sin Honorarios Hasta Que Ganemos"
     },
     location: {
         visitHeadquarters: "Visit Our Headquarters",
