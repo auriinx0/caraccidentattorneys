@@ -16,6 +16,17 @@ export const es = {
             { name: "Ahmed Galal", text: "El bufete de abogados Parke son los abogados más profesionales en accidentes de tráfico, ya que tuve un accidente con fuga en mayo de 2020, todo lo que tenía era una foto de las placas de ese tipo y pudieron encontrarlo con LVMPD..." }
         ]
     },
+    heroButton: {
+        claimValue: "View Your Claim Value Now!",
+        consultation: "Free Consultation • No Fee Unless We Win"
+    },
+    location: {
+        visitHeadquarters: "Visit Our Headquarters",
+        officeTitle: "Las Vegas Office",
+        mainHeadquarters: "Main Headquarters",
+        addressLabel: "Address",
+        getDirections: "Get Directions"
+    },
     detailPage: {
         introPart1: "Nos especializamos en",
         introPart2: "casos. Si usted o un ser querido ha resultado herido, necesita un equipo agresivo que entienda las complejidades de estos reclamos específicos.",

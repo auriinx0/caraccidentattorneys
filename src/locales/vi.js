@@ -73,6 +73,17 @@ export const vi = {
             { name: "Jessica M.", text: "Giao tiếp tuyệt vời trong suốt quá trình. Tôi cảm thấy an toàn khi biết họ đang đứng về phía mình." }
         ]
     },
+    heroButton: {
+        claimValue: "View Your Claim Value Now!",
+        consultation: "Free Consultation • No Fee Unless We Win"
+    },
+    location: {
+        visitHeadquarters: "Visit Our Headquarters",
+        officeTitle: "Las Vegas Office",
+        mainHeadquarters: "Main Headquarters",
+        addressLabel: "Address",
+        getDirections: "Get Directions"
+    },
     verdicts: {
         title: "Bản Án",
         titleSpan: "Của Chúng Tôi",

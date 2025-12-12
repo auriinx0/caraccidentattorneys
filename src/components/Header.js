@@ -46,14 +46,6 @@ const Header = ({ lang, setLang, route, setRoute, t, isScrolled, handleLangChang
                     >
                         {t.nav.results}
                     </button>
-                    <a
-                        href="https://community.myfunlasvegas.com/index.php/lasvegas-column/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-gray-300 hover:text-white text-xs font-bold uppercase tracking-widest transition hover:text-red-500"
-                    >
-                        Korean My Fun Blog
-                    </a>
                     <button
                         onClick={() => setRoute('blog')}
                         className="text-gray-300 hover:text-white text-xs font-bold uppercase tracking-widest transition hover:text-red-500"
@@ -109,14 +101,6 @@ const Header = ({ lang, setLang, route, setRoute, t, isScrolled, handleLangChang
                         >
                             {t.nav.results}
                         </button>
-                        <a
-                            href="https://community.myfunlasvegas.com/index.php/lasvegas-column/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-white text-2xl font-serif font-bold uppercase tracking-widest"
-                        >
-                            Korean My Fun Blog
-                        </a>
                         <button
                             onClick={() => { setRoute('blog'); setMobileMenuOpen(false); }}
                             className="text-white text-2xl font-serif font-bold uppercase tracking-widest"

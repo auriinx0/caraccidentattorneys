@@ -16,6 +16,17 @@ export const zh = {
             { name: "Ahmed Galal", text: "Parke 律师事务所是交通事故中最专业的律师，我在 2020 年 5 月遇到了一起肇事逃逸事故，我只有那个人车牌的照片，他们能够通过 LVMPD 找到他..." }
         ]
     },
+    heroButton: {
+        claimValue: "View Your Claim Value Now!",
+        consultation: "Free Consultation • No Fee Unless We Win"
+    },
+    location: {
+        visitHeadquarters: "Visit Our Headquarters",
+        officeTitle: "Las Vegas Office",
+        mainHeadquarters: "Main Headquarters",
+        addressLabel: "Address",
+        getDirections: "Get Directions"
+    },
     detailPage: {
         introPart1: "在 Car Accident Attorneys，我们专注于",
         introPart2: "案件。如果您或您的亲人受伤，您需要一个了解这些特定索赔复杂性的积极团队。",

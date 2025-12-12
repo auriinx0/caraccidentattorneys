@@ -118,7 +118,7 @@ export default function App() {
           </div>
         </section>
 
-        <LocationSection />
+        <LocationSection t={t} />
       </>
     );
   } else if (route.startsWith('category-')) {

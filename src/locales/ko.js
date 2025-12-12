@@ -4,6 +4,17 @@ export const ko = {
     form: { title: "무료 사건 검토", subtitle: "무료 견적을 받아보세요.", nameLabel: "성함", phoneLabel: "전화번호", emailLabel: "이메일 주소", detailsPlaceholder: "사건 경위를 말씀해 주세요...", submitBtn: "무료 견적 및 상담 지금 연락하세요", sending: "전송 중...", success: "요청이 전송되었습니다!", error: "오류가 발생했습니다. 다시 시도해 주세요.", stateLabel: "사고 발생 주", dateLabel: "사고 날짜", timeLabel: "사고 시간", accidentLabel: "사고 경위", injuryLabel: "부상 유형" },
     sections: { areasTitle: "전문 분야", areasSubtitle: "특정 사건 유형을 보려면 카테고리를 선택하세요", viewAll: "모든 사례 보기", learnMore: "더 알아보기", whyUs: "왜 Car Accident Attorneys를 선택해야 할까요?", callToAction: "기다리지 마십시오. 지체된 정의는 정의가 아닙니다." },
     footer: { copyright: "© 2025 Car Accident Attorneys. All Rights Reserved.", mainOffice: "본사", newClients: "신규 고객" },
+    heroButton: {
+        claimValue: "View Your Claim Value Now!",
+        consultation: "Free Consultation • No Fee Unless We Win"
+    },
+    location: {
+        visitHeadquarters: "Visit Our Headquarters",
+        officeTitle: "Las Vegas Office",
+        mainHeadquarters: "Main Headquarters",
+        addressLabel: "Address",
+        getDirections: "Get Directions"
+    },
     testimonials: {
         title: "고객 성공 사례",
         subtitle: "Google에서 고객들이 우리에 대해 어떻게 말하는지 확인하세요.",

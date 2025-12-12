@@ -1,13 +1,13 @@
 import React from 'react';
 import { MapPin, Navigation } from 'lucide-react';
 
-const LocationSection = () => {
+const LocationSection = ({ t }) => {
     return (
         <section className="py-24 bg-gray-50 relative overflow-hidden">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                 <div className="text-center mb-16">
                     <h2 className="text-4xl font-serif font-bold text-gray-900 mb-4">
-                        Visit Our <span className="text-red-600">Headquarters</span>
+                        {t.location.visitHeadquarters.split("Headquarters")[0]} <span className="text-red-600">Headquarters</span>
                     </h2>
                     <div className="h-1 w-24 bg-red-600 mx-auto rounded-full"></div>
                     <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
@@ -22,8 +22,8 @@ const LocationSection = () => {
                         <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-red-600 to-red-900"></div>
 
                         <div className="mb-8">
-                            <h3 className="text-2xl font-bold text-gray-900 mb-2">Las Vegas Office</h3>
-                            <p className="text-red-600 font-medium">Main Headquarters</p>
+                            <h3 className="text-2xl font-bold text-gray-900 mb-2">{t.location.officeTitle}</h3>
+                            <p className="text-red-600 font-medium">{t.location.mainHeadquarters}</p>
                         </div>
 
                         <div className="space-y-6">
@@ -32,7 +32,7 @@ const LocationSection = () => {
                                     <MapPin className="w-6 h-6" />
                                 </div>
                                 <div>
-                                    <p className="text-gray-900 font-bold mb-1">Address</p>
+                                    <p className="text-gray-900 font-bold mb-1">{t.location.addressLabel}</p>
                                     <p className="text-gray-600 leading-relaxed">
                                         4700 Spring Mountain Rd<br />
                                         Las Vegas, NV 89102
@@ -49,7 +49,7 @@ const LocationSection = () => {
                                 className="block w-full text-center bg-red-600 hover:bg-red-700 text-white font-bold py-4 px-6 rounded-xl transition-all shadow-lg hover:shadow-xl hover:-translate-y-1 flex items-center justify-center uppercase tracking-wider text-sm"
                             >
                                 <Navigation className="w-4 h-4 mr-2" />
-                                Get Directions
+                                {t.location.getDirections}
                             </a>
                         </div>
                     </div>

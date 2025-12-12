@@ -10,6 +10,10 @@ export const en = {
             { l1: "Justice For Your Injury.", l2: "Peace For Your Mind." }
         ]
     },
+    heroButton: {
+        claimValue: "View Your Claim Value Now!",
+        consultation: "Free Consultation • No Fee Unless We Win"
+    },
     form: {
         title: "Free Case Evaluation",
         subtitle: "Our office will reach out to you within 24 hours.",
@@ -44,6 +48,13 @@ export const en = {
         step2Desc: "We gather evidence, talk to witnesses, and build a rock-solid case while you focus on healing.",
         step3: "We Fight for Your Check",
         step3Desc: "We negotiate aggressively or go to trial to ensure you get the maximum compensation you deserve."
+    },
+    location: {
+        visitHeadquarters: "Visit Our Headquarters",
+        officeTitle: "Las Vegas Office",
+        mainHeadquarters: "Main Headquarters",
+        addressLabel: "Address",
+        getDirections: "Get Directions"
     },
     footer: { copyright: "© 2025 Car Accident Attorneys. All Rights Reserved.", mainOffice: "Main Office", newClients: "New Clients" },
     testimonials: {

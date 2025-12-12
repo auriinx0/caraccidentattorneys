@@ -68,12 +68,12 @@ const Hero = ({ t }) => {
                     >
                         <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent skew-x-12 translate-x-[-150%] group-hover:animate-shine" />
                         <span className="relative z-10 flex items-center justify-center gap-3">
-                            View Your Claim Value Now!
+                            {t.heroButton.claimValue}
                             <ChevronRight className="w-8 h-8 animate-pulse" />
                         </span>
                         <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-red-400 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
                     </button>
-                    <p className="mt-4 text-gray-400 text-sm uppercase tracking-wider font-medium">Free Constultation • No Fee Unless We Win</p>
+                    <p className="mt-4 text-gray-400 text-sm uppercase tracking-wider font-medium">{t.heroButton.consultation}</p>
                 </div>
             </div>
 
