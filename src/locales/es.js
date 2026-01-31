@@ -46,8 +46,88 @@ export const es = {
         comingSoonTitle: "Próximamente",
         comingSoonDesc: "Actualmente estamos recopilando nuestros últimos resultados de casos. Vuelva pronto."
     },
-    categories: { 'cat-vehicle': { title: 'Accidentes de Vehículos', desc: 'Autos, camiones, motocicletas y más.' }, 'cat-products': { title: 'Productos Peligrosos', desc: 'Medicamentos defectuosos, dispositivos médicos y productos de consumo.' }, 'cat-injury': { title: 'Lesiones Personales', desc: 'Resbalones, caídas, lesiones cerebrales y negligencia general.' } },
+    categories: {
+        'cat-vehicle': { title: 'Accidentes de Vehículos', desc: 'Autos, camiones, motocicletas y más.' },
+        'cat-products': { title: 'Productos Peligrosos', desc: 'Medicamentos defectuosos, dispositivos médicos.' },
+        'cat-injury': { title: 'Lesiones Personales', desc: 'Resbalones, caídas, lesiones cerebrales.' },
+        'cat-criminal': { title: 'Defensa Criminal', desc: 'DUI, Delitos de Drogas, Asalto y más.' },
+        'cat-immigration': { title: 'Ley de Inmigración', desc: 'Visas, Tarjetas Verdes, Ciudadanía.' },
+        'cat-family': { title: 'Ley Familiar', desc: 'Custodia, Adopción, Paternidad (Sin Divorcio).' },
+        'cat-business': { title: 'Ley de Negocios', desc: 'Contratos, Litigios y Disputas.' },
+        'cat-estate': { title: 'Planificación Patrimonial', desc: 'Testamentos, Fideicomisos y Sucesiones.' }
+    },
     areas: {
+        'workers-comp': {
+            title: "Compensación para Trabajadores",
+            desc: "¿Lesionado en el trabajo? Podemos ayudar.",
+            about: "Las lesiones laborales pueden ser devastadoras, afectando su capacidad para ganarse la vida. Las leyes de compensación para trabajadores protegen a los empleados, pero el proceso de reclamación suele ser complejo y conflictivo. Las aseguradoras pueden negar su reclamo o infravalorar sus beneficios.\n\nNuestro equipo lucha para garantizar que reciba todos los beneficios a los que tiene derecho, incluido tratamiento médico, pagos por discapacidad temporal e indemnizaciones por impedimento permanente.",
+            statistics: [
+                "Miles de lesiones laborales ocurren diariamente.",
+                "La construcción es una de las industrias más peligrosas.",
+                "Los reclamos denegados son comunes sin representación legal."
+            ],
+            whatToDo: [
+                "Informe la lesión a su empleador inmediatamente.",
+                "Busque atención médica de inmediato.",
+                "Mantenga registros detallados del accidente.",
+                "No firme ofertas de acuerdo sin consultar a un abogado."
+            ],
+            howWeHelp: "Navegamos el complejo sistema de compensación laboral por usted, luchando por su derecho a atención médica y reemplazo de salarios."
+        },
+        'wrongful-death': {
+            title: "Muerte Injusta",
+            desc: "Apoyo legal compasivo para familias en duelo.",
+            about: "Perder a un ser querido debido a la negligencia de otra persona es una tragedia inimaginable. Si bien ninguna cantidad de dinero puede reemplazar su pérdida, un reclamo por muerte injusta puede brindar seguridad financiera a su familia y responsabilizar a los culpables.\n\nManejamos casos de muerte injusta con la mayor compasión y dedicación. Investigamos las circunstancias de la muerte y luchamos por una compensación por gastos funerarios, pérdida de ingresos, pérdida de compañía y sufrimiento emocional.",
+            statistics: [
+                "Las lesiones no intencionales son una causa principal de muerte.",
+                "Los errores médicos contribuyen significativamente a la muerte injusta.",
+                "Las familias a menudo enfrentan dificultades financieras tras una pérdida."
+            ],
+            whatToDo: [
+                "Contacte a un abogado lo antes posible para preservar pruebas.",
+                "No hable con los ajustadores de seguros sobre la muerte.",
+                "Reúna documentos relacionados con el accidente y las finanzas del fallecido."
+            ],
+            howWeHelp: "Perseguimos justicia para su ser querido, manejando todos los aspectos legales para que pueda concentrarse en sanar."
+        },
+        'dog-bites': {
+            title: "Mordeduras de Perro",
+            desc: "Representación para víctimas de ataques de animales.",
+            about: "Las mordeduras de perro pueden causar traumas físicos y emocionales graves. Los dueños son responsables de las acciones de sus mascotas. Si usted o un ser querido ha sido mordido, puede tener derecho a una compensación por facturas médicas, cicatrices y dolor y sufrimiento.\n\nEntendemos las leyes sobre responsabilidad de dueños de perros. Trabajamos para identificar al dueño, probar la negligencia y asegurar la máxima compensación.",
+            statistics: [
+                "Millones de mordeduras de perro ocurren anualmente.",
+                "Los niños son las víctimas más comunes.",
+                "A menudo se necesita cirugía reconstructiva para mordeduras graves."
+            ],
+            whatToDo: [
+                "Busque atención médica inmediatamente.",
+                "Identifique al perro y a su dueño si es posible.",
+                "Tome fotos de sus lesiones y del lugar del ataque.",
+                "Reporte el incidente al control de animales."
+            ],
+            howWeHelp: "Responsabilizamos a los dueños negligentes y luchamos por la compensación de sus tratamientos médicos y trauma emocional."
+        },
+        'medical-malpractice': {
+            title: "Negligencia Médica",
+            desc: "Responsabilizando a los profesionales de la salud.",
+            about: "Confiamos en los profesionales médicos para ayudarnos. Cuando esa confianza se rompe por negligencia, los resultados pueden ser catastróficos. Los casos de negligencia médica son complejos y requieren un profundo conocimiento tanto de la ley como de la medicina.\n\nManejamos casos que involucran errores quirúrgicos, diagnósticos erróneos, lesiones de nacimiento y errores de medicación.",
+            statistics: [
+                "Los errores médicos son una causa principal de muerte.",
+                "El diagnóstico erróneo es una forma común de mala praxis.",
+                "Probar la negligencia requiere testimonio médico experto."
+            ],
+            whatToDo: [
+                "Solicite copias de sus registros médicos inmediatamente.",
+                "No discuta su reclamo con el médico u hospital.",
+                "Mantenga un diario detallado de sus síntomas.",
+                "Consulte con un abogado antes de que expire el plazo de prescripción."
+            ],
+            howWeHelp: "Trabajamos con expertos médicos para probar la negligencia y asegurar justicia para las víctimas de errores médicos."
+        },
+
+
+
+
         'car-accidents': {
             title: 'Accidentes de Auto',
             desc: 'Representación experta.',
@@ -725,6 +805,118 @@ export const es = {
                     { q: "¿Debe dejar de tomar medicamentos para el VIH?", options: ["Sí, inmediatamente", "No, hable con su médico", "Solo los fines de semana"], answer: 1, explanation: "Nunca deje la medicación que salva vidas sin supervisión médica. Pida alternativas más seguras." }
                 ]
             }
-        }
+        },
+        'dui': {
+            title: "Defensa de DUI",
+            desc: "Defensa agresiva contra cargos de conducir ebrio.",
+            about: "Una condena por DUI puede tener consecuencias que alteran la vida, incluyendo tiempo en la cárcel, suspensión de la licencia y multas elevadas. Entendemos la ciencia detrás de las pruebas de sobriedad y sabemos cómo desafiar la evidencia de la fiscalía. Luchamos para proteger sus privilegios de conducir y su libertad.",
+            statistics: ["Las leyes de DUI en Nevada se aplican estrictamente.", "Las primeras ofensas aún pueden conllevar tiempo en la cárcel.", "La revocación de la licencia es obligatoria para las condenas."],
+            whatToDo: ["Ejerza su derecho a permanecer en silencio.", "No consienta pruebas de sobriedad de campo si no son obligatorias.", "Solicite un abogado inmediatamente.", "Solicite una audiencia del DMV dentro del plazo."],
+            howWeHelp: "Desafiamos la detención, los procedimientos de prueba y la fiabilidad de la evidencia para buscar una desestimación o reducción de cargos."
+        },
+        'drug-crimes': {
+            title: "Delitos de Drogas",
+            desc: "Defensa por posesión, tráfico y distribución.",
+            about: "Los cargos por drogas van desde la simple posesión hasta graves delitos de tráfico. Las penas pueden ser severas. Investigamos si sus derechos fueron violados durante la búsqueda e incautación y luchamos para suprimir la evidencia obtenida ilegalmente.",
+            statistics: ["Las leyes de drogas son complejas.", "La búsqueda e incautación ilegal es una defensa común.", "Los programas de desviación pueden estar disponibles."],
+            whatToDo: ["No consienta una búsqueda de su persona o vehículo.", "Permanezca en silencio y pida un abogado.", "No firme nada sin un abogado.", "Documente los eventos del arresto."],
+            howWeHelp: "Escrutamos la conducta policial y desafiamos la evidencia para proteger sus derechos constitucionales."
+        },
+        'assault': {
+            title: "Asalto y Agresión",
+            desc: "Protegiendo sus derechos en casos de delitos violentos.",
+            about: "Los cargos de asalto a menudo surgen de malentendidos o defensa propia. Escuchamos su lado de la historia y construimos una defensa sólida. Ya sea una pelea en un bar o una disputa vecinal, trabajamos para probar su inocencia.",
+            statistics: ["La defensa propia es una justificación legal válida.", "La credibilidad de los testigos es clave.", "Los cargos pueden aumentar si se usó un arma."],
+            whatToDo: ["No hable con la policía sin un abogado.", "Reúna información de contacto de los testigos.", "Documente cualquier lesión.", "Manténgase alejado del acusador."],
+            howWeHelp: "Entrevistamos a testigos, reunimos pruebas de defensa propia y negociamos con los fiscales."
+        },
+        'domestic-violence': {
+            title: "Violencia Doméstica",
+            desc: "Defensa contra acusaciones de abuso doméstico.",
+            about: "Las acusaciones de violencia doméstica se toman muy en serio. Sin embargo, las acusaciones falsas son comunes. Proporcionamos una defensa vigorosa para proteger su reputación y sus derechos, y para evitar la pérdida de derechos de armas.",
+            statistics: ["Las acusaciones falsas son comunes en disputas de custodia.", "Las condenas llevan a la prohibición de armas.", "Las órdenes de protección pueden forzarlo a salir de su casa."],
+            whatToDo: ["Cumpla con las órdenes de protección temporales.", "No contacte al acusador.", "Contrate a un abogado inmediatamente.", "Reúna evidencia que apoye su versión."],
+            howWeHelp: "Exponemos inconsistencias en la historia del acusador y luchamos para prevenir una condena."
+        },
+        'visas': {
+            title: "Visas y Tarjetas Verdes",
+            desc: "Guiándolo a través del proceso de solicitud.",
+            about: "Navegar por el proceso de visa y tarjeta verde puede ser abrumador. Ya sea que busque reunirse con la familia o trabajar en los EE. UU., aseguramos que su solicitud sea precisa. Manejamos peticiones familiares y visas de empleo.",
+            statistics: ["USCIS niega miles de solicitudes por errores.", "Los tiempos de procesamiento varían.", "La orientación profesional aumenta las tasas de éxito."],
+            whatToDo: ["Reúna toda la documentación requerida.", "Sea honesto en todos los formularios.", "Guarde copias de todo.", "Monitoree el estado de su caso."],
+            howWeHelp: "Evaluamos su elegibilidad, preparamos sus formularios y lo guiamos a través del proceso de entrevista."
+        },
+        'deportation': {
+            title: "Defensa contra Deportación",
+            desc: "Luchando para mantener a las familias unidas.",
+            about: "Enfrentar procedimientos de remoción es aterrador. Necesita un abogado que luche incansablemente por su derecho a permanecer en los EE. UU. Exploramos todas las formas de alivio, como el asilo y la cancelación de remoción.",
+            statistics: ["Los jueces de inmigración tienen discreción.", "La representación aumenta las posibilidades de éxito.", "Las apelaciones son posibles."],
+            whatToDo: ["No firme nada sin un abogado.", "Asista a todas las audiencias.", "Reúna evidencia de su vida en los EE. UU.", "Contacte a un abogado de inmigración."],
+            howWeHelp: "Construimos un caso sólido de por qué debe quedarse, representándolo en la corte de inmigración."
+        },
+        'citizenship': {
+            title: "Ciudadanía",
+            desc: "Ayudándole a convertirse en ciudadano estadounidense.",
+            about: "La naturalización es el paso final. Ayudamos a los residentes permanentes a convertirse en ciudadanos. Revisamos su elegibilidad, lo ayudamos a prepararse para los exámenes y lo representamos en la entrevista.",
+            statistics: ["La ciudadanía ofrece derechos de voto.", "El buen carácter moral es un requisito.", "Existen excepciones para ciertos solicitantes."],
+            whatToDo: ["Revise los requisitos de naturalización.", "Prepárese para el examen cívico.", "Reúna registros de impuestos.", "Consulte a un abogado si tiene antecedentes."],
+            howWeHelp: "Aseguramos que cumpla con todos los requisitos y lo guiamos para lograr la ciudadanía."
+        },
+        'child-custody': {
+            title: "Custodia de Menores",
+            desc: "Priorizando el mejor interés de sus hijos.",
+            about: "Las disputas de custodia son emocionalmente agotadoras. Nos enfocamos en el mejor interés del niño mientras abogamos agresivamente por sus derechos parentales. Lo ayudamos a navegar el sistema legal para planes de crianza.",
+            statistics: ["Los tribunales favorecen la custodia compartida.", "El mejor interés del niño es el estándar.", "Las órdenes de custodia pueden modificarse."],
+            whatToDo: ["Mantenga un ambiente estable para sus hijos.", "Documente los intercambios de visitas.", "No hable mal del otro padre.", "Siga todas las órdenes judiciales."],
+            howWeHelp: "Luchamos por acuerdos de custodia que protejan su relación con sus hijos."
+        },
+        'adoption': {
+            title: "Adopción",
+            desc: "Construyendo familias a través de la adopción.",
+            about: "La adopción es hermosa pero compleja. Manejamos adopciones de padrastros, independientes y de agencias. Aseguramos que se cumplan todos los requisitos legales para que pueda concentrarse en su nuevo miembro de la familia.",
+            statistics: ["La adopción establece derechos parentales completos.", "Se requieren estudios del hogar.", "Es necesaria la terminación de derechos biológicos."],
+            whatToDo: ["Decida el tipo de adopción.", "Prepárese para una verificación de antecedentes.", "Consulte con un abogado.", "Sea paciente con el proceso."],
+            howWeHelp: "Manejamos la terminación de derechos parentales y finalizamos la adopción."
+        },
+        'paternity': {
+            title: "Derechos de Paternidad",
+            desc: "Estableciendo la paternidad legal.",
+            about: "Establecer la paternidad es crucial para la custodia y manutención. Ya sea madre o padre, lo ayudamos a establecer la paternidad legal a través de pruebas de ADN o una orden judicial.",
+            statistics: ["La paternidad otorga derechos legales.", "Los padres no casados deben establecer la paternidad.", "Las pruebas de ADN son el estándar."],
+            whatToDo: ["Solicite una prueba de ADN si tiene dudas.", "Presente una petición de paternidad.", "Reúna evidencia de su relación.", "Entienda sus derechos."],
+            howWeHelp: "Navegamos el proceso legal para establecer la paternidad y asegurar los derechos parentales."
+        },
+        'contracts': {
+            title: "Disputas de Contratos",
+            desc: "Haciendo cumplir acuerdos comerciales.",
+            about: "Los contratos son la base de los negocios. Cuando una parte falla, causa pérdidas. Representamos a empresas en reclamos por incumplimiento de contrato, asegurando que se protejan sus derechos.",
+            statistics: ["Los contratos claros previenen disputas.", "El incumplimiento requiere prueba de daños.", "La mediación es a menudo requerida."],
+            whatToDo: ["Revise los términos del contrato.", "Documente el incumplimiento.", "Calcule sus daños financieros.", "Intente resolver antes de demandar."],
+            howWeHelp: "Analizamos el contrato, negociamos el cumplimiento y litigamos si es necesario."
+        },
+        'business-litigation': {
+            title: "Litigio Comercial",
+            desc: "Resolviendo disputas comerciales eficientemente.",
+            about: "Las disputas comerciales pueden interrumpir sus operaciones. Representamos a empresas en desacuerdos de asociación, problemas de empleo y más. Nuestro objetivo es resolver conflictos de manera eficiente.",
+            statistics: ["Los costos de litigio afectan la rentabilidad.", "La resolución alternativa de disputas es viable.", "La intervención temprana ahorra dinero."],
+            whatToDo: ["Revise los acuerdos internos.", "Documente todas las comunicaciones.", "Evalúe el impacto financiero.", "Consulte a un abogado."],
+            howWeHelp: "Representamos sus intereses comerciales en la corte y negociaciones."
+        },
+        'wills-trusts': {
+            title: "Testamentos y Fideicomisos",
+            desc: "Planificando para el futuro.",
+            about: "Un plan patrimonial integral es esencial. Ayudamos a crear testamentos y fideicomisos. Aseguramos que sus activos se distribuyan según sus deseos y ayudamos a minimizar los impuestos sobre el patrimonio.",
+            statistics: ["Un fideicomiso puede evitar la sucesión.", "Los testamentos solo entran en vigor después de la muerte.", "La planificación es para todos."],
+            whatToDo: ["Haga un inventario de sus activos.", "Elija beneficiarios.", "Seleccione un albacea.", "Actualice su plan regularmente."],
+            howWeHelp: "Redactamos documentos de planificación patrimonial personalizados para su tranquilidad."
+        },
+        'probate': {
+            title: "Sucesión (Probate)",
+            desc: "Guiándolo a través del proceso judicial.",
+            about: "La sucesión es el proceso supervisado por la corte para distribuir activos. Asistimos a albaceas en la presentación de documentos, pago de deudas y distribución de activos.",
+            statistics: ["La sucesión puede llevar meses.", "Los albaceas tienen deberes fiduciarios.", "Los acreedores deben ser notificados."],
+            whatToDo: ["Localice el testamento original.", "Identifique activos y deudas.", "Notifique a herederos.", "No distribuya sin aprobación."],
+            howWeHelp: "Manejamos todo el proceso de sucesión, asegurando el cumplimiento legal."
+        },
     }
 };

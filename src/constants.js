@@ -13,7 +13,19 @@ import {
     Pill,
     Syringe,
     FlaskConical,
-    Droplets
+    Globe,
+    Baby,
+    FileText,
+    Building,
+    Droplets,
+    Scale,
+    Gavel,
+    Bone,
+    HeartCrack,
+    AlertTriangle,
+    Dog,
+    Stethoscope,
+    Briefcase
 } from 'lucide-react';
 import GridIcon from './components/GridIcon';
 
@@ -32,6 +44,11 @@ export const CATEGORY_STRUCT = [
     { id: 'cat-vehicle', icon: Car },
     { id: 'cat-products', icon: PackageX },
     { id: 'cat-injury', icon: BriefcaseMedical },
+    { id: 'cat-criminal', icon: Gavel },
+    { id: 'cat-immigration', icon: Globe },
+    { id: 'cat-family', icon: Baby },
+    { id: 'cat-business', icon: Building },
+    { id: 'cat-estate', icon: FileText },
 ];
 
 export const AREA_STRUCT = [
@@ -52,6 +69,29 @@ export const AREA_STRUCT = [
     { id: 'talc', categoryId: 'cat-products', icon: PackageX },
     { id: 'ozempic', categoryId: 'cat-products', icon: Pill },
     { id: 'truvada', categoryId: 'cat-products', icon: Syringe },
+    { id: 'workers-comp', categoryId: 'cat-injury', icon: HardHat },
+    { id: 'wrongful-death', categoryId: 'cat-injury', icon: HeartCrack },
+    { id: 'dog-bites', categoryId: 'cat-injury', icon: Dog },
+    { id: 'medical-malpractice', categoryId: 'cat-injury', icon: Stethoscope },
+    // Criminal
+    { id: 'dui', categoryId: 'cat-criminal', icon: AlertTriangle },
+    { id: 'drug-crimes', categoryId: 'cat-criminal', icon: Pill },
+    { id: 'assault', categoryId: 'cat-criminal', icon: Gavel },
+    { id: 'domestic-violence', categoryId: 'cat-criminal', icon: HeartCrack },
+    // Immigration
+    { id: 'visas', categoryId: 'cat-immigration', icon: Globe },
+    { id: 'deportation', categoryId: 'cat-immigration', icon: ShieldAlert },
+    { id: 'citizenship', categoryId: 'cat-immigration', icon: User },
+    // Family
+    { id: 'child-custody', categoryId: 'cat-family', icon: Baby },
+    { id: 'adoption', categoryId: 'cat-family', icon: HeartCrack },
+    { id: 'paternity', categoryId: 'cat-family', icon: Users },
+    // Business
+    { id: 'contracts', categoryId: 'cat-business', icon: FileText },
+    { id: 'business-litigation', categoryId: 'cat-business', icon: Scale },
+    // Estate
+    { id: 'wills-trusts', categoryId: 'cat-estate', icon: FileText },
+    { id: 'probate', categoryId: 'cat-estate', icon: Gavel },
 ];
 
 export const BLOG_POSTS = [

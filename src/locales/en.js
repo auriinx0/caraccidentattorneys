@@ -88,8 +88,196 @@ export const en = {
         comingSoonTitle: "Coming Soon",
         comingSoonDesc: "We are currently compiling our latest case results. Check back shortly."
     },
-    categories: { 'cat-vehicle': { title: 'Motor Vehicle Accidents', desc: 'Cars, Trucks, Motorcycles, and more.' }, 'cat-products': { title: 'Dangerous Products', desc: 'Defective drugs, medical devices, and consumer products.' }, 'cat-injury': { title: 'Personal Injury', desc: 'Slips, falls, brain injuries, and general negligence.' } },
+    categories: {
+        'cat-vehicle': { title: 'Motor Vehicle Accidents', desc: 'Cars, Trucks, Motorcycles, and more.' },
+        'cat-products': { title: 'Dangerous Products', desc: 'Defective drugs, medical devices, and consumer products.' },
+        'cat-injury': { title: 'Personal Injury', desc: 'Slips, falls, brain injuries, and general negligence.' },
+        'cat-criminal': { title: 'Criminal Defense', desc: 'DUI, Drug Crimes, Assault, and more.' },
+        'cat-immigration': { title: 'Immigration Law', desc: 'Visas, Green Cards, Citizenship, and Deportation.' },
+        'cat-family': { title: 'Family Law', desc: 'Custody, Adoption, Paternity (No Divorce).' },
+        'cat-business': { title: 'Business Law', desc: 'Contracts, Litigation, and Disputes.' },
+        'cat-estate': { title: 'Estate Planning', desc: 'Wills, Trusts, and Probate.' }
+    },
     areas: {
+        'workers-comp': {
+            title: "Workers' Compensation",
+            desc: "Injured on the job? We can help.",
+            about: "Workplace injuries can be devastating, affecting your ability to earn a living and provide for your family. Workers' compensation laws are designed to protect employees, but the claims process is often complex and adversarial. Insurance companies may deny your claim or undervalue your benefits.\n\nOur team fights to ensuring you receive the full benefits you are entitled to, including medical treatment, temporary disability payments, and permanent impairment awards. We handle claims involving construction accidents, industrial injuries, repetitive stress injuries, and more.",
+            statistics: [
+                "Thousands of workplace injuries occur daily in the US.",
+                "Construction is one of the most dangerous industries.",
+                "Denied claims are common without legal representation."
+            ],
+            whatToDo: [
+                "Report the injury to your employer immediately.",
+                "Seek medical attention right away.",
+                "Keep detailed records of the accident and your injuries.",
+                "Do not sign any settlement offers without consulting an attorney."
+            ],
+            howWeHelp: "We navigate the complex workers' comp system for you, fighting for your right to medical care and lost wage replacement."
+        },
+        'wrongful-death': {
+            title: "Wrongful Death",
+            desc: "Compassionate legal support for grieving families.",
+            about: "Losing a loved one due to someone else's negligence is an unimaginable tragedy. While no amount of money can replace your loss, a wrongful death claim can provide financial security for your family and hold the responsible parties accountable.\n\nWe handle wrongful death cases with the utmost compassion and dedication. We investigate the circumstances of the death, consult with experts, and fight for compensation for funeral expenses, lost income, loss of companionship, and emotional suffering.",
+            statistics: [
+                "Unintentional injuries are a leading cause of death.",
+                "Medical errors are a significant contributor to wrongful death.",
+                "Families often face financial hardship after a loss."
+            ],
+            whatToDo: [
+                "Contact an attorney as soon as possible to preserve evidence.",
+                "Do not speak to insurance adjusters about the death.",
+                "Gather any documents related to the accident and the deceased's finances."
+            ],
+            howWeHelp: "We pursue justice for your loved one, handling all legal aspects so you can focus on healing."
+        },
+        'dog-bites': {
+            title: "Dog Bites",
+            desc: "Representation for victims of animal attacks.",
+            about: "Dog bites can cause severe physical and emotional trauma, especially for children. Owners are responsible for the actions of their pets. If you or a loved one has been bitten, you may be entitled to compensation for medical bills, scarring, and pain and suffering.\n\nWe understand the laws regarding dog owner liability. We work to identify the owner, prove negligence (if required), and secure the maximum compensation for your injuries.",
+            statistics: [
+                "Millions of dog bites occur annually in the US.",
+                "Children are the most common victims of dog bites.",
+                "Reconstructive surgery is often needed for severe bites."
+            ],
+            whatToDo: [
+                "Seek medical attention immediately to prevent infection.",
+                "Identify the dog and its owner if possible.",
+                "Take photos of your injuries and the location of the attack.",
+                "Report the incident to animal control."
+            ],
+            howWeHelp: "We hold negligent pet owners accountable and fight for compensation for your medical treatments and emotional trauma."
+        },
+        'medical-malpractice': {
+            title: "Medical Malpractice",
+            desc: "Holding healthcare professionals accountable.",
+            about: "When we seek medical care, we trust professionals to help us. When that trust is broken through negligence, the results can be catastrophic. Medical malpractice cases are highly complex and require a deep understanding of both law and medicine.\n\nOur firm has the resources and expertise to take on hospitals, doctors, and insurance companies. We handle cases involving surgical errors, misdiagnosis, birth injuries, and medication errors.",
+            statistics: [
+                "Medical errors are a leading cause of death in the US.",
+                "Misdiagnosis is a common form of malpractice.",
+                "Proving negligence requires expert medical testimony."
+            ],
+            whatToDo: [
+                "Request copies of your medical records immediately.",
+                "Do not discuss your potential claim with the doctor or hospital.",
+                "Keep a detailed journal of your symptoms and interactions.",
+                "Consult with a malpractice attorney before the statute of limitations expires."
+            ],
+            howWeHelp: "We work with top medical experts to prove negligence and secure justice for victims of medical errors."
+        },
+        'dui': {
+            title: "DUI Defense",
+            desc: "Aggressive defense against drunk driving charges.",
+            about: "A DUI conviction can have life-altering consequences, including jail time, license suspension, heavy fines, and a permanent criminal record. We understand the science behind sobriety tests and know how to challenge the prosecution's evidence. We fight to protect your driving privileges and your freedom.",
+            statistics: ["DUI laws in Nevada are strictly enforced.", "First-time offenses can still carry jail time.", "License revocation is mandatory for convictions."],
+            whatToDo: ["Exercise your right to remain silent.", "Do not consent to field sobriety tests if not mandatory.", "Request an attorney immediately.", "Request a DMV hearing within the time limit."],
+            howWeHelp: "We challenge the stop, the testing procedures, and the reliability of the evidence to seek a dismissal or reduction of charges."
+        },
+        'drug-crimes': {
+            title: "Drug Crimes",
+            desc: "Defense for possession, trafficking, and distribution.",
+            about: "Drug charges range from simple possession to serious trafficking offenses. The penalties can be severe, including long prison sentences. We investigate whether your rights were violated during the search and seizure and fight to suppress illegally obtained evidence.",
+            statistics: ["Drug laws are complex and carry mandatory minimums.", "Illegal search and seizure is a common defense.", "Diversion programs may be available for first offenders."],
+            whatToDo: ["Do not consent to a search of your person or vehicle.", "Remain silent and ask for a lawyer.", "Do not sign anything without counsel.", "Document the events of the arrest."],
+            howWeHelp: "We scrutinize police conduct and challenge the evidence to protect your constitutional rights and avoid harsh penalties."
+        },
+        'assault': {
+            title: "Assault & Battery",
+            desc: "Protecting your rights in violent crime cases.",
+            about: "Assault and battery charges often arise from misunderstandings, self-defense situations, or false accusations. We listen to your side of the story and build a strong defense. Whether it's a bar fight or a neighbor dispute, we work to prove your innocence or mitigate the consequences.",
+            statistics: ["Self-defense is a valid legal justification.", "Witness credibility is often key in these cases.", "Charges can be enhanced if a weapon was used."],
+            whatToDo: ["Do not speak to the police without an attorney.", "Gather contact info for any witnesses.", "Document any injuries you sustained.", "Stay away from the accuser."],
+            howWeHelp: "We interview witnesses, gather evidence of self-defense, and negotiate with prosecutors to drop or reduce charges."
+        },
+        'domestic-violence': {
+            title: "Domestic Violence",
+            desc: "Defense against domestic abuse allegations.",
+            about: "Domestic violence allegations are taken very seriously and can result in immediate protective orders and loss of gun rights. However, false accusations are common in heated relationships. We provide a vigorous defense to protect your reputation and your rights.",
+            statistics: ["False accusations are common in divorce/custody battles.", "Convictions lead to a lifetime ban on firearms.", "Protective orders can force you out of your home."],
+            whatToDo: [" comply with any temporary protective orders.", "Do not contact the accuser.", "Hire an attorney immediately.", "Gather evidence that supports your version of events."],
+            howWeHelp: "We expose inconsistencies in the accuser's story and fight to prevent a conviction that could ruin your life."
+        },
+        'visas': {
+            title: "Visas & Green Cards",
+            desc: "Guiding you through the application process.",
+            about: "Navigating the visa and green card process can be overwhelming. Whether you're seeking to reunite with family, work in the US, or invest in a business, we ensure your application is accurate and complete. We handle family-based petitions, employment visas, and adjustment of status.",
+            statistics: ["USCIS denies thousands of applications due to errors.", "Processing times vary significantly.", "Professional guidance increases success rates."],
+            whatToDo: ["Gather all required documentation.", "Be honest on all forms.", "Keep copies of everything submitted.", "Monitor your case status online."],
+            howWeHelp: "We assess your eligibility, prepare your forms, and guide you through the interview process to obtain your visa or green card."
+        },
+        'deportation': {
+            title: "Deportation Defense",
+            desc: "Fighting to keep families together.",
+            about: "Facing removal proceedings is terrifying. You need an attorney who will fight tirelessly for your right to remain in the US. We explore all available forms of relief, such as asylum, cancellation of removal, and waivers of inadmissibility.",
+            statistics: ["Immigration judges have discretion in some cases.", "Representation significantly increases chances of success.", "Appeals are possible for unfavorable decisions."],
+            whatToDo: ["Do not sign anything without a lawyer.", "Attend all scheduled hearings.", "Gather evidence of your life in the US.", "Contact an immigration attorney immediately."],
+            howWeHelp: "We build a strong case for why you should remain, representing you in immigration court and filing necessary appeals."
+        },
+        'citizenship': {
+            title: "Citizenship",
+            desc: "Helping you become a US citizen.",
+            about: "Naturalization is the final step in the immigration journey. We help permanent residents become US citizens. We review your eligibility, help you prepare for the English and civics tests, and represent you at the naturalization interview.",
+            statistics: ["Citizenship offers voting rights and protection from deportation.", "Good moral character is a requirement.", "Exceptions exist for certain applicants."],
+            whatToDo: ["Review the naturalization requirements.", "Prepare for the civics exam.", "Gather tax records and travel history.", "Consult an attorney if you have a criminal record."],
+            howWeHelp: "We ensure you meet all requirements and guide you through the naturalization process to achieve citizenship."
+        },
+        'child-custody': {
+            title: "Child Custody",
+            desc: "Prioritizing the best interests of your children.",
+            about: "Child custody disputes are emotionally draining. We focus on the best interests of the child while aggressively advocating for your parental rights. Whether you're establishing a parenting plan or modifying an existing order, we help you navigate the legal system.",
+            statistics: ["Courts favor joint custody when possible.", "The best interest of the child is the standard.", "Custody orders can be modified if circumstances change."],
+            whatToDo: ["Maintain a stable environment for your children.", "Document visitation exchanges.", "Do not disparage the other parent to the children.", "Follow all court orders."],
+            howWeHelp: "We fight for custody arrangements that protect your relationship with your children and ensure their well-being."
+        },
+        'adoption': {
+            title: "Adoption",
+            desc: "Building families through adoption.",
+            about: "Adoption is a beautiful way to build a family, but the legal process is complex. We handle stepparent adoptions, independent adoptions, and agency adoptions. We ensure all legal requirements are met so you can focus on welcoming your new family member.",
+            statistics: ["Adoption establishes full legal parental rights.", "Home studies are usually required.", "Termination of biological rights is necessary."],
+            whatToDo: ["Decide on the type of adoption.", "Prepare for a background check.", "Consult with an adoption attorney.", "Be patient with the process."],
+            howWeHelp: "We handle the termination of parental rights and finalize the adoption, ensuring a legally secure future for your family."
+        },
+        'paternity': {
+            title: "Paternity Rights",
+            desc: "Establishing legal fatherhood.",
+            about: "Establishing paternity is crucial for custody, visitation, and child support. Whether you are a mother seeking support or a father seeking to be part of your child's life, we help you establish legal paternity through DNA testing or court order.",
+            statistics: ["Paternity grants legal rights and responsibilities.", "Unmarried fathers must establish paternity for rights.", "DNA testing is the standard method."],
+            whatToDo: ["Request a DNA test if in doubt.", "File a paternity petition.", "Gather evidence of your relationship.", "Understand your rights and obligations."],
+            howWeHelp: "We navigate the legal process to establish paternity, securing financial support and parental rights."
+        },
+        'contracts': {
+            title: "Contract Disputes",
+            desc: "Enforcing and defending business agreements.",
+            about: "Contracts are the foundation of business. When a party fails to honor their obligations, it can cause significant financial loss. We represent businesses and individuals in breach of contract claims, ensuring your rights are protected and you receive what you are owed.",
+            statistics: ["Clear contracts prevent disputes.", "Breach of contract requires proof of damages.", "Mediation is often required before litigation."],
+            whatToDo: ["Review the contract terms carefully.", "Document the breach in writing.", "Calculate your financial damages.", "Attempt to resolve the issue before suing."],
+            howWeHelp: "We analyze the contract, negotiate for compliance, and litigate if necessary to enforce the agreement."
+        },
+        'business-litigation': {
+            title: "Business Litigation",
+            desc: "Resolving commercial disputes efficiently.",
+            about: "Business disputes can disrupt your operations and threaten your bottom line. We represent businesses of all sizes in partnership disagreements, employment issues, and more. Our goal is to resolve conflicts efficiently and effectively, allowing you to get back to business.",
+            statistics: ["Litigation costs can impact business profitability.", "Alternative dispute resolution is often a viable option.", "Early intervention can save money."],
+            whatToDo: ["Review internal agreements.", "Document all communications.", "Assess the financial impact.", "Consult an attorney before terminating agreements."],
+            howWeHelp: "We represent your business interests in court and negotiations, heavily focused on cost-effective resolutions."
+        },
+        'wills-trusts': {
+            title: "Wills & Trusts",
+            desc: "Planning for the future.",
+            about: "A comprehensive estate plan is essential for protecting your assets and your family. We help you create wills, revocable living trusts, and irrevocable trusts. We ensure your assets are distributed according to your wishes and help you minimize estate taxes.",
+            statistics: ["A trust can avoid probate.", "Wills only take effect after death.", "Estate planning is for everyone, not just the wealthy."],
+            whatToDo: ["Inventory your assets.", "Choose beneficiaries.", "Select a trustee/executor.", "Update your plan regularly."],
+            howWeHelp: "We draft custom estate planning documents that provide peace of mind and financial security for your loved ones."
+        },
+        'probate': {
+            title: "Probate",
+            desc: "Guiding you through the court process.",
+            about: "Probate is the court-supervised process of distributing a deceased person's assets. It can be complex and time-consuming. We assist executors and administrators in filing the necessary court documents, paying debts, and distributing assets to heirs.",
+            statistics: ["Probate can take months or years.", "Executors have fiduciary duties.", "Creditors must be notified."],
+            whatToDo: ["Locate the original will.", "Identify all assets and debts.", "Notify heirs and creditors.", "Do not distribute assets without court approval."],
+            howWeHelp: "We handle the entire probate process, ensuring legal compliance and minimizing stress for the family."
+        },
         'car-accidents': {
             title: 'Auto Accidents',
             desc: 'Expert legal representation.',

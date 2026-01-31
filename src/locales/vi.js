@@ -93,10 +93,150 @@ export const vi = {
     },
     categories: {
         'cat-vehicle': { title: 'Tai Nạn Xe Cơ Giới', desc: 'Ô tô, Xe tải, Xe máy, và hơn thế nữa.' },
-        'cat-products': { title: 'Sản Phẩm Nguy Hiểm', desc: 'Thuốc, thiết bị y tế và sản phẩm tiêu dùng bị lỗi.' },
-        'cat-injury': { title: 'Thương Tích Cá Nhân', desc: 'Trượt ngã, chấn thương não và sơ suất chung.' }
+        'cat-products': { title: 'Sản Phẩm Nguy Hiểm', desc: 'Thuốc lỗi, thiết bị y tế.' },
+        'cat-injury': { title: 'Thương Tích Cá Nhân', desc: 'Trượt ngã, chấn thương não.' },
+        'cat-criminal': { title: 'Luật Hình Sự', desc: 'DUI, Tội Phạm Ma Túy, Tấn Công.' },
+        'cat-immigration': { title: 'Luật Di Trú', desc: 'Visa, Thẻ Xanh, Quốc Tịch.' },
+        'cat-family': { title: 'Luật Gia Đình', desc: 'Quyền Nuôi Con, Nhận Con Nuôi.' },
+        'cat-business': { title: 'Luật Kinh Doanh', desc: 'Hợp Đồng, Tranh Tụng.' },
+        'cat-estate': { title: 'Hoạch Định Di Sản', desc: 'Di Chúc, Tín Thác, Thừa Kế.' }
     },
     areas: {
+        'workers-comp': {
+            title: "Bồi Thường Cho Người Lao Động",
+            desc: "Bị thương khi làm việc? Chúng tôi có thể giúp.",
+            about: "Thương tích tại nơi làm việc có thể gây ra hậu quả tàn khốc, ảnh hưởng đến khả năng kiếm sống và chu cấp cho gia đình của bạn. Luật bồi thường cho người lao động được thiết kế để bảo vệ nhân viên, nhưng quy trình khiếu nại thường phức tạp. Các công ty bảo hiểm có thể từ chối yêu cầu của bạn hoặc đánh giá thấp lợi ích của bạn.\n\nNhóm của chúng tôi chiến đấu để đảm bảo bạn nhận được đầy đủ các quyền lợi mà bạn được hưởng, bao gồm điều trị y tế, thanh toán khuyết tật tạm thời và bồi thường suy giảm vĩnh viễn.",
+            statistics: [
+                "Hàng ngàn vụ tai nạn lao động xảy ra hàng ngày.",
+                "Xây dựng là một trong những ngành nguy hiểm nhất.",
+                "Các yêu cầu bị từ chối là phổ biến nếu không có đại diện pháp lý."
+            ],
+            whatToDo: [
+                "Báo cáo thương tích cho chủ nhân của bạn ngay lập tức.",
+                "Tìm kiếm sự chăm sóc y tế ngay lập tức.",
+                "Giữ hồ sơ chi tiết về tai nạn và thương tích.",
+                "Không ký bất kỳ đề nghị hòa giải nào mà không tham khảo ý kiến luật sư."
+            ],
+            howWeHelp: "Chúng tôi điều hướng hệ thống bồi thường lao động phức tạp cho bạn, đấu tranh cho quyền được chăm sóc y tế và thay thế tiền lương đã mất."
+        },
+        'wrongful-death': {
+            title: "Cái Chết Oan Ức",
+            desc: "Hỗ trợ pháp lý từ bi cho các gia đình đau buồn.",
+            about: "Mất người thân do sự bất cẩn của người khác là một bi kịch không thể tưởng tượng được. Mặc dù không số tiền nào có thể thay thế sự mất mát của bạn, nhưng yêu cầu bồi thường cho cái chết oan ức có thể mang lại sự an toàn tài chính cho gia đình bạn và buộc các bên chịu trách nhiệm phải chịu trách nhiệm.\n\nChúng tôi xử lý các trường hợp chết oan với lòng trắc ẩn và sự cống hiến cao nhất. Chúng tôi điều tra các tình huống của cái chết và đấu tranh cho bồi thường chi phí tang lễ, mất thu nhập, mất sự đồng hành và đau khổ về tình cảm.",
+            statistics: [
+                "Thương tích không cố ý là nguyên nhân hàng đầu gây tử vong.",
+                "Sai sót y tế là một nguyên nhân đáng kể gây ra cái chết oan ức.",
+                "Các gia đình thường phải đối mặt với khó khăn tài chính sau khi mất mát."
+            ],
+            whatToDo: [
+                "Liên hệ luật sư càng sớm càng tốt để bảo quản bằng chứng.",
+                "Không nói chuyện với nhân viên điều chỉnh bảo hiểm về cái chết.",
+                "Thu thập tài liệu liên quan đến tai nạn và tài chính của người quá cố."
+            ],
+            howWeHelp: "Chúng tôi theo đuổi công lý cho người thân của bạn, xử lý tất cả các khía cạnh pháp lý để bạn có thể tập trung vào việc chữa lành."
+        },
+        'dog-bites': {
+            title: "Chó Cắn",
+            desc: "Đại diện cho nạn nhân của các cuộc tấn công động vật.",
+            about: "Chó cắn có thể gây ra chấn thương thể chất và tình cảm nghiêm trọng, đặc biệt là đối với trẻ em. Chủ sở hữu phải chịu trách nhiệm về hành động của vật nuôi của họ. Nếu bạn hoặc người thân bị cắn, bạn có thể được bồi thường cho các hóa đơn y tế, sẹo và đau đớn.\n\nChúng tôi hiểu luật pháp liên quan đến trách nhiệm của chủ sở hữu chó. Chúng tôi làm việc để xác định chủ sở hữu, chứng minh sự sơ suất và đảm bảo bồi thường tối đa.",
+            statistics: [
+                "Hàng triệu vụ chó cắn xảy ra hàng năm.",
+                "Trẻ em là nạn nhân phổ biến nhất của chó cắn.",
+                "Phẫu thuật tái tạo thường cần thiết cho các vết cắn nghiêm trọng."
+            ],
+            whatToDo: [
+                "Tìm kiếm sự chăm sóc y tế ngay lập tức để ngăn ngừa nhiễm trùng.",
+                "Xác định con chó và chủ sở hữu nếu có thể.",
+                "Chụp ảnh vết thương và vị trí tấn công.",
+                "Báo cáo sự việc cho kiểm soát động vật."
+            ],
+            howWeHelp: "Chúng tôi buộc các chủ vật nuôi sơ suất phải chịu trách nhiệm và đấu tranh cho bồi thường cho các phương pháp điều trị y tế và chấn thương tình cảm của bạn."
+        },
+        'medical-malpractice': {
+            title: "Sơ Suất Y Tế",
+            desc: "Buộc các chuyên gia chăm sóc sức khỏe phải chịu trách nhiệm.",
+            about: "Khi chúng tôi tìm kiếm sự chăm sóc y tế, chúng tôi tin tưởng các chuyên gia sẽ giúp đỡ chúng tôi. Khi niềm tin đó bị phá vỡ do sự sơ suất, kết quả có thể là thảm khốc. Các trường hợp sơ suất y tế rất phức tạp và đòi hỏi sự hiểu biết sâu sắc về cả luật pháp và y học.\n\nChúng tôi xử lý các trường hợp liên quan đến lỗi phẫu thuật, chẩn đoán sai, chấn thương khi sinh và lỗi thuốc.",
+            statistics: [
+                "Sai sót y tế là nguyên nhân hàng đầu gây tử vong.",
+                "Chẩn đoán sai là một hình thức sơ suất phổ biến.",
+                "Chứng minh sự sơ suất đòi hỏi lời khai của chuyên gia y tế."
+            ],
+            whatToDo: [
+                "Yêu cầu bản sao hồ sơ y tế của bạn ngay lập tức.",
+                "Không thảo luận về yêu cầu tiềm năng của bạn với bác sĩ hoặc bệnh viện.",
+                "Giữ một cuốn nhật ký chi tiết về các triệu chứng của bạn.",
+                "Tham khảo ý kiến luật sư trước khi hết thời hiệu."
+            ],
+            howWeHelp: "Chúng tôi làm việc với các chuyên gia y tế hàng đầu để chứng minh sự sơ suất và đảm bảo công lý cho các nạn nhân của sai sót y tế."
+        },
+        'criminal-defense': {
+            title: "Bào Chữa Hình Sự",
+            desc: "Bảo vệ quyền và tự do của bạn.",
+            about: "Đối mặt với các cáo buộc hình sự có thể rất đáng sợ. Tự do, danh tiếng và tương lai của bạn đang bị đe dọa. Bạn cần một chiến lược bào chữa tích cực để bảo vệ quyền của mình. Chúng tôi xử lý nhiều loại vụ án hình sự, từ DUI và tội phạm ma túy đến tấn công và tội phạm cổ cồn trắng.\n\nChúng tôi xem xét kỹ lưỡng vụ án của bên công tố, thách thức bằng chứng thu được bất hợp pháp và đấu tranh cho kết quả tốt nhất có thể.",
+            statistics: [
+                "Hoa Kỳ có tỷ lệ giam giữ cao nhất thế giới.",
+                "Luật sư công thường làm việc quá sức và thiếu nguồn lực.",
+                "Hồ sơ tội phạm có thể ảnh hưởng đến việc làm và nhà ở."
+            ],
+            whatToDo: [
+                "Thực hiện quyền giữ im lặng của bạn.",
+                "Không đồng ý với bất kỳ cuộc khám xét nào mà không có lệnh.",
+                "Yêu cầu luật sư ngay lập tức.",
+                "Không thảo luận về vụ án của bạn với bất kỳ ai ngoài luật sư của bạn."
+            ],
+            howWeHelp: "Chúng tôi cung cấp đại diện bào chữa tích cực, thách thức mọi bằng chứng để bảo vệ tự do của bạn."
+        },
+        'immigration': {
+            title: "Luật Di Trú",
+            desc: "Điều hướng hệ thống nhập cư Hoa Kỳ phức tạp.",
+            about: "Hệ thống nhập cư Hoa Kỳ cực kỳ phức tạp và liên tục thay đổi. Cho dù bạn đang tìm kiếm thẻ xanh, đối mặt với việc bị trục xuất hay nộp đơn xin nhập tịch, việc có một luật sư giàu kinh nghiệm là rất quan trọng. Chúng tôi giúp các gia đình ở bên nhau và các cá nhân đạt được giấc mơ Mỹ của họ.\n\nChúng tôi hỗ trợ các kiến nghị dựa trên gia đình, thị thực việc làm, bào chữa trục xuất và nhập tịch.",
+            statistics: [
+                "Hàng triệu đơn xin nhập cư được xử lý hàng năm.",
+                "Những sai sót nhỏ có thể dẫn đến sự chậm trễ hoặc từ chối.",
+                "Luật nhập cư thường xuyên thay đổi do chính trị."
+            ],
+            whatToDo: [
+                "Thu thập tất cả các tài liệu nhận dạng của bạn.",
+                "Trung thực và nhất quán trong tất cả các đơn đăng ký.",
+                "Giữ bản sao của mọi thứ gửi cho USCIS.",
+                "Tham khảo ý kiến luật sư trước khi đi du lịch bên ngoài Hoa Kỳ."
+            ],
+            howWeHelp: "Chúng tôi hướng dẫn bạn qua mê cung nhập cư, từ đơn xin thị thực đến quyền công dân và bào chữa trục xuất."
+        },
+        'estate-planning': {
+            title: "Lập Kế Hoạch Tài Sản",
+            desc: "Bảo vệ di sản và người thân của bạn.",
+            about: "Lập kế hoạch tài sản không chỉ dành cho người giàu. Đó là về việc đảm bảo mong muốn của bạn được tôn trọng và gia đình bạn được cung cấp sau khi bạn ra đi. Một kế hoạch tài sản được soạn thảo tốt có thể tránh được việc xác thực di chúc, giảm thiểu thuế và ngăn chặn tranh chấp gia đình.\n\nChúng tôi giúp khách hàng lập di chúc, tín thác và giấy ủy quyền, tạo ra một kế hoạch mang lại sự an tâm.",
+            statistics: [
+                "Nhiều người Mỹ không có di chúc.",
+                "Xác thực di chúc có thể tốn kém và tốn thời gian.",
+                "Lập kế hoạch tài sản giúp tránh các thủ tục giám hộ."
+            ],
+            whatToDo: [
+                "Kiểm kê tài sản và nợ nần của bạn.",
+                "Quyết định ai bạn muốn thừa kế tài sản của mình.",
+                "Chọn người giám hộ cho trẻ vị thành niên.",
+                "Xem lại người thụ hưởng trên các tài khoản bảo hiểm và hưu trí."
+            ],
+            howWeHelp: "Chúng tôi tạo ra các kế hoạch tài sản toàn diện, bao gồm di chúc và tín thác, để bảo vệ tài sản của bạn và đơn giản hóa tương lai cho gia đình bạn."
+        },
+        'business-litigation': {
+            title: "Tranh Tụng Kinh Doanh",
+            desc: "Giải quyết tranh chấp thương mại hiệu quả.",
+            about: "Tranh chấp kinh doanh có thể làm gián đoạn hoạt động của bạn. Chúng tôi đại diện cho các doanh nghiệp trong các tranh chấp hợp đồng, bất đồng đối tác và các vấn đề việc làm. Mục tiêu của chúng tôi là giải quyết xung đột hiệu quả.\n\nChúng tôi đánh giá rủi ro và lợi ích của việc kiện tụng, giúp bạn đưa ra quyết định sáng suốt để bảo vệ lợi ích của mình.",
+            statistics: [
+                "Tranh chấp hợp đồng là loại tranh tụng kinh doanh phổ biến nhất.",
+                "Chi phí kiện tụng có thể ảnh hưởng đến lợi nhuận kinh doanh.",
+                "Giải quyết tranh chấp thay thế thường là một lựa chọn khả thi."
+            ],
+            whatToDo: [
+                "Xem lại hợp đồng và thỏa thuận của bạn.",
+                "Ghi lại tất cả các thông tin liên lạc.",
+                "Đánh giá tác động tài chính tiềm năng.",
+                "Tham khảo ý kiến luật sư trước khi chấm dứt bất kỳ thỏa thuận nào."
+            ],
+            howWeHelp: "Chúng tôi đại diện cho lợi ích kinh doanh của bạn tại tòa án và đàm phán, xử lý các tranh chấp hợp đồng và khiếu nại trách nhiệm."
+        },
         'car-accidents': {
             title: 'Tai Nạn Ô Tô',
             desc: 'Đại diện pháp lý chuyên nghiệp.',
@@ -816,7 +956,119 @@ export const vi = {
                     { q: "Nên tự ý dừng thuốc?", options: ["Có", "Không", "Chỉ cuối tuần"], answer: 1, explanation: "Luôn hỏi ý kiến bác sĩ trước khi thay đổi thuốc." }
                 ]
             }
-        }
+        },
+        'dui': {
+            title: "Bào Chữa DUI",
+            desc: "Bào chữa tích cực chống lại cáo buộc lái xe khi say rượu.",
+            about: "Một bản án DUI có thể gây ra hậu quả thay đổi cuộc sống, bao gồm ngồi tù, đình chỉ bằng lái và phạt tiền nặng. Chúng tôi hiểu khoa học đằng sau các bài kiểm tra sự tỉnh táo và biết cách thách thức bằng chứng của bên công tố. Chúng tôi chiến đấu để bảo vệ quyền lái xe và tự do của bạn.",
+            statistics: ["Luật DUI ở Nevada được thực thi nghiêm ngặt.", "Lần vi phạm đầu tiên vẫn có thể bị ngồi tù.", "Bắt buộc thu hồi bằng lái đối với các bản án."],
+            whatToDo: ["Thực hiện quyền giữ im lặng của bạn.", "Không đồng ý kiểm tra sự tỉnh táo tại hiện trường nếu không bắt buộc.", "Yêu cầu luật sư ngay lập tức.", "Yêu cầu phiên điều trần DMV trong thời hạn."],
+            howWeHelp: "Chúng tôi thách thức việc dừng xe, quy trình kiểm tra và độ tin cậy của bằng chứng để tìm kiếm sự bác bỏ hoặc giảm nhẹ cáo buộc."
+        },
+        'drug-crimes': {
+            title: "Tội Phạm Ma Túy",
+            desc: "Bào chữa cho tội tàng trữ, buôn bán và phân phối.",
+            about: "Cáo buộc ma túy bao gồm từ tàng trữ đơn giản đến buôn bán nghiêm trọng. Hình phạt có thể rất nghiêm khắc. Chúng tôi điều tra xem quyền của bạn có bị vi phạm trong quá trình khám xét và thu giữ hay không và chiến đấu để loại bỏ bằng chứng thu được bất hợp pháp.",
+            statistics: ["Luật ma túy rất phức tạp.", "Khám xét và thu giữ bất hợp pháp là một biện pháp bào chữa phổ biến.", "Các chương trình chuyển hướng có thể có sẵn cho người vi phạm lần đầu."],
+            whatToDo: ["Không đồng ý khám xét người hoặc xe của bạn.", "Giữ im lặng và yêu cầu luật sư.", "Không ký bất cứ điều gì nếu không có luật sư.", "Ghi lại các sự kiện của vụ bắt giữ."],
+            howWeHelp: "Chúng tôi xem xét kỹ lưỡng hành vi của cảnh sát và thách thức bằng chứng để bảo vệ quyền hiến định của bạn."
+        },
+        'assault': {
+            title: "Tấn Công & Hành Hung",
+            desc: "Bảo vệ quyền của bạn trong các vụ án bạo lực.",
+            about: "Cáo buộc tấn công thường phát sinh từ hiểu lầm hoặc tự vệ. Chúng tôi lắng nghe câu chuyện của bạn và xây dựng một biện pháp bào chữa mạnh mẽ. Cho dù đó là một cuộc ẩu đả trong quán bar hay tranh chấp hàng xóm, chúng tôi làm việc để chứng minh sự vô tội của bạn.",
+            statistics: ["Tự vệ là một lý do pháp lý hợp lệ.", "Độ tin cậy của nhân chứng là chìa khóa.", "Cáo buộc có thể tăng nặng nếu sử dụng vũ khí."],
+            whatToDo: ["Không nói chuyện với cảnh sát mà không có luật sư.", "Thu thập thông tin liên lạc của nhân chứng.", "Ghi lại bất kỳ thương tích nào.", "Tránh xa người tố cáo."],
+            howWeHelp: "Chúng tôi phỏng vấn nhân chứng, thu thập bằng chứng tự vệ và đàm phán với công tố viên."
+        },
+        'domestic-violence': {
+            title: "Bạo Lực Gia Đình",
+            desc: "Bào chữa chống lại cáo buộc lạm dụng gia đình.",
+            about: "Cáo buộc bạo lực gia đình được coi là rất nghiêm trọng. Tuy nhiên, cáo buộc sai sự thật là phổ biến. Chúng tôi cung cấp sự bào chữa mạnh mẽ để bảo vệ danh tiếng và quyền của bạn, và ngăn chặn việc mất quyền sử dụng súng.",
+            statistics: ["Cáo buộc sai sự thật là phổ biến trong tranh chấp quyền nuôi con.", "Bản án dẫn đến cấm sử dụng súng trọn đời.", "Lệnh bảo vệ có thể buộc bạn phải rời khỏi nhà."],
+            whatToDo: ["Tuân thủ các lệnh bảo vệ tạm thời.", "Không liên hệ với người tố cáo.", "Thuê luật sư ngay lập tức.", "Thu thập bằng chứng hỗ trợ phiên bản của bạn."],
+            howWeHelp: "Chúng tôi vạch trần những mâu thuẫn trong câu chuyện của người tố cáo và chiến đấu để ngăn chặn một bản án."
+        },
+        'visas': {
+            title: "Visa & Thẻ Xanh",
+            desc: "Hướng dẫn bạn qua quy trình nộp đơn.",
+            about: "Điều hướng quy trình xin visa và thẻ xanh có thể quá sức. Cho dù bạn đang tìm cách đoàn tụ với gia đình hay làm việc tại Hoa Kỳ, chúng tôi đảm bảo đơn của bạn chính xác. Chúng tôi xử lý các đơn xin dựa trên gia đình và visa việc làm.",
+            statistics: ["USCIS từ chối hàng ngàn đơn đăng ký do lỗi.", "Thời gian xử lý thay đổi đáng kể.", "Hướng dẫn chuyên nghiệp làm tăng tỷ lệ thành công."],
+            whatToDo: ["Thu thập tất cả các tài liệu cần thiết.", "Trung thực trên tất cả các biểu mẫu.", "Giữ bản sao của mọi thứ đã nộp.", "Theo dõi trạng thái hồ sơ trực tuyến."],
+            howWeHelp: "Chúng tôi đánh giá đủ điều kiện của bạn, chuẩn bị biểu mẫu và hướng dẫn bạn qua quy trình phỏng vấn."
+        },
+        'deportation': {
+            title: "Chống Trục Xuất",
+            desc: "Chiến đấu để giữ gia đình bên nhau.",
+            about: "Đối mặt với thủ tục trục xuất là điều đáng sợ. Bạn cần một luật sư sẽ chiến đấu không mệt mỏi cho quyền ở lại Hoa Kỳ của bạn. Chúng tôi khám phá tất cả các hình thức cứu trợ, chẳng hạn như tị nạn và hủy bỏ trục xuất.",
+            statistics: ["Thẩm phán di trú có quyền quyết định.", "Đại diện pháp lý làm tăng đáng kể cơ hội thành công.", "Kháng cáo là có thể."],
+            whatToDo: ["Không ký bất cứ điều gì nếu không có luật sư.", "Tham dự tất cả các phiên điều trần.", "Thu thập bằng chứng về cuộc sống của bạn tại Hoa Kỳ.", "Liên hệ với luật sư di trú ngay lập tức."],
+            howWeHelp: "Chúng tôi xây dựng một hồ sơ mạnh mẽ về lý do tại sao bạn nên ở lại, đại diện cho bạn tại tòa án di trú."
+        },
+        'citizenship': {
+            title: "Quốc Tịch",
+            desc: "Giúp bạn trở thành công dân Hoa Kỳ.",
+            about: "Nhập tịch là bước cuối cùng trong hành trình di trú. Chúng tôi giúp thường trú nhân trở thành công dân Hoa Kỳ. Chúng tôi xem xét đủ điều kiện của bạn, giúp bạn chuẩn bị cho các bài kiểm tra và đại diện cho bạn tại cuộc phỏng vấn.",
+            statistics: ["Quốc tịch mang lại quyền bầu cử.", "Phẩm chất đạo đức tốt là bắt buộc.", "Có ngoại lệ cho một số người nộp đơn."],
+            whatToDo: ["Xem xét các yêu cầu nhập tịch.", "Chuẩn bị cho bài kiểm tra công dân.", "Thu thập hồ sơ thuế.", "Tham khảo ý kiến luật sư nếu bạn có tiền án."],
+            howWeHelp: "Chúng tôi đảm bảo bạn đáp ứng tất cả các yêu cầu và hướng dẫn bạn qua quá trình đạt được quốc tịch."
+        },
+        'child-custody': {
+            title: "Quyền Nuôi Con",
+            desc: "Ưu tiên lợi ích tốt nhất của con bạn.",
+            about: "Tranh chấp quyền nuôi con gây tổn hại về mặt cảm xúc. Chúng tôi tập trung vào lợi ích tốt nhất của trẻ trong khi tích cực bảo vệ quyền làm cha mẹ của bạn. Chúng tôi giúp bạn điều hướng hệ thống pháp luật để lập kế hoạch nuôi dạy con cái.",
+            statistics: ["Tòa án ủng hộ quyền nuôi con chung.", "Lợi ích tốt nhất của trẻ là tiêu chuẩn.", "Lệnh nuôi con có thể được sửa đổi."],
+            whatToDo: ["Duy trì môi trường ổn định cho con bạn.", "Ghi lại các cuộc trao đổi thăm nom.", "Không nói xấu cha mẹ kia với con cái.", "Tuân theo tất cả các lệnh của tòa án."],
+            howWeHelp: "Chúng tôi chiến đấu cho các thỏa thuận quyền nuôi con bảo vệ mối quan hệ của bạn với con cái."
+        },
+        'adoption': {
+            title: "Nhận Con Nuôi",
+            desc: "Xây dựng gia đình thông qua việc nhận con nuôi.",
+            about: "Nhận con nuôi là điều tuyệt vời nhưng phức tạp. Chúng tôi xử lý việc nhận con nuôi của cha dượng/mẹ kế, nhận con nuôi độc lập và qua cơ quan. Chúng tôi đảm bảo đáp ứng tất cả các yêu cầu pháp lý.",
+            statistics: ["Nhận con nuôi thiết lập quyền cha mẹ hợp pháp đầy đủ.", "Thường yêu cầu nghiên cứu tại nhà.", "Cần phải chấm dứt quyền của cha mẹ ruột."],
+            whatToDo: ["Quyết định loại hình nhận con nuôi.", "Chuẩn bị kiểm tra lý lịch.", "Tham khảo ý kiến luật sư.", "Kiên nhẫn với quá trình này."],
+            howWeHelp: "Chúng tôi xử lý việc chấm dứt quyền cha mẹ và hoàn tất việc nhận con nuôi."
+        },
+        'paternity': {
+            title: "Xác Định Cha Con",
+            desc: "Thiết lập quan hệ cha con hợp pháp.",
+            about: "Thiết lập quan hệ cha con là rất quan trọng đối với quyền nuôi con và cấp dưỡng. Cho dù bạn là mẹ đang tìm kiếm hỗ trợ hay cha đang tìm cách tham gia vào cuộc sống của con mình, chúng tôi giúp bạn thiết lập quan hệ cha con hợp pháp.",
+            statistics: ["Quan hệ cha con trao quyền pháp lý.", "Cha chưa kết hôn phải thiết lập quan hệ cha con.", "Xét nghiệm DNA là phương pháp tiêu chuẩn."],
+            whatToDo: ["Yêu cầu xét nghiệm DNA nếu nghi ngờ.", "Nộp đơn yêu cầu xác định cha con.", "Thu thập bằng chứng về mối quan hệ.", "Hiểu quyền của bạn."],
+            howWeHelp: "Chúng tôi điều hướng quy trình pháp lý để thiết lập quan hệ cha con và đảm bảo quyền làm cha mẹ."
+        },
+        'contracts': {
+            title: "Tranh Chấp Hợp Đồng",
+            desc: "Thực thi các thỏa thuận kinh doanh.",
+            about: "Hợp đồng là nền tảng của kinh doanh. Khi một bên không thực hiện nghĩa vụ, nó gây ra thiệt hại tài chính. Chúng tôi đại diện cho các doanh nghiệp trong các khiếu nại vi phạm hợp đồng.",
+            statistics: ["Hợp đồng rõ ràng ngăn ngừa tranh chấp.", "Vi phạm hợp đồng cần chứng minh thiệt hại.", "Hòa giải thường là bắt buộc."],
+            whatToDo: ["Xem xét các điều khoản hợp đồng.", "Ghi lại vi phạm bằng văn bản.", "Tính toán thiệt hại tài chính.", "Cố gắng giải quyết trước khi kiện."],
+            howWeHelp: "Chúng tôi phân tích hợp đồng, đàm phán tuân thủ và tranh tụng nếu cần thiết."
+        },
+        'business-litigation': {
+            title: "Tranh Tụng Kinh Doanh",
+            desc: "Giải quyết tranh chấp thương mại hiệu quả.",
+            about: "Tranh chấp kinh doanh có thể làm gián đoạn hoạt động của bạn. Chúng tôi đại diện cho các doanh nghiệp trong các bất đồng đối tác, vấn đề việc làm và hơn thế nữa.",
+            statistics: ["Chi phí tranh tụng ảnh hưởng đến lợi nhuận.", "Giải quyết tranh chấp thay thế là khả thi.", "Can thiệp sớm tiết kiệm tiền."],
+            whatToDo: ["Xem xét các thỏa thuận nội bộ.", "Ghi lại tất cả các giao tiếp.", "Đánh giá tác động tài chính.", "Tham khảo ý kiến luật sư."],
+            howWeHelp: "Chúng tôi đại diện cho lợi ích kinh doanh của bạn tại tòa án và đàm phán."
+        },
+        'wills-trusts': {
+            title: "Di Chúc & Tín Thác",
+            desc: "Lập kế hoạch cho tương lai.",
+            about: "Một kế hoạch di sản toàn diện là rất cần thiết. Chúng tôi giúp tạo di chúc và tín thác. Chúng tôi đảm bảo tài sản của bạn được phân phối theo mong muốn của bạn và giúp giảm thiểu thuế di sản.",
+            statistics: ["Tín thác có thể tránh được di chúc.", "Di chúc chỉ có hiệu lực sau khi chết.", "Lập kế hoạch dành cho tất cả mọi người."],
+            whatToDo: ["Kiểm kê tài sản.", "Chọn người thụ hưởng.", "Chọn người thực hiện di chúc.", "Cập nhật kế hoạch thường xuyên."],
+            howWeHelp: "Chúng tôi soạn thảo các tài liệu lập kế hoạch di sản tùy chỉnh mang lại sự an tâm."
+        },
+        'probate': {
+            title: "Thừa Kế / Di Chúc",
+            desc: "Hướng dẫn bạn qua quy trình tòa án.",
+            about: "Thừa kế là quy trình phân phối tài sản của người quá cố dưới sự giám sát của tòa án. Chúng tôi hỗ trợ người thực hiện nộp các tài liệu cần thiết, trả nợ và phân phối tài sản.",
+            statistics: ["Quá trình thừa kế có thể mất nhiều tháng.", "Người thực hiện có nghĩa vụ ủy thác.", "Chủ nợ phải được thông báo."],
+            whatToDo: ["Tìm bản gốc di chúc.", "Xác định tài sản và nợ.", "Thông báo cho người thừa kế.", "Không phân phối mà không có sự chấp thuận."],
+            howWeHelp: "Chúng tôi xử lý toàn bộ quy trình thừa kế, đảm bảo tuân thủ pháp luật."
+        },
     }
 };
 

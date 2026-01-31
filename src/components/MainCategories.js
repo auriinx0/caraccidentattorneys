@@ -12,7 +12,7 @@ const MainCategories = ({ t, setRoute, isPage }) => (
                 <p className="text-gray-400 max-w-md mt-4 md:mt-0">{t.sections.areasSubtitle}</p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-0 border border-gray-800">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-0 border border-gray-800">
                 {CATEGORY_STRUCT.map((cat) => {
                     const info = t.categories[cat.id] || { title: 'Unknown', desc: '...' };
 
