@@ -79,7 +79,7 @@ const Hero = ({ t }) => {
 
             {/* Modal */}
             <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}>
-                <IntakeForm t={t} />
+                <IntakeForm t={t} onClose={() => setIsModalOpen(false)} />
             </Modal>
         </div>
     );

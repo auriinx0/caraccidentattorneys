@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Calendar, Clock as ClockIcon, ChevronRight } from 'lucide-react';
 import { GOOGLE_SCRIPT_URL, ACCESS_KEY, US_STATES } from '../constants';
 
-const IntakeForm = ({ t }) => {
+const IntakeForm = ({ t, onClose }) => {
     const [formData, setFormData] = useState({
         firstName: '',
         phone: '',
@@ -46,6 +46,13 @@ const IntakeForm = ({ t }) => {
 
             setStatus('sent');
             setFormData({ firstName: '', phone: '', email: '', state: '', accidentDate: '', accidentTime: '', accidentDetails: '', injuryDetails: '' });
+
+            if (onClose) {
+                setTimeout(() => {
+                    onClose();
+                    setStatus('idle'); // Reset status for next open
+                }, 2000);
+            }
         } catch (err) {
             console.error(err);
             setStatus('error');
