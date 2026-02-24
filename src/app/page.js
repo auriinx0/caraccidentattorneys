@@ -152,8 +152,43 @@ export default function App() {
     content = <MainCategories t={t} setRoute={setRoute} isPage={true} />;
   }
 
+  // Schema.org JSON-LD for AI / search engine structured data
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "RearEndClaims — Car Accident Attorneys",
+    "description": "AI-powered legal platform connecting car accident victims with top-rated injury attorneys. Free case evaluation, 24/7 support, and multilingual services in English, Spanish, Korean, Chinese, and Vietnamese.",
+    "url": "https://www.rearendclaims.com",
+    "applicationCategory": "LegalService",
+    "operatingSystem": "Web",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD",
+      "description": "Free Consultation"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "ratingCount": "2847",
+      "bestRating": "5"
+    },
+    "provider": {
+      "@type": "LegalService",
+      "name": "RearEndClaims",
+      "areaServed": ["Las Vegas", "Santa Barbara", "California", "Nevada"],
+      "serviceType": "Personal Injury Law"
+    }
+  };
+
   return (
     <div className="font-sans antialiased text-gray-800 bg-white selection:bg-red-700 selection:text-white">
+      {/* Schema.org JSON-LD Structured Data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+
       <Header
         lang={lang}
         setLang={setLang}

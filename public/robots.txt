@@ -1,0 +1,8 @@
+# Robots.txt for Car Accident Attorneys
+# Allow all crawlers
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://www.rearendclaims.com/sitemap.xml
