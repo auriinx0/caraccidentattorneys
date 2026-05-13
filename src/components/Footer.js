@@ -35,15 +35,7 @@ const Footer = ({ t }) => (
                     <ul className="space-y-4 text-sm text-gray-500">
                         <li className="flex items-center hover:text-white transition">
                             <Phone className="h-5 w-5 mr-3 text-red-700" />
-                            <div className="flex flex-col">
-                                <span>(702) 381-2344 ({t.footer.mainOffice})</span>
-                            </div>
-                        </li>
-                        <li className="flex items-center hover:text-white transition">
-                            <Phone className="h-5 w-5 mr-3 text-red-700" />
-                            <div className="flex flex-col">
-                                <span>(702) 381-2344 ({t.footer.newClients})</span>
-                            </div>
+                            <span>(702) 381-2344</span>
                         </li>
                         <li className="flex items-center hover:text-white transition">
                             <DollarSign className="h-5 w-5 mr-3 text-red-700" />
