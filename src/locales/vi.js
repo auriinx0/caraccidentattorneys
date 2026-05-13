@@ -46,7 +46,7 @@ export const vi = {
     footer: {
         about: "Luật sư tai nạn xe hơi, đấu tranh vì công lý.",
         address: "123 Legal Ave, Suite 100, City, ST 12345",
-        phone: "(555) 000-0000",
+        phone: "(702) 381-2344",
         rights: "Đã đăng ký bản quyền."
     },
     detailPage: {

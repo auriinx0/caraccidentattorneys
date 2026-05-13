@@ -67,7 +67,7 @@ const Header = ({ lang, setLang, route, setRoute, t, isScrolled, handleLangChang
                         <button onClick={() => handleLangChange('vi')} className={`text-[10px] font-bold ${lang === 'vi' ? 'text-red-500' : 'text-gray-400 hover:text-white'}`}>Tiếng Việt</button>
                     </div>
 
-                    <a href="tel:555-000-0000" className="bg-red-700 hover:bg-red-800 text-white px-6 py-3 font-black text-xs uppercase tracking-widest shadow-lg transition transform hover:scale-105 flex items-center border border-red-600 whitespace-nowrap">
+                    <a href="tel:+17023812344" className="bg-red-700 hover:bg-red-800 text-white px-6 py-3 font-black text-xs uppercase tracking-widest shadow-lg transition transform hover:scale-105 flex items-center border border-red-600 whitespace-nowrap">
                         <Phone className="h-3 w-3 mr-2 fill-current" />
                         {t.nav.freeConsult}
                     </a>
@@ -120,7 +120,7 @@ const Header = ({ lang, setLang, route, setRoute, t, isScrolled, handleLangChang
                             ))}
                         </div>
 
-                        <a href="tel:555-000-0000" className="bg-red-700 text-white px-8 py-4 w-full text-center font-bold uppercase tracking-widest mt-8">
+                        <a href="tel:+17023812344" className="bg-red-700 text-white px-8 py-4 w-full text-center font-bold uppercase tracking-widest mt-8">
                             {t.nav.freeConsult}
                         </a>
                     </div>

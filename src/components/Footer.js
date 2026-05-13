@@ -36,13 +36,13 @@ const Footer = ({ t }) => (
                         <li className="flex items-center hover:text-white transition">
                             <Phone className="h-5 w-5 mr-3 text-red-700" />
                             <div className="flex flex-col">
-                                <span>(702) 469-3000 ({t.footer.mainOffice})</span>
+                                <span>(702) 381-2344 ({t.footer.mainOffice})</span>
                             </div>
                         </li>
                         <li className="flex items-center hover:text-white transition">
                             <Phone className="h-5 w-5 mr-3 text-red-700" />
                             <div className="flex flex-col">
-                                <span>(702) 389-8888 ({t.footer.newClients})</span>
+                                <span>(702) 381-2344 ({t.footer.newClients})</span>
                             </div>
                         </li>
                         <li className="flex items-center hover:text-white transition">
